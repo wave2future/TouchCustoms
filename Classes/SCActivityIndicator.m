@@ -18,7 +18,7 @@
 
 @implementation SCActivityIndicator
 
-@synthesize indicatorView, statusLabel;
+@synthesize indicatorView = _indicatorView, statusLabel = _statusLabel;
 
 - (id)initWithFrame:(CGRect)frame {
 

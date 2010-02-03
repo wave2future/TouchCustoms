@@ -97,7 +97,7 @@ typedef UIImageView *		StarViewRef;
 	}
 }
 
-@synthesize starPlaceSize;
+@synthesize starPlaceSize = _starPlaceSize;
 - (void)setStarPlaceSize:(CGSize)value {
 	
 	_starPlaceSize = value;
@@ -110,7 +110,7 @@ typedef UIImageView *		StarViewRef;
 	}
 }
 
-@synthesize highlighted;
+@synthesize highlighted = _highlighted;
 - (void)setHighlighted:(BOOL)value {
 	
 	for (StarViewRef starView in _starViews) {
