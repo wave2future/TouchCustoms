@@ -48,6 +48,10 @@
 		5588F79911197DFC002BF56E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5588F79811197DFC002BF56E /* AVFoundation.framework */; };
 		5588F7A311197E0D002BF56E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5588F7A211197E0D002BF56E /* AudioToolbox.framework */; };
 		5588F7B311197E9A002BF56E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5588F7B211197E9A002BF56E /* CFNetwork.framework */; };
+		559FC9B6111AE3F500A3A532 /* SCSegment.h in Headers */ = {isa = PBXBuildFile; fileRef = 559FC9B2111AE3F500A3A532 /* SCSegment.h */; };
+		559FC9B7111AE3F500A3A532 /* SCSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 559FC9B3111AE3F500A3A532 /* SCSegment.m */; };
+		559FC9B8111AE3F500A3A532 /* SCSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 559FC9B4111AE3F500A3A532 /* SCSegmentedControl.h */; };
+		559FC9B9111AE3F500A3A532 /* SCSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 559FC9B5111AE3F500A3A532 /* SCSegmentedControl.m */; };
 		AA747D9F0F9514B9006C5449 /* TouchCustoms_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* TouchCustoms_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -100,6 +104,10 @@
 		5588F79811197DFC002BF56E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		5588F7A211197E0D002BF56E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		5588F7B211197E9A002BF56E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		559FC9B2111AE3F500A3A532 /* SCSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCSegment.h; path = Classes/SCSegment.h; sourceTree = "<group>"; };
+		559FC9B3111AE3F500A3A532 /* SCSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSegment.m; path = Classes/SCSegment.m; sourceTree = "<group>"; };
+		559FC9B4111AE3F500A3A532 /* SCSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCSegmentedControl.h; path = Classes/SCSegmentedControl.h; sourceTree = "<group>"; };
+		559FC9B5111AE3F500A3A532 /* SCSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSegmentedControl.m; path = Classes/SCSegmentedControl.m; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* TouchCustoms_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchCustoms_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libTouchCustoms.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTouchCustoms.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -225,6 +233,10 @@
 		5588F79611197DB4002BF56E /* Screen Stuff */ = {
 			isa = PBXGroup;
 			children = (
+				559FC9B2111AE3F500A3A532 /* SCSegment.h */,
+				559FC9B3111AE3F500A3A532 /* SCSegment.m */,
+				559FC9B4111AE3F500A3A532 /* SCSegmentedControl.h */,
+				559FC9B5111AE3F500A3A532 /* SCSegmentedControl.m */,
 				5588F73E1119773C002BF56E /* SCGrfx.h */,
 				5588F73F1119773C002BF56E /* SCGrfx.m */,
 				5588F71411197177002BF56E /* SCActivityIndicator.h */,
@@ -287,6 +299,8 @@
 				5588F77D11197C46002BF56E /* lcl_config_components.h in Headers */,
 				5588F77E11197C46002BF56E /* lcl_config_logger.h in Headers */,
 				5588F77F11197C46002BF56E /* LCLNSLog.h in Headers */,
+				559FC9B6111AE3F500A3A532 /* SCSegment.h in Headers */,
+				559FC9B8111AE3F500A3A532 /* SCSegmentedControl.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +364,8 @@
 				5588F77111197C10002BF56E /* NSNumber+MacTypes.m in Sources */,
 				5588F77C11197C46002BF56E /* lcl.m in Sources */,
 				5588F78011197C46002BF56E /* LCLNSLog.m in Sources */,
+				559FC9B7111AE3F500A3A532 /* SCSegment.m in Sources */,
+				559FC9B9111AE3F500A3A532 /* SCSegmentedControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

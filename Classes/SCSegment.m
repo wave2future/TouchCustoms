@@ -11,6 +11,7 @@
 
 #import "SCGrfx.h"
 #import "SCSegment.h"
+#import "SCMemoryManagement.h"
 
 @interface SCSegment (/* Private methods */) 
 

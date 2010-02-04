@@ -9,6 +9,7 @@
 //  
 
 #import "SCRatingView.h"
+#import "SCMemoryManagement.h"
 #import "math.h"
 
 #define PROP_RATING			@"rating"

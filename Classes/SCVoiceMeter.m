@@ -10,6 +10,7 @@
 //
 
 #import "SCVoiceMeter.h"
+#import "lcl.h"
 
 #define CheckIfAudioQueueError(status, message) { if (status != noErr) lcl_log(lcl_cSCVoiceMeter, lcl_vError, message); }
 

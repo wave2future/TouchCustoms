@@ -37,6 +37,7 @@
 
 #import "SCFTPRequest.h"
 #import "NSString+ExtensionMethods.h"
+#import "lcl.h"
 
 NSString *const SCFTPRequestErrorDomain = @"SCFTPRequestErrorDomain";
 

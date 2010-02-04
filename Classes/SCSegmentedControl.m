@@ -11,6 +11,7 @@
 
 #import "SCSegment.h"
 #import "SCSegmentedControl.h"
+#import "SCMemoryManagement.h"
 
 #define kRowHeight	37
 

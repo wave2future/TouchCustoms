@@ -5,7 +5,4 @@
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
 	#import <UIKit/UIKit.h>
-
-	#import "lcl.h"
-	#import "SCMemoryManagement.h"
 #endif

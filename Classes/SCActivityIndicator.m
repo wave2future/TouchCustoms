@@ -9,6 +9,7 @@
 //  
 
 #import "SCActivityIndicator.h"
+#import "SCMemoryManagement.h"
 
 @interface SCActivityIndicator (/* Private methods */)
 
