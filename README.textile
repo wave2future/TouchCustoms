@@ -1,6 +1,6 @@
 h1. Quick Overview
 
-See Wiki for more instructions.
+"Documentation":http://screencustoms.backpackit.com/pub/1936677-touchcustoms-iphone-library
 
 h2. What is TouchCustoms
 
@@ -8,6 +8,6 @@ TouchCustoms is a Cocoa Touch static library that contains a number of reusable 
 
 h2. Component list
 
-# SCMemoryManagement - Make memory management easier
-# SCSegmentedControl - Multi-row UISegmentedControl
+# SCMemoryManagement - Make memory management easier.
+# SCSegmentedControl - Multi-row UISegmentedControl.
 # SCRatingView - 5-star rating-view that allows to set ratings yourself.
