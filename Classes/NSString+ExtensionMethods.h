@@ -14,5 +14,6 @@
 @interface NSString (ExtensionMethods)
 
 + (BOOL)isNullOrEmpty:(NSString *)aString;
++ (NSString *)stringFromInteger:(NSInteger)anInteger;
 
 @end

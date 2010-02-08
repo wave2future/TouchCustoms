@@ -10,9 +10,9 @@
 //
 
 #import "SCVoiceMeter.h"
-#import "lcl.h"
+#import "SCLog.h"
 
-#define CheckIfAudioQueueError(status, message) { if (status != noErr) lcl_log(lcl_cSCVoiceMeter, lcl_vError, message); }
+#define CheckIfAudioQueueError(status, message) { if (status != noErr) SC_LOG_ERROR(message); }
 
 @interface SCVoiceMeter (/* Private Methods */)
 
@@ -64,10 +64,10 @@ static UInt32 DeriveBufferSize(AudioQueueRef audioQueue, const AudioStreamBasicD
 - (void)initializeComponent {
 	
 	format.mSampleRate = [[AVAudioSession sharedInstance] currentHardwareSampleRate];
-	lcl_log(lcl_cSCVoiceMeter, lcl_vInfo, @"Sample rate: %f", format.mSampleRate);
+	SC_LOG_INFO(@"Sample rate: %f", format.mSampleRate);
 	
 	format.mChannelsPerFrame = [[AVAudioSession sharedInstance] currentHardwareInputNumberOfChannels];
-	lcl_log(lcl_cSCVoiceMeter, lcl_vInfo, @"Channels: %d", format.mChannelsPerFrame);
+	SC_LOG_INFO(@"Channels: %d", format.mChannelsPerFrame);
 	
 	format.mFormatID = kAudioFormatLinearPCM;
 	format.mFormatFlags = kLinearPCMFormatFlagIsBigEndian | kLinearPCMFormatFlagIsSignedInteger | kLinearPCMFormatFlagIsPacked;
@@ -81,7 +81,7 @@ static UInt32 DeriveBufferSize(AudioQueueRef audioQueue, const AudioStreamBasicD
 	OSErr status = AudioQueueNewInput(&format, HandleInputBuffer, self, NULL, kCFRunLoopCommonModes, 0, &queue);
 	CheckIfAudioQueueError(status, @"Cannot create new AudioQueue.");
 	if (noErr == status) {
-		lcl_log(lcl_cSCVoiceMeter, lcl_vDebug, @"AudioQueue created successfully.");
+		SC_LOG_DEBUG(@"AudioQueue created successfully.");
 	}
 	
 	UInt32 formatSize = sizeof(format);
@@ -93,7 +93,7 @@ static UInt32 DeriveBufferSize(AudioQueueRef audioQueue, const AudioStreamBasicD
 						   @"Cannot enable metering.");
 	
 	bufferByteSize = DeriveBufferSize(queue, &format, kSCVoiceMeterBufferForTime);
-	lcl_log(lcl_cSCVoiceMeter, lcl_vTrace, @"bufferByteSize = %d", bufferByteSize);
+	SC_LOG_TRACE(@"bufferByteSize = %d", bufferByteSize);
 	
 	for (NSUInteger i = 0; i < kSCVoiceMeterBufferNumber; ++i) {
 		
@@ -136,14 +136,14 @@ static UInt32 DeriveBufferSize(AudioQueueRef audioQueue, const AudioStreamBasicD
 	[audioSession setCategory:AVAudioSessionCategoryRecord error:&error];
 	
 	if (error) {
-		lcl_log(lcl_cSCVoiceMeter, lcl_vError, @"Cannot apply Record category to AVAudioSession: %@ (%@)", error, error.userInfo);
+		SC_LOG_ERROR(@"Cannot apply Record category to AVAudioSession: %@ (%@)", error, error.userInfo);
 	} else {
 		
 		error = NULL;
 		[[AVAudioSession sharedInstance] setActive:YES error:&error];
 		
 		if (error) {
-			lcl_log(lcl_cSCVoiceMeter, lcl_vError, @"Cannot set AVAudioSession active.");
+			SC_LOG_ERROR(@"Cannot set AVAudioSession active.");
 		} else {
 			
 			OSStatus status = AudioQueueStart(queue, NULL);
@@ -151,7 +151,7 @@ static UInt32 DeriveBufferSize(AudioQueueRef audioQueue, const AudioStreamBasicD
 			
 			if (noErr == status) {
 				
-				lcl_log(lcl_cSCVoiceMeter, lcl_vDebug, @"AudioQueue started successfully.");
+				SC_LOG_DEBUG(@"AudioQueue started successfully.");
 				result = YES;
 			}
 		}
@@ -162,11 +162,11 @@ static UInt32 DeriveBufferSize(AudioQueueRef audioQueue, const AudioStreamBasicD
 
 - (void)stop {
 	
-	lcl_log(lcl_cSCVoiceMeter, lcl_vDebug, @"Stopping...");
+	SC_LOG_DEBUG(@"Stopping...");
 	OSErr status = AudioQueueStop(queue, TRUE);
 	CheckIfAudioQueueError(status, @"Cannot stop AudioQueue immediately.");
 	if (noErr == status) {
-		lcl_log(lcl_cSCVoiceMeter, lcl_vDebug, @"AudioQueue stopped successfully.");
+		SC_LOG_DEBUG(@"AudioQueue stopped successfully.");
 	}
 }
 

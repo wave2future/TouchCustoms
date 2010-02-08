@@ -39,12 +39,6 @@
 		5588F76F11197C10002BF56E /* NSData+Digests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5588F76B11197C10002BF56E /* NSData+Digests.m */; };
 		5588F77011197C10002BF56E /* NSNumber+MacTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F76C11197C10002BF56E /* NSNumber+MacTypes.h */; };
 		5588F77111197C10002BF56E /* NSNumber+MacTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5588F76D11197C10002BF56E /* NSNumber+MacTypes.m */; };
-		5588F77B11197C46002BF56E /* lcl.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F77511197C46002BF56E /* lcl.h */; };
-		5588F77C11197C46002BF56E /* lcl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5588F77611197C46002BF56E /* lcl.m */; };
-		5588F77D11197C46002BF56E /* lcl_config_components.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F77711197C46002BF56E /* lcl_config_components.h */; };
-		5588F77E11197C46002BF56E /* lcl_config_logger.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F77811197C46002BF56E /* lcl_config_logger.h */; };
-		5588F77F11197C46002BF56E /* LCLNSLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F77911197C46002BF56E /* LCLNSLog.h */; };
-		5588F78011197C46002BF56E /* LCLNSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5588F77A11197C46002BF56E /* LCLNSLog.m */; };
 		5588F79911197DFC002BF56E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5588F79811197DFC002BF56E /* AVFoundation.framework */; };
 		5588F7A311197E0D002BF56E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5588F7A211197E0D002BF56E /* AudioToolbox.framework */; };
 		5588F7B311197E9A002BF56E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5588F7B211197E9A002BF56E /* CFNetwork.framework */; };
@@ -54,6 +48,7 @@
 		559FC9B9111AE3F500A3A532 /* SCSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 559FC9B5111AE3F500A3A532 /* SCSegmentedControl.m */; };
 		55E466F211203605000B710E /* NSMutableArray+Queue.h in Headers */ = {isa = PBXBuildFile; fileRef = 55E466F011203605000B710E /* NSMutableArray+Queue.h */; };
 		55E466F311203605000B710E /* NSMutableArray+Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E466F111203605000B710E /* NSMutableArray+Queue.m */; };
+		55E46A471120A786000B710E /* SCLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 55E46A461120A786000B710E /* SCLog.h */; };
 		AA747D9F0F9514B9006C5449 /* TouchCustoms_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* TouchCustoms_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -97,12 +92,6 @@
 		5588F76B11197C10002BF56E /* NSData+Digests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Digests.m"; path = "Classes/NSData+Digests.m"; sourceTree = "<group>"; };
 		5588F76C11197C10002BF56E /* NSNumber+MacTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNumber+MacTypes.h"; path = "Classes/NSNumber+MacTypes.h"; sourceTree = "<group>"; };
 		5588F76D11197C10002BF56E /* NSNumber+MacTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+MacTypes.m"; path = "Classes/NSNumber+MacTypes.m"; sourceTree = "<group>"; };
-		5588F77511197C46002BF56E /* lcl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl.h; sourceTree = "<group>"; };
-		5588F77611197C46002BF56E /* lcl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lcl.m; sourceTree = "<group>"; };
-		5588F77711197C46002BF56E /* lcl_config_components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl_config_components.h; sourceTree = "<group>"; };
-		5588F77811197C46002BF56E /* lcl_config_logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl_config_logger.h; sourceTree = "<group>"; };
-		5588F77911197C46002BF56E /* LCLNSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLNSLog.h; sourceTree = "<group>"; };
-		5588F77A11197C46002BF56E /* LCLNSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLNSLog.m; sourceTree = "<group>"; };
 		5588F79811197DFC002BF56E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		5588F7A211197E0D002BF56E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		5588F7B211197E9A002BF56E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -112,6 +101,7 @@
 		559FC9B5111AE3F500A3A532 /* SCSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSegmentedControl.m; path = Classes/SCSegmentedControl.m; sourceTree = "<group>"; };
 		55E466F011203605000B710E /* NSMutableArray+Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+Queue.h"; path = "Classes/NSMutableArray+Queue.h"; sourceTree = "<group>"; };
 		55E466F111203605000B710E /* NSMutableArray+Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+Queue.m"; path = "Classes/NSMutableArray+Queue.m"; sourceTree = "<group>"; };
+		55E46A461120A786000B710E /* SCLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCLog.h; path = Classes/SCLog.h; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* TouchCustoms_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchCustoms_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libTouchCustoms.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTouchCustoms.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,8 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				5588F79811197DFC002BF56E /* AVFoundation.framework */,
-				5588F7B211197E9A002BF56E /* CFNetwork.framework */,
 				5588F7A211197E0D002BF56E /* AudioToolbox.framework */,
+				5588F7B211197E9A002BF56E /* CFNetwork.framework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 				5588F72011197407002BF56E /* UIKit.framework */,
 			);
@@ -169,10 +159,10 @@
 			isa = PBXGroup;
 			children = (
 				5588F79711197DCE002BF56E /* Categories */,
-				5588F77411197C46002BF56E /* Logging */,
 				5588F79511197D84002BF56E /* Network */,
 				5588F79611197DB4002BF56E /* Screen Stuff */,
 				5588F7C7111981D7002BF56E /* Sound */,
+				55E46A461120A786000B710E /* SCLog.h */,
 				5588F71611197177002BF56E /* SCMemoryManagement.h */,
 			);
 			name = Classes;
@@ -197,20 +187,6 @@
 				5588F7131119715F002BF56E /* star-userselected.png */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		5588F77411197C46002BF56E /* Logging */ = {
-			isa = PBXGroup;
-			children = (
-				5588F77511197C46002BF56E /* lcl.h */,
-				5588F77611197C46002BF56E /* lcl.m */,
-				5588F77711197C46002BF56E /* lcl_config_components.h */,
-				5588F77811197C46002BF56E /* lcl_config_logger.h */,
-				5588F77911197C46002BF56E /* LCLNSLog.h */,
-				5588F77A11197C46002BF56E /* LCLNSLog.m */,
-			);
-			name = Logging;
-			path = Classes/Logging;
 			sourceTree = "<group>";
 		};
 		5588F79511197D84002BF56E /* Network */ = {
@@ -301,13 +277,10 @@
 				5588F76611197BBF002BF56E /* NSString+ExtensionMethods.h in Headers */,
 				5588F76E11197C10002BF56E /* NSData+Digests.h in Headers */,
 				5588F77011197C10002BF56E /* NSNumber+MacTypes.h in Headers */,
-				5588F77B11197C46002BF56E /* lcl.h in Headers */,
-				5588F77D11197C46002BF56E /* lcl_config_components.h in Headers */,
-				5588F77E11197C46002BF56E /* lcl_config_logger.h in Headers */,
-				5588F77F11197C46002BF56E /* LCLNSLog.h in Headers */,
 				559FC9B6111AE3F500A3A532 /* SCSegment.h in Headers */,
 				559FC9B8111AE3F500A3A532 /* SCSegmentedControl.h in Headers */,
 				55E466F211203605000B710E /* NSMutableArray+Queue.h in Headers */,
+				55E46A471120A786000B710E /* SCLog.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,8 +342,6 @@
 				5588F76711197BBF002BF56E /* NSString+ExtensionMethods.m in Sources */,
 				5588F76F11197C10002BF56E /* NSData+Digests.m in Sources */,
 				5588F77111197C10002BF56E /* NSNumber+MacTypes.m in Sources */,
-				5588F77C11197C46002BF56E /* lcl.m in Sources */,
-				5588F78011197C46002BF56E /* LCLNSLog.m in Sources */,
 				559FC9B7111AE3F500A3A532 /* SCSegment.m in Sources */,
 				559FC9B9111AE3F500A3A532 /* SCSegmentedControl.m in Sources */,
 				55E466F311203605000B710E /* NSMutableArray+Queue.m in Sources */,
@@ -393,6 +364,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TouchCustoms_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "SC_LOG_LEVEL=2";
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = TouchCustoms;
 			};
@@ -407,6 +379,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TouchCustoms_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "SC_LOG_LEVEL=2";
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = TouchCustoms;
 			};

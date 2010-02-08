@@ -35,9 +35,9 @@
 //  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //  
 
+#import "SCLog.h"
 #import "SCFTPRequest.h"
 #import "NSString+ExtensionMethods.h"
-#import "lcl.h"
 
 NSString *const SCFTPRequestErrorDomain = @"SCFTPRequestErrorDomain";
 
@@ -305,7 +305,7 @@ static NSError *SCFTPUnableToCreateRequestError;
 	}
 	
 	CFURLRef uploadUrl = CFURLCreateCopyAppendingPathComponent(kCFAllocatorDefault, (CFURLRef)self.ftpURL, fileName, false);
-	lcl_log(lcl_cSCFTPRequest, lcl_vDebug, @"uploadUrl = %@", (NSString *)uploadUrl);
+	SC_LOG_DEBUG(@"uploadUrl = %@", (NSString *)uploadUrl);
 	if (!uploadUrl) {
 		[self failWithError:[self constructErrorWithCode:SCFTPInternalErrorWhileBuildingRequestType
 												 message:NSLocalizedString(@"Unable to build URL to upload.", @"")]];

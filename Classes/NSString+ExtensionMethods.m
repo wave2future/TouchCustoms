@@ -26,4 +26,9 @@
 	return NO;
 }
 
++ (NSString *)stringFromInteger:(NSInteger)value {
+	
+	return [NSString stringWithFormat:@"%d", value];
+}
+
 @end
