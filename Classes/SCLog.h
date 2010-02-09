@@ -32,7 +32,7 @@
 #endif
 
 #if (SC_LOG_LEVEL <= 2)
-#define SC_LOG_INFO(MSG, ...)		NSLog(@"[I]: %s:%d:%@", __PRETTY_FUNCTION__, __LINE__, [NSString stringWithFormat:MSG, ## __VA_ARGS__]);
+#define SC_LOG_INFO(MSG, ...)		NSLog(@"[I] %s:%d:%@", __PRETTY_FUNCTION__, __LINE__, [NSString stringWithFormat:MSG, ## __VA_ARGS__]);
 #else
 #define SC_LOG_INFO(MSG, ...)
 #endif

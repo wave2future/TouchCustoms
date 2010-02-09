@@ -53,10 +53,11 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 287354653;
-			PBXWorkspaceStateSaveDate = 287354653;
+			PBXPerProjectTemplateStateSaveDate = 287431183;
+			PBXWorkspaceStateSaveDate = 287431183;
 		};
 		perUserProjectItems = {
+			55E2B2541121DA1500D7B11E /* PBXTextBookmark */ = 55E2B2541121DA1500D7B11E /* PBXTextBookmark */;
 			55E4685B11207BA4000B710E /* PBXTextBookmark */ = 55E4685B11207BA4000B710E /* PBXTextBookmark */;
 			55E4688011207C5F000B710E /* PBXTextBookmark */ = 55E4688011207C5F000B710E /* PBXTextBookmark */;
 			55E4688111207C5F000B710E /* PBXTextBookmark */ = 55E4688111207C5F000B710E /* PBXTextBookmark */;
@@ -96,7 +97,6 @@
 			55E46A0211209D4E000B710E /* PBXTextBookmark */ = 55E46A0211209D4E000B710E /* PBXTextBookmark */;
 			55E46A171120A615000B710E /* PBXTextBookmark */ = 55E46A171120A615000B710E /* PBXTextBookmark */;
 			55E46A181120A615000B710E /* PBXTextBookmark */ = 55E46A181120A615000B710E /* PBXTextBookmark */;
-			55E46A4F1120A799000B710E /* PBXTextBookmark */ = 55E46A4F1120A799000B710E /* PBXTextBookmark */;
 			55E46AA41120AF45000B710E /* PBXTextBookmark */ = 55E46AA41120AF45000B710E /* PBXTextBookmark */;
 		};
 		sourceControlManager = 5588F6FB11197083002BF56E /* Source Control */;
@@ -361,6 +361,16 @@
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 893}";
 		};
+	};
+	55E2B2541121DA1500D7B11E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55E46A461120A786000B710E /* SCLog.h */;
+		name = "SCLog.h: 35";
+		rLen = 0;
+		rLoc = 809;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 151;
 	};
 	55E466F011203605000B710E /* NSMutableArray+Queue.h */ = {
 		uiCtxt = {
@@ -776,26 +786,16 @@
 	55E46A461120A786000B710E /* SCLog.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1261, 663}}";
-			sepNavSelRange = "{1179, 0}";
-			sepNavVisRange = "{175, 1186}";
+			sepNavSelRange = "{809, 0}";
+			sepNavVisRange = "{151, 1209}";
 		};
-	};
-	55E46A4F1120A799000B710E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 55E46A461120A786000B710E /* SCLog.h */;
-		name = "SCLog.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1159;
-		vrLoc = 0;
 	};
 	55E46AA41120AF45000B710E /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 55E46A461120A786000B710E /* SCLog.h */;
 		name = "SCLog.h: 46";
 		rLen = 0;
-		rLoc = 1179;
+		rLoc = 1178;
 		rType = 0;
 		vrLen = 1186;
 		vrLoc = 175;
