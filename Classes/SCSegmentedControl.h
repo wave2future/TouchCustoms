@@ -12,7 +12,7 @@
 //	Represents a multi-row segmented control.
 //
 
-@interface SCSegmentedControl : UIView {
+@interface SCSegmentedControl : UIControl {
 
 @private
 	NSUInteger _columnCount, _rowCount;
