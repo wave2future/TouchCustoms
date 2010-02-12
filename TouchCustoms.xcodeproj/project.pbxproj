@@ -46,6 +46,8 @@
 		559FC9B7111AE3F500A3A532 /* SCSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 559FC9B3111AE3F500A3A532 /* SCSegment.m */; };
 		559FC9B8111AE3F500A3A532 /* SCSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 559FC9B4111AE3F500A3A532 /* SCSegmentedControl.h */; };
 		559FC9B9111AE3F500A3A532 /* SCSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 559FC9B5111AE3F500A3A532 /* SCSegmentedControl.m */; };
+		55A55C0E1125E4DF0035CFBA /* SCTabOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = 55A55C0C1125E4DF0035CFBA /* SCTabOrder.h */; };
+		55A55C0F1125E4DF0035CFBA /* SCTabOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A55C0D1125E4DF0035CFBA /* SCTabOrder.m */; };
 		55E466F211203605000B710E /* NSMutableArray+Queue.h in Headers */ = {isa = PBXBuildFile; fileRef = 55E466F011203605000B710E /* NSMutableArray+Queue.h */; };
 		55E466F311203605000B710E /* NSMutableArray+Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E466F111203605000B710E /* NSMutableArray+Queue.m */; };
 		55E46A471120A786000B710E /* SCLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 55E46A461120A786000B710E /* SCLog.h */; };
@@ -99,6 +101,8 @@
 		559FC9B3111AE3F500A3A532 /* SCSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSegment.m; path = Classes/SCSegment.m; sourceTree = "<group>"; };
 		559FC9B4111AE3F500A3A532 /* SCSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCSegmentedControl.h; path = Classes/SCSegmentedControl.h; sourceTree = "<group>"; };
 		559FC9B5111AE3F500A3A532 /* SCSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSegmentedControl.m; path = Classes/SCSegmentedControl.m; sourceTree = "<group>"; };
+		55A55C0C1125E4DF0035CFBA /* SCTabOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCTabOrder.h; path = Classes/SCTabOrder.h; sourceTree = "<group>"; };
+		55A55C0D1125E4DF0035CFBA /* SCTabOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCTabOrder.m; path = Classes/SCTabOrder.m; sourceTree = "<group>"; };
 		55E466F011203605000B710E /* NSMutableArray+Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+Queue.h"; path = "Classes/NSMutableArray+Queue.h"; sourceTree = "<group>"; };
 		55E466F111203605000B710E /* NSMutableArray+Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+Queue.m"; path = "Classes/NSMutableArray+Queue.m"; sourceTree = "<group>"; };
 		55E46A461120A786000B710E /* SCLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCLog.h; path = Classes/SCLog.h; sourceTree = "<group>"; };
@@ -225,6 +229,8 @@
 				5588F71811197177002BF56E /* SCRatingView.m */,
 				5588F75A1119774D002BF56E /* SCViewSlider.h */,
 				5588F75B1119774D002BF56E /* SCViewSlider.m */,
+				55A55C0C1125E4DF0035CFBA /* SCTabOrder.h */,
+				55A55C0D1125E4DF0035CFBA /* SCTabOrder.m */,
 			);
 			name = "Screen Stuff";
 			sourceTree = "<group>";
@@ -281,6 +287,7 @@
 				559FC9B8111AE3F500A3A532 /* SCSegmentedControl.h in Headers */,
 				55E466F211203605000B710E /* NSMutableArray+Queue.h in Headers */,
 				55E46A471120A786000B710E /* SCLog.h in Headers */,
+				55A55C0E1125E4DF0035CFBA /* SCTabOrder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +352,7 @@
 				559FC9B7111AE3F500A3A532 /* SCSegment.m in Sources */,
 				559FC9B9111AE3F500A3A532 /* SCSegmentedControl.m in Sources */,
 				55E466F311203605000B710E /* NSMutableArray+Queue.m in Sources */,
+				55A55C0F1125E4DF0035CFBA /* SCTabOrder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
