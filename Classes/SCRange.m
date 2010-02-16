@@ -10,7 +10,7 @@
 //  
 
 #import "SCRange.h"
-#import "NSNumber+MacTypes.h"
+#import "NSNumber+SCMacTypes.h"
 
 SCRange SCUnionRange(SCRange range1, SCRange range2) {
 	

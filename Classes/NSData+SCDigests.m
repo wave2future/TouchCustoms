@@ -1,5 +1,5 @@
 //
-//  NSData+Digests.m
+//  NSData+SCDigests.m
 //  TouchCustoms
 //
 //  Created by Aleks Nesterow on 03/02/10.
@@ -9,7 +9,7 @@
 //	Maintained by Screen Customs s.r.o.
 //  
 
-#import "NSData+Digests.h"
+#import "NSData+SCDigests.h"
 
 #if TARGET_OS_IPHONE
 #import <CommonCrypto/CommonDigest.h>
@@ -17,7 +17,7 @@
 #import "SSCrypto.h"
 #endif
 
-@implementation NSData (Digests)
+@implementation NSData (SCDigests)
 
 #if TARGET_OS_IPHONE
 static char encodingTable[64] = {

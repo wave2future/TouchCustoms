@@ -1,5 +1,5 @@
 //
-//  NSNumber+MacTypes.m
+//  NSNumber+SCMacTypes.m
 //  TouchCustoms
 //
 //  Edited by Aleks Nesterow on 03/02/10.
@@ -9,9 +9,9 @@
 //	Maintained by Screen Customs s.r.o.
 //	
 
-#import "NSNumber+MacTypes.h"
+#import "NSNumber+SCMacTypes.h"
 
-@implementation NSNumber (MacTypes)
+@implementation NSNumber (SCMacTypes)
 
 + (BOOL)parseString:(NSString *)str intoSInt64:(SInt64 *)pNum {
 	

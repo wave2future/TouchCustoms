@@ -8,9 +8,9 @@
 //  Copyright © 2009-2010 Screen Customs s.r.o. All rights reserved.
 //  
 
-#import "NSString+ExtensionMethods.h"
+#import "NSString+SCMethods.h"
 
-@implementation NSString (ExtensionMethods)
+@implementation NSString (SCMethods)
 
 + (BOOL)isNullOrEmpty:(NSString *)aString {
 	

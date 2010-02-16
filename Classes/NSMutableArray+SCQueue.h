@@ -1,5 +1,5 @@
 //
-//  NSMutableArray+Queue.h
+//  NSMutableArray+SCQueue.h
 //  TouchCustoms
 //
 //  Created by Aleks Nesterow on 2/7/10.
@@ -11,7 +11,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSMutableArray (Queue)
+@interface NSMutableArray (SCQueue)
 
 - (void)enqueue:(id)object;
 - (id)dequeue;

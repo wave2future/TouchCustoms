@@ -15,8 +15,8 @@
 #import "SCHttpResponse.h"
 #import "SCHttpAuthenticationRequest.h"
 #import "SCRange.h"
-#import "NSNumber+MacTypes.h"
-#import "NSData+Digests.h"
+#import "NSNumber+SCMacTypes.h"
+#import "NSData+SCDigests.h"
 
 // Define chunk size used to read in data for responses
 // This is how much data will be read from disk into RAM at a time

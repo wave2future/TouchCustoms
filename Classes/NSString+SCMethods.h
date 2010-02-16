@@ -1,5 +1,5 @@
 //
-//  NSString+ExtensionMethods.h
+//  NSString+SCMethods.h
 //  TouchCustoms
 //
 //  Created by Aleks Nesterow on 7/19/09.
@@ -11,7 +11,7 @@
 //  Extension methods for NSString.
 //
 
-@interface NSString (ExtensionMethods)
+@interface NSString (SCMethods)
 
 + (BOOL)isNullOrEmpty:(NSString *)aString;
 + (NSString *)stringFromInteger:(NSInteger)anInteger;

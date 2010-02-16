@@ -1,5 +1,5 @@
 //
-//  NSData+Digests.h
+//  NSData+SCDigests.h
 //  TouchCustoms
 //
 //  Edited by Aleks Nesterow on 03/02/10.
@@ -9,7 +9,7 @@
 //	Maintained by Screen Customs s.r.o.
 //  
 
-@interface NSData (Digets)
+@interface NSData (SCDigets)
 
 - (NSData *)md5Digest;
 - (NSData *)sha1Digest;

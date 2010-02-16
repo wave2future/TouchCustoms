@@ -1,5 +1,5 @@
 //
-//  NSMutableArray+Queue.m
+//  NSMutableArray+SCQueue.m
 //  TouchCustoms
 //
 //  Created by Aleks Nesterow on 2/7/10.
@@ -9,9 +9,9 @@
 //	All rights reserved.
 //
 
-#import "NSMutableArray+Queue.h"
+#import "NSMutableArray+SCQueue.h"
 
-@implementation NSMutableArray (Queue)
+@implementation NSMutableArray (SCQueue)
 
 - (void)enqueue:(id)object {
 
