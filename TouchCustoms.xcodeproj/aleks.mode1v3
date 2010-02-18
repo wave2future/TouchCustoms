@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -265,6 +267,10 @@
 							<array>
 								<string>0867D691FE84028FC02AAC07</string>
 								<string>08FB77AEFE84172EC02AAC07</string>
+<<<<<<< HEAD
+=======
+								<string>5588F79711197DCE002BF56E</string>
+>>>>>>> 92e00e7e4bd60ca481a5294144e44ab4fdfac722
 								<string>5588F79611197DB4002BF56E</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FAAC04509CD000000102</string>
@@ -273,8 +279,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+<<<<<<< HEAD
 									<integer>20</integer>
 									<integer>4</integer>
+=======
+									<integer>15</integer>
+									<integer>12</integer>
+>>>>>>> 92e00e7e4bd60ca481a5294144e44ab4fdfac722
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -299,7 +310,7 @@
 							<real>224</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>70 121 1568 937 0 0 1920 1058 </string>
+						<string>115 118 1568 937 0 0 1920 1058 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -310,14 +321,16 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
+<<<<<<< HEAD
 								<string>SCTextFieldCell.m</string>
+=======
+								<string>SCSegmentedControl.h</string>
+>>>>>>> 92e00e7e4bd60ca481a5294144e44ab4fdfac722
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,6 +338,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
+<<<<<<< HEAD
 										<string>SCTextFieldCell.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
@@ -333,16 +347,44 @@
 										<key>history</key>
 										<array>
 											<string>55E4685B11207BA4000B710E</string>
+=======
+										<string>SCSegmentedControl.h</string>
+										<key>_historyCapacity</key>
+										<integer>0</integer>
+										<key>bookmark</key>
+										<string>55E46D841121891D000B710E</string>
+										<key>history</key>
+										<array>
+											<string>55E4685B11207BA4000B710E</string>
+											<string>55E4688011207C5F000B710E</string>
+											<string>55E4688111207C5F000B710E</string>
+											<string>55E4688211207C5F000B710E</string>
+											<string>55E4688311207C5F000B710E</string>
+											<string>55E4688711207C5F000B710E</string>
+											<string>55E4688811207C5F000B710E</string>
+											<string>55E4688911207C5F000B710E</string>
+											<string>55E4688B11207C5F000B710E</string>
+											<string>55E4688C11207C5F000B710E</string>
+											<string>55E4688D11207C5F000B710E</string>
+											<string>55E4688E11207C5F000B710E</string>
+											<string>55E4688F11207C5F000B710E</string>
+											<string>55E4689011207C5F000B710E</string>
+											<string>55E4689111207C5F000B710E</string>
+											<string>55E4689211207C5F000B710E</string>
+											<string>55E4689311207C5F000B710E</string>
+											<string>55E4689411207C5F000B710E</string>
+											<string>55E4689611207C5F000B710E</string>
+											<string>55E4689911207C5F000B710E</string>
+>>>>>>> 92e00e7e4bd60ca481a5294144e44ab4fdfac722
 											<string>55E4689A11207C5F000B710E</string>
 											<string>55E4689B11207C5F000B710E</string>
 											<string>55E4689C11207C5F000B710E</string>
-											<string>55E4689D11207C5F000B710E</string>
-											<string>55E4689E11207C5F000B710E</string>
 											<string>55E4689F11207C5F000B710E</string>
 											<string>55E468A011207C5F000B710E</string>
 											<string>55E468A111207C5F000B710E</string>
 											<string>55E468A211207C5F000B710E</string>
 											<string>55E4691311208166000B710E</string>
+<<<<<<< HEAD
 											<string>55CF416A112AC39B00E762C1</string>
 											<string>55CF416E112AC39B00E762C1</string>
 											<string>55CF416F112AC39B00E762C1</string>
@@ -383,6 +425,26 @@
 											<string>55AD3A1F112D831000E70986</string>
 											<string>55AD3A20112D831000E70986</string>
 											<string>55AD3A21112D831000E70986</string>
+=======
+											<string>55E4693E11208435000B710E</string>
+											<string>55E469FE11209D4E000B710E</string>
+											<string>55E46A0011209D4E000B710E</string>
+											<string>55E46A0211209D4E000B710E</string>
+											<string>55E46A171120A615000B710E</string>
+											<string>55E46A181120A615000B710E</string>
+											<string>55E46C06112164FB000B710E</string>
+											<string>55E46C07112164FB000B710E</string>
+											<string>55E46C08112164FB000B710E</string>
+											<string>55E46C09112164FB000B710E</string>
+											<string>55E46C0A112164FB000B710E</string>
+											<string>55E46C0B112164FB000B710E</string>
+											<string>55E46C981121704F000B710E</string>
+											<string>55E46D1C1121856B000B710E</string>
+											<string>55E46D1D1121856B000B710E</string>
+											<string>55E46D1E1121856B000B710E</string>
+											<string>55E46D1F1121856B000B710E</string>
+											<string>55E46D7F11218918000B710E</string>
+>>>>>>> 92e00e7e4bd60ca481a5294144e44ab4fdfac722
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -394,14 +456,22 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
+<<<<<<< HEAD
 								<string>{{0, 0}, {1322, 809}}</string>
+=======
+								<string>{{0, 0}, {1322, 531}}</string>
+>>>>>>> 92e00e7e4bd60ca481a5294144e44ab4fdfac722
 								<key>RubberWindowFrame</key>
-								<string>70 121 1568 937 0 0 1920 1058 </string>
+								<string>115 118 1568 937 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
+<<<<<<< HEAD
 							<string>809pt</string>
+=======
+							<string>531pt</string>
+>>>>>>> 92e00e7e4bd60ca481a5294144e44ab4fdfac722
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -414,14 +484,22 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
+<<<<<<< HEAD
 								<string>{{0, 814}, {1322, 82}}</string>
+=======
+								<string>{{0, 536}, {1322, 360}}</string>
+>>>>>>> 92e00e7e4bd60ca481a5294144e44ab4fdfac722
 								<key>RubberWindowFrame</key>
-								<string>70 121 1568 937 0 0 1920 1058 </string>
+								<string>115 118 1568 937 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
+<<<<<<< HEAD
 							<string>82pt</string>
+=======
+							<string>360pt</string>
+>>>>>>> 92e00e7e4bd60ca481a5294144e44ab4fdfac722
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -440,9 +518,15 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
+<<<<<<< HEAD
 				<string>55AD396E112D66F600E70986</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
 				<string>55AD396F112D66F600E70986</string>
+=======
+				<string>55E46D8111218918000B710E</string>
+				<string>1CE0B1FE06471DED0097A5F4</string>
+				<string>55E46D8211218918000B710E</string>
+>>>>>>> 92e00e7e4bd60ca481a5294144e44ab4fdfac722
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -579,10 +663,10 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>558C22970F83B6220034555B</string>
-		<string>/Users/aleks/Projects/SE/BBK/TouchCustoms/TouchCustoms.xcodeproj</string>
+		<string>/Users/aleks/Projects/Creatonic/TVGuide/TouchCustoms/TouchCustoms.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>70 121 1568 937 0 0 1920 1058 </string>
+	<string>115 118 1568 937 0 0 1920 1058 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -661,7 +745,11 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>558C22970F83B6220034555B</string>
+<<<<<<< HEAD
 				<string>55AD3970112D66F600E70986</string>
+=======
+				<string>55E46D8311218918000B710E</string>
+>>>>>>> 92e00e7e4bd60ca481a5294144e44ab4fdfac722
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

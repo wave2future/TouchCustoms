@@ -65,9 +65,17 @@
 
 	if (_selectedIndex != value) {
 		
-		[[_segments objectAtIndex:_selectedIndex] setSelected:NO];
+		if (_segments.count > _selectedIndex) {
+			[[_segments objectAtIndex:_selectedIndex] setSelected:NO];
+		}
+		
 		_selectedIndex = value;
-		[[_segments objectAtIndex:_selectedIndex] setSelected:YES];
+		
+		if (_segments.count > _selectedIndex) {
+			[[_segments objectAtIndex:_selectedIndex] setSelected:YES];
+		}
+		
+		[self sendActionsForControlEvents:UIControlEventValueChanged];
 	}
 }
 
