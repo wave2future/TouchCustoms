@@ -51,6 +51,8 @@
 		55AD3975112D681F00E70986 /* SCTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 55AD3973112D681F00E70986 /* SCTextFieldCell.h */; };
 		55AD3976112D681F00E70986 /* SCTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55AD3974112D681F00E70986 /* SCTextFieldCell.m */; };
 		55AD3982112D733D00E70986 /* SCColorScheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 55AD3981112D733D00E70986 /* SCColorScheme.h */; };
+		55AD3A4F112D92BD00E70986 /* SCSwitchCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 55AD3A4D112D92BD00E70986 /* SCSwitchCell.h */; };
+		55AD3A50112D92BD00E70986 /* SCSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55AD3A4E112D92BD00E70986 /* SCSwitchCell.m */; };
 		55CF41FF112AE9EA00E762C1 /* UIColor+SCMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 55CF41FD112AE9EA00E762C1 /* UIColor+SCMethods.h */; };
 		55CF4200112AE9EA00E762C1 /* UIColor+SCMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CF41FE112AE9EA00E762C1 /* UIColor+SCMethods.m */; };
 		55E466F211203605000B710E /* NSMutableArray+SCQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 55E466F011203605000B710E /* NSMutableArray+SCQueue.h */; };
@@ -111,6 +113,8 @@
 		55AD3973112D681F00E70986 /* SCTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCTextFieldCell.h; path = Classes/SCTextFieldCell.h; sourceTree = "<group>"; };
 		55AD3974112D681F00E70986 /* SCTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCTextFieldCell.m; path = Classes/SCTextFieldCell.m; sourceTree = "<group>"; };
 		55AD3981112D733D00E70986 /* SCColorScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCColorScheme.h; path = Classes/SCColorScheme.h; sourceTree = "<group>"; };
+		55AD3A4D112D92BD00E70986 /* SCSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCSwitchCell.h; path = Classes/SCSwitchCell.h; sourceTree = "<group>"; };
+		55AD3A4E112D92BD00E70986 /* SCSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSwitchCell.m; path = Classes/SCSwitchCell.m; sourceTree = "<group>"; };
 		55CF41FD112AE9EA00E762C1 /* UIColor+SCMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+SCMethods.h"; path = "Classes/UIColor+SCMethods.h"; sourceTree = "<group>"; };
 		55CF41FE112AE9EA00E762C1 /* UIColor+SCMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+SCMethods.m"; path = "Classes/UIColor+SCMethods.m"; sourceTree = "<group>"; };
 		55E466F011203605000B710E /* NSMutableArray+SCQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+SCQueue.h"; path = "Classes/NSMutableArray+SCQueue.h"; sourceTree = "<group>"; };
@@ -231,6 +235,8 @@
 				55A55C0D1125E4DF0035CFBA /* SCTabOrder.m */,
 				55AD3973112D681F00E70986 /* SCTextFieldCell.h */,
 				55AD3974112D681F00E70986 /* SCTextFieldCell.m */,
+				55AD3A4D112D92BD00E70986 /* SCSwitchCell.h */,
+				55AD3A4E112D92BD00E70986 /* SCSwitchCell.m */,
 			);
 			name = "Screen Stuff";
 			sourceTree = "<group>";
@@ -306,6 +312,7 @@
 				55CF41FF112AE9EA00E762C1 /* UIColor+SCMethods.h in Headers */,
 				55AD3975112D681F00E70986 /* SCTextFieldCell.h in Headers */,
 				55AD3982112D733D00E70986 /* SCColorScheme.h in Headers */,
+				55AD3A4F112D92BD00E70986 /* SCSwitchCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +380,7 @@
 				55A55C0F1125E4DF0035CFBA /* SCTabOrder.m in Sources */,
 				55CF4200112AE9EA00E762C1 /* UIColor+SCMethods.m in Sources */,
 				55AD3976112D681F00E70986 /* SCTextFieldCell.m in Sources */,
+				55AD3A50112D92BD00E70986 /* SCSwitchCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,7 @@
 //	All rights reserved.
 //	
 //	Purpose
-//	Represents a UITableViewCell with UITextField.
+//	Represents UITableViewCell with UITextField.
 //	Can be useful for entering credentials for example.
 //
 

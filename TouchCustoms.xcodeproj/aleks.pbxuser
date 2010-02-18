@@ -472,9 +472,9 @@
 	};
 	55AD3973112D681F00E70986 /* SCTextFieldCell.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {915, 494}}";
-			sepNavSelRange = "{471, 0}";
-			sepNavVisRange = "{192, 552}";
+			sepNavIntBoundsRect = "{{0, 0}, {1261, 777}}";
+			sepNavSelRange = "{215, 0}";
+			sepNavVisRange = "{0, 885}";
 		};
 	};
 	55AD3974112D681F00E70986 /* SCTextFieldCell.m */ = {
@@ -505,7 +505,7 @@
 		fRef = 55AD3973112D681F00E70986 /* SCTextFieldCell.h */;
 		name = "SCTextFieldCell.h: 23";
 		rLen = 0;
-		rLoc = 471;
+		rLoc = 469;
 		rType = 0;
 		vrLen = 612;
 		vrLoc = 190;
@@ -555,7 +555,7 @@
 		fRef = 55AD3973112D681F00E70986 /* SCTextFieldCell.h */;
 		name = "SCTextFieldCell.h: 23";
 		rLen = 0;
-		rLoc = 471;
+		rLoc = 469;
 		rType = 0;
 		vrLen = 802;
 		vrLoc = 0;
@@ -565,7 +565,7 @@
 		fRef = 55AD3973112D681F00E70986 /* SCTextFieldCell.h */;
 		name = "SCTextFieldCell.h: 23";
 		rLen = 0;
-		rLoc = 471;
+		rLoc = 469;
 		rType = 0;
 		vrLen = 802;
 		vrLoc = 0;
@@ -575,7 +575,7 @@
 		fRef = 55AD3973112D681F00E70986 /* SCTextFieldCell.h */;
 		name = "SCTextFieldCell.h: 31";
 		rLen = 0;
-		rLoc = 880;
+		rLoc = 878;
 		rType = 0;
 		vrLen = 827;
 		vrLoc = 0;
@@ -621,7 +621,7 @@
 		fRef = 55AD3973112D681F00E70986 /* SCTextFieldCell.h */;
 		name = "SCTextFieldCell.h: 30";
 		rLen = 0;
-		rLoc = 664;
+		rLoc = 662;
 		rType = 0;
 		vrLen = 887;
 		vrLoc = 0;
@@ -801,6 +801,20 @@
 		rType = 0;
 		vrLen = 1449;
 		vrLoc = 1009;
+	};
+	55AD3A4D112D92BD00E70986 /* SCSwitchCell.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1261, 777}}";
+			sepNavSelRange = "{455, 0}";
+			sepNavVisRange = "{0, 463}";
+		};
+	};
+	55AD3A4E112D92BD00E70986 /* SCSwitchCell.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1261, 777}}";
+			sepNavSelRange = "{703, 0}";
+			sepNavVisRange = "{0, 735}";
+		};
 	};
 	55CF4162112AC39B00E762C1 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
