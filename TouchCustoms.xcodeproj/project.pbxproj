@@ -48,6 +48,9 @@
 		559FC9B9111AE3F500A3A532 /* SCSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 559FC9B5111AE3F500A3A532 /* SCSegmentedControl.m */; };
 		55A55C0E1125E4DF0035CFBA /* SCTabOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = 55A55C0C1125E4DF0035CFBA /* SCTabOrder.h */; };
 		55A55C0F1125E4DF0035CFBA /* SCTabOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A55C0D1125E4DF0035CFBA /* SCTabOrder.m */; };
+		55AD3975112D681F00E70986 /* SCTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 55AD3973112D681F00E70986 /* SCTextFieldCell.h */; };
+		55AD3976112D681F00E70986 /* SCTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55AD3974112D681F00E70986 /* SCTextFieldCell.m */; };
+		55AD3982112D733D00E70986 /* SCColorScheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 55AD3981112D733D00E70986 /* SCColorScheme.h */; };
 		55CF41FF112AE9EA00E762C1 /* UIColor+SCMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 55CF41FD112AE9EA00E762C1 /* UIColor+SCMethods.h */; };
 		55CF4200112AE9EA00E762C1 /* UIColor+SCMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CF41FE112AE9EA00E762C1 /* UIColor+SCMethods.m */; };
 		55E466F211203605000B710E /* NSMutableArray+SCQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 55E466F011203605000B710E /* NSMutableArray+SCQueue.h */; };
@@ -58,12 +61,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5588F70E1119715F002BF56E /* star-halfselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-halfselected.png"; sourceTree = "<group>"; };
-		5588F70F1119715F002BF56E /* star-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-highlighted.png"; sourceTree = "<group>"; };
-		5588F7101119715F002BF56E /* star-hot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-hot.png"; sourceTree = "<group>"; };
-		5588F7111119715F002BF56E /* star-nonselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-nonselected.png"; sourceTree = "<group>"; };
-		5588F7121119715F002BF56E /* star-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-selected.png"; sourceTree = "<group>"; };
-		5588F7131119715F002BF56E /* star-userselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-userselected.png"; sourceTree = "<group>"; };
 		5588F71411197177002BF56E /* SCActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCActivityIndicator.h; path = Classes/SCActivityIndicator.h; sourceTree = "<group>"; };
 		5588F71511197177002BF56E /* SCActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCActivityIndicator.m; path = Classes/SCActivityIndicator.m; sourceTree = "<group>"; };
 		5588F71611197177002BF56E /* SCMemoryManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCMemoryManagement.h; path = Classes/SCMemoryManagement.h; sourceTree = "<group>"; };
@@ -105,6 +102,15 @@
 		559FC9B5111AE3F500A3A532 /* SCSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSegmentedControl.m; path = Classes/SCSegmentedControl.m; sourceTree = "<group>"; };
 		55A55C0C1125E4DF0035CFBA /* SCTabOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCTabOrder.h; path = Classes/SCTabOrder.h; sourceTree = "<group>"; };
 		55A55C0D1125E4DF0035CFBA /* SCTabOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCTabOrder.m; path = Classes/SCTabOrder.m; sourceTree = "<group>"; };
+		55AD3965112D66DA00E70986 /* star-halfselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star-halfselected.png"; path = "Images/star-halfselected.png"; sourceTree = "<group>"; };
+		55AD3966112D66DA00E70986 /* star-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star-highlighted.png"; path = "Images/star-highlighted.png"; sourceTree = "<group>"; };
+		55AD3967112D66DA00E70986 /* star-hot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star-hot.png"; path = "Images/star-hot.png"; sourceTree = "<group>"; };
+		55AD3968112D66DA00E70986 /* star-nonselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star-nonselected.png"; path = "Images/star-nonselected.png"; sourceTree = "<group>"; };
+		55AD3969112D66DA00E70986 /* star-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star-selected.png"; path = "Images/star-selected.png"; sourceTree = "<group>"; };
+		55AD396A112D66DA00E70986 /* star-userselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star-userselected.png"; path = "Images/star-userselected.png"; sourceTree = "<group>"; };
+		55AD3973112D681F00E70986 /* SCTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCTextFieldCell.h; path = Classes/SCTextFieldCell.h; sourceTree = "<group>"; };
+		55AD3974112D681F00E70986 /* SCTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCTextFieldCell.m; path = Classes/SCTextFieldCell.m; sourceTree = "<group>"; };
+		55AD3981112D733D00E70986 /* SCColorScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCColorScheme.h; path = Classes/SCColorScheme.h; sourceTree = "<group>"; };
 		55CF41FD112AE9EA00E762C1 /* UIColor+SCMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+SCMethods.h"; path = "Classes/UIColor+SCMethods.h"; sourceTree = "<group>"; };
 		55CF41FE112AE9EA00E762C1 /* UIColor+SCMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+SCMethods.m"; path = "Classes/UIColor+SCMethods.m"; sourceTree = "<group>"; };
 		55E466F011203605000B710E /* NSMutableArray+SCQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+SCQueue.h"; path = "Classes/NSMutableArray+SCQueue.h"; sourceTree = "<group>"; };
@@ -144,7 +150,7 @@
 			children = (
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
-				5588F70D1119715F002BF56E /* Resources */,
+				55AD3964112D66C400E70986 /* Images */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
@@ -172,6 +178,7 @@
 				5588F7C7111981D7002BF56E /* Sound */,
 				55E46A461120A786000B710E /* SCLog.h */,
 				5588F71611197177002BF56E /* SCMemoryManagement.h */,
+				55AD3981112D733D00E70986 /* SCColorScheme.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -182,19 +189,6 @@
 				AA747D9E0F9514B9006C5449 /* TouchCustoms_Prefix.pch */,
 			);
 			name = "Other Sources";
-			sourceTree = "<group>";
-		};
-		5588F70D1119715F002BF56E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				5588F70E1119715F002BF56E /* star-halfselected.png */,
-				5588F70F1119715F002BF56E /* star-highlighted.png */,
-				5588F7101119715F002BF56E /* star-hot.png */,
-				5588F7111119715F002BF56E /* star-nonselected.png */,
-				5588F7121119715F002BF56E /* star-selected.png */,
-				5588F7131119715F002BF56E /* star-userselected.png */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		5588F79511197D84002BF56E /* Network */ = {
@@ -235,6 +229,8 @@
 				5588F75B1119774D002BF56E /* SCViewSlider.m */,
 				55A55C0C1125E4DF0035CFBA /* SCTabOrder.h */,
 				55A55C0D1125E4DF0035CFBA /* SCTabOrder.m */,
+				55AD3973112D681F00E70986 /* SCTextFieldCell.h */,
+				55AD3974112D681F00E70986 /* SCTextFieldCell.m */,
 			);
 			name = "Screen Stuff";
 			sourceTree = "<group>";
@@ -263,6 +259,19 @@
 				5588F75D1119774D002BF56E /* SCVoiceMeter.m */,
 			);
 			name = Sound;
+			sourceTree = "<group>";
+		};
+		55AD3964112D66C400E70986 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				55AD3965112D66DA00E70986 /* star-halfselected.png */,
+				55AD3966112D66DA00E70986 /* star-highlighted.png */,
+				55AD3967112D66DA00E70986 /* star-hot.png */,
+				55AD3968112D66DA00E70986 /* star-nonselected.png */,
+				55AD3969112D66DA00E70986 /* star-selected.png */,
+				55AD396A112D66DA00E70986 /* star-userselected.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +304,8 @@
 				55E46A471120A786000B710E /* SCLog.h in Headers */,
 				55A55C0E1125E4DF0035CFBA /* SCTabOrder.h in Headers */,
 				55CF41FF112AE9EA00E762C1 /* UIColor+SCMethods.h in Headers */,
+				55AD3975112D681F00E70986 /* SCTextFieldCell.h in Headers */,
+				55AD3982112D733D00E70986 /* SCColorScheme.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +372,7 @@
 				55E466F311203605000B710E /* NSMutableArray+SCQueue.m in Sources */,
 				55A55C0F1125E4DF0035CFBA /* SCTabOrder.m in Sources */,
 				55CF4200112AE9EA00E762C1 /* UIColor+SCMethods.m in Sources */,
+				55AD3976112D681F00E70986 /* SCTextFieldCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

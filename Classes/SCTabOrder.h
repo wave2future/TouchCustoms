@@ -20,9 +20,10 @@
 @interface SCTabOrder : NSObject<UITextFieldDelegate> {
 
 @private
-	UITextField *_textField, *_textField2, *_textField3, *_textField4;
+	NSMutableArray *_textFields;
 }
 
-@property (nonatomic, retain) IBOutlet UITextField *textField, *textField2, *textField3, *textField4;
+- (void)addTextField:(UITextField *)textField;
+- (void)removeTextField:(UITextField *)textField;
 
 @end

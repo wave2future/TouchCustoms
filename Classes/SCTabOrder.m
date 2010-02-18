@@ -14,30 +14,53 @@
 
 @implementation SCTabOrder
 
-@synthesize textField = _textField, textField2 = _textField2, textField3 = _textField3, textField4 = _textField4;
+- (id)init {
 
-#pragma mark init / dealloc
+	if (self = [super init]) {
+		_textFields = [[NSMutableArray alloc] initWithCapacity:8];
+	}
+	return self;
+}
 
 - (void)dealloc {
 	
-	SC_RELEASE_SAFELY(_textField);
-	SC_RELEASE_SAFELY(_textField2);
-	SC_RELEASE_SAFELY(_textField3);
-	SC_RELEASE_SAFELY(_textField4);
+	for (UITextField *textField in _textFields) {
+		textField.delegate = nil;
+	}
+	
+	SC_RELEASE_SAFELY(_textFields);
 	
 	[super dealloc];
 }
 
+- (void)addTextField:(UITextField *)textField {
+
+	if (![_textFields containsObject:textField]) {
+		[[_textFields lastObject] setReturnKeyType:UIReturnKeyNext];
+		textField.delegate = self;
+		textField.returnKeyType = UIReturnKeyDone;
+		[_textFields addObject:textField];
+	}
+}
+
+- (void)removeTextField:(UITextField *)textField {
+	
+	if ([_textFields containsObject:textField]) {
+		textField.delegate = nil;
+		textField.returnKeyType = UIReturnKeyDefault;
+		[_textFields removeObject:textField];
+		[[_textFields lastObject] setReturnKeyType:UIReturnKeyDone];
+	}
+}
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
 
-	if (textField == self.textField) {
-		[self.textField2 becomeFirstResponder];
-	} else if (textField == self.textField2) {
-		[self.textField3 becomeFirstResponder];
-	} else if (textField == self.textField3) {
-		[self.textField4 becomeFirstResponder];
-	} else if (textField == self.textField4) {
-		[self.textField4 resignFirstResponder];
+	if ([_textFields containsObject:textField]) {
+		if (textField == [_textFields lastObject]) {
+			[textField resignFirstResponder];
+		} else {
+			[[_textFields objectAtIndex:[_textFields indexOfObject:textField] + 1] becomeFirstResponder];
+		}
 	}
 	
 	return YES;
