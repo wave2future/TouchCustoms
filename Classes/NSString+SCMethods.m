@@ -26,9 +26,14 @@
 	return NO;
 }
 
-+ (NSString *)stringFromInteger:(NSInteger)value {
++ (NSString *)stringFromInteger:(NSInteger)anInteger {
 	
-	return [NSString stringWithFormat:@"%d", value];
+	return [NSString stringWithFormat:@"%d", anInteger];
+}
+
++ (NSString *)stringFromDouble:(double)aDouble {
+
+	return [NSString stringWithFormat:@"%f", aDouble];
 }
 
 @end

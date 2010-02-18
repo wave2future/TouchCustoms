@@ -15,5 +15,6 @@
 
 + (BOOL)isNullOrEmpty:(NSString *)aString;
 + (NSString *)stringFromInteger:(NSInteger)anInteger;
++ (NSString *)stringFromDouble:(double)aDouble;
 
 @end
