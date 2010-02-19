@@ -10,9 +10,9 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					341,
+					581,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -27,11 +27,22 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 288223063;
-			PBXWorkspaceStateSaveDate = 288223063;
+			PBXPerProjectTemplateStateSaveDate = 288288787;
+			PBXWorkspaceStateSaveDate = 288288787;
+		};
+		perUserProjectItems = {
+			55F7CF64112EF01F00DB54B4 /* PBXBookmark */ = 55F7CF64112EF01F00DB54B4 /* PBXBookmark */;
+			55F7CF65112EF01F00DB54B4 /* PBXTextBookmark */ = 55F7CF65112EF01F00DB54B4 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 55F7CE4A112DEF5A00DB54B4 /* Source Control */;
 		userBuildSettings = {
+		};
+	};
+	559FC9B4111AE3F500A3A532 /* SCSegmentedControl.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {759, 416}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 719}";
 		};
 	};
 	55F7CE4A112DEF5A00DB54B4 /* Source Control */ = {
@@ -47,6 +58,20 @@
 	55F7CE4B112DEF5A00DB54B4 /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
+	};
+	55F7CF64112EF01F00DB54B4 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 559FC9B4111AE3F500A3A532 /* SCSegmentedControl.h */;
+	};
+	55F7CF65112EF01F00DB54B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 559FC9B4111AE3F500A3A532 /* SCSegmentedControl.h */;
+		name = "SCSegmentedControl.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 719;
+		vrLoc = 0;
 	};
 	D2AAC07D0554694100DB518D /* TouchCustoms */ = {
 		activeExec = 0;
