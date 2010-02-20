@@ -11,4 +11,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define SETTINGS_TEXT_COLOR	[UIColor colorWithRed:.20 green:.48 blue:.67 alpha:1.]
+#define RGBA(R, G, B, A)	[UIColor colorWithRed:R / 255. green:G / 255. blue:B / 255. alpha:A / 255.]
+#define RGB(R, G, B)		RGBA(R, G, B, 255)
+
+#define SETTINGS_TEXT_COLOR	RGB(57, 85, 135)

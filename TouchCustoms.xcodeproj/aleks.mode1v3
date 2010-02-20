@@ -229,8 +229,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -273,8 +271,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>7</integer>
-									<integer>4</integer>
+									<integer>26</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -299,7 +296,7 @@
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>23 414 1028 621 0 0 1920 1058 </string>
+						<string>258 350 1028 621 0 0 1920 1058 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -310,12 +307,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SCSegmentedControl.h</string>
+								<string>SCColorScheme.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -323,14 +322,16 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>SCSegmentedControl.h</string>
+										<string>SCColorScheme.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>55F7CF65112EF01F00DB54B4</string>
+										<string>55F7D0C8112FFE2900DB54B4</string>
 										<key>history</key>
 										<array>
-											<string>55F7CF64112EF01F00DB54B4</string>
+											<string>55F7D0C5112FFE2900DB54B4</string>
+											<string>55F7D0C6112FFE2900DB54B4</string>
+											<string>55F7D0C7112FFE2900DB54B4</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -344,7 +345,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {820, 386}}</string>
 								<key>RubberWindowFrame</key>
-								<string>23 414 1028 621 0 0 1920 1058 </string>
+								<string>258 350 1028 621 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -364,7 +365,7 @@
 								<key>Frame</key>
 								<string>{{0, 391}, {820, 189}}</string>
 								<key>RubberWindowFrame</key>
-								<string>23 414 1028 621 0 0 1920 1058 </string>
+								<string>258 350 1028 621 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -532,7 +533,7 @@
 		<string>/Users/aleks/Projects/SE/BBK/TouchCustoms/TouchCustoms.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>23 414 1028 621 0 0 1920 1058 </string>
+	<string>258 350 1028 621 0 0 1920 1058 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
