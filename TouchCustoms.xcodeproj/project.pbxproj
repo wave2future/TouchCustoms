@@ -46,6 +46,8 @@
 		559FC9B7111AE3F500A3A532 /* SCSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 559FC9B3111AE3F500A3A532 /* SCSegment.m */; };
 		559FC9B8111AE3F500A3A532 /* SCSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 559FC9B4111AE3F500A3A532 /* SCSegmentedControl.h */; };
 		559FC9B9111AE3F500A3A532 /* SCSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 559FC9B5111AE3F500A3A532 /* SCSegmentedControl.m */; };
+		55A10E8D113706EA00810178 /* SCAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 55A10E8B113706EA00810178 /* SCAppDelegate.h */; };
+		55A10E8E113706EA00810178 /* SCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A10E8C113706EA00810178 /* SCAppDelegate.m */; };
 		55A55C0E1125E4DF0035CFBA /* SCTabOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = 55A55C0C1125E4DF0035CFBA /* SCTabOrder.h */; };
 		55A55C0F1125E4DF0035CFBA /* SCTabOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A55C0D1125E4DF0035CFBA /* SCTabOrder.m */; };
 		55AD3975112D681F00E70986 /* SCTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 55AD3973112D681F00E70986 /* SCTextFieldCell.h */; };
@@ -102,6 +104,8 @@
 		559FC9B3111AE3F500A3A532 /* SCSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSegment.m; path = Classes/SCSegment.m; sourceTree = "<group>"; };
 		559FC9B4111AE3F500A3A532 /* SCSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCSegmentedControl.h; path = Classes/SCSegmentedControl.h; sourceTree = "<group>"; };
 		559FC9B5111AE3F500A3A532 /* SCSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSegmentedControl.m; path = Classes/SCSegmentedControl.m; sourceTree = "<group>"; };
+		55A10E8B113706EA00810178 /* SCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAppDelegate.h; sourceTree = "<group>"; };
+		55A10E8C113706EA00810178 /* SCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAppDelegate.m; sourceTree = "<group>"; };
 		55A55C0C1125E4DF0035CFBA /* SCTabOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCTabOrder.h; path = Classes/SCTabOrder.h; sourceTree = "<group>"; };
 		55A55C0D1125E4DF0035CFBA /* SCTabOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCTabOrder.m; path = Classes/SCTabOrder.m; sourceTree = "<group>"; };
 		55AD3965112D66DA00E70986 /* star-halfselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star-halfselected.png"; path = "Images/star-halfselected.png"; sourceTree = "<group>"; };
@@ -183,6 +187,8 @@
 				55E46A461120A786000B710E /* SCLog.h */,
 				5588F71611197177002BF56E /* SCMemoryManagement.h */,
 				55AD3981112D733D00E70986 /* SCColorScheme.h */,
+				55A10E8B113706EA00810178 /* SCAppDelegate.h */,
+				55A10E8C113706EA00810178 /* SCAppDelegate.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -313,6 +319,7 @@
 				55AD3975112D681F00E70986 /* SCTextFieldCell.h in Headers */,
 				55AD3982112D733D00E70986 /* SCColorScheme.h in Headers */,
 				55AD3A4F112D92BD00E70986 /* SCSwitchCell.h in Headers */,
+				55A10E8D113706EA00810178 /* SCAppDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +388,7 @@
 				55CF4200112AE9EA00E762C1 /* UIColor+SCMethods.m in Sources */,
 				55AD3976112D681F00E70986 /* SCTextFieldCell.m in Sources */,
 				55AD3A50112D92BD00E70986 /* SCSwitchCell.m in Sources */,
+				55A10E8E113706EA00810178 /* SCAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

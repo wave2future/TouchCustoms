@@ -3,6 +3,9 @@
 	0867D690FE84028FC02AAC07 /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeTarget = D2AAC07D0554694100DB518D /* TouchCustoms */;
+		addToTargets = (
+			D2AAC07D0554694100DB518D /* TouchCustoms */,
+		);
 		codeSenseManager = 55F7CE4B112DEF5A00DB54B4 /* Code sense */;
 		perUserDictionary = {
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
@@ -27,14 +30,14 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 288288787;
-			PBXWorkspaceStateSaveDate = 288288787;
+			PBXPerProjectTemplateStateSaveDate = 288818872;
+			PBXWorkspaceStateSaveDate = 288818872;
 		};
 		perUserProjectItems = {
+			55A10D2E11368CEC00810178 /* PBXTextBookmark */ = 55A10D2E11368CEC00810178 /* PBXTextBookmark */;
+			55A10D2F11368CEC00810178 /* PBXTextBookmark */ = 55A10D2F11368CEC00810178 /* PBXTextBookmark */;
 			55F7D0C5112FFE2900DB54B4 /* PBXTextBookmark */ = 55F7D0C5112FFE2900DB54B4 /* PBXTextBookmark */;
 			55F7D0C6112FFE2900DB54B4 /* PBXTextBookmark */ = 55F7D0C6112FFE2900DB54B4 /* PBXTextBookmark */;
-			55F7D0C7112FFE2900DB54B4 /* PBXBookmark */ = 55F7D0C7112FFE2900DB54B4 /* PBXBookmark */;
-			55F7D0C8112FFE2900DB54B4 /* PBXTextBookmark */ = 55F7D0C8112FFE2900DB54B4 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 55F7CE4A112DEF5A00DB54B4 /* Source Control */;
 		userBuildSettings = {
@@ -47,16 +50,36 @@
 			sepNavVisRange = "{0, 719}";
 		};
 	};
+	55A10D2E11368CEC00810178 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55AD3981112D733D00E70986 /* SCColorScheme.h */;
+		name = "SCColorScheme.h: 18";
+		rLen = 0;
+		rLoc = 399;
+		rType = 0;
+		vrLen = 399;
+		vrLoc = 0;
+	};
+	55A10D2F11368CEC00810178 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55A55C0C1125E4DF0035CFBA /* SCTabOrder.h */;
+		name = "SCTabOrder.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 606;
+		vrLoc = 0;
+	};
 	55A55C0C1125E4DF0035CFBA /* SCTabOrder.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {759, 390}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 607}";
+			sepNavVisRange = "{0, 606}";
 		};
 	};
 	55AD3981112D733D00E70986 /* SCColorScheme.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {759, 354}}";
+			sepNavIntBoundsRect = "{{0, 0}, {759, 347}}";
 			sepNavSelRange = "{399, 0}";
 			sepNavVisRange = "{0, 399}";
 		};
@@ -93,20 +116,6 @@
 		rLoc = 0;
 		rType = 0;
 		vrLen = 607;
-		vrLoc = 0;
-	};
-	55F7D0C7112FFE2900DB54B4 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 55AD3981112D733D00E70986 /* SCColorScheme.h */;
-	};
-	55F7D0C8112FFE2900DB54B4 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 55AD3981112D733D00E70986 /* SCColorScheme.h */;
-		name = "SCColorScheme.h: 18";
-		rLen = 0;
-		rLoc = 399;
-		rType = 0;
-		vrLen = 399;
 		vrLoc = 0;
 	};
 	D2AAC07D0554694100DB518D /* TouchCustoms */ = {
