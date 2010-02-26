@@ -24,4 +24,6 @@
 @property (nonatomic, readonly) UILabel *titleLabel;
 @property (nonatomic, readonly) UISwitch *optionSwitch;
 
+- (id)initWithReuseIdentifier:(NSString *)reuseIdentifier;
+
 @end

@@ -32,8 +32,10 @@
 - (id)initWithReuseIdentifier:(NSString *)reuseIdentifier {
 
 	if (self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier]) {
+		
 		[self initializeComponent];
 	}
+	
 	return self;
 }
 
