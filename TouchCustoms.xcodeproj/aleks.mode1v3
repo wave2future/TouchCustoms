@@ -265,19 +265,20 @@
 							<array>
 								<string>0867D691FE84028FC02AAC07</string>
 								<string>08FB77AEFE84172EC02AAC07</string>
-								<string>5588F79611197DB4002BF56E</string>
+								<string>55A1118A1138391F00810178</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>27</integer>
+									<integer>6</integer>
+									<integer>5</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {186, 562}}</string>
+							<string>{{0, 0}, {186, 650}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -289,14 +290,14 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {203, 580}}</string>
+						<string>{{0, 0}, {203, 668}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>811 329 1028 621 0 0 1920 1058 </string>
+						<string>573 226 1194 709 0 0 1920 1058 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -314,7 +315,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SCAppDelegate.m</string>
+								<string>SCSettingsService.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -322,18 +323,20 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>SCAppDelegate.m</string>
+										<string>SCSettingsService.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>55A110E41138335700810178</string>
+										<string>55A1119511383BE800810178</string>
 										<key>history</key>
 										<array>
 											<string>55F7D0C5112FFE2900DB54B4</string>
 											<string>55A10D2E11368CEC00810178</string>
 											<string>55A10EC51137179900810178</string>
-											<string>55A10EC61137179900810178</string>
-											<string>55A10EC81137179900810178</string>
+											<string>55A1117E113838D500810178</string>
+											<string>55A1119211383BE800810178</string>
+											<string>55A1119311383BE800810178</string>
+											<string>55A1119411383BE800810178</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -345,14 +348,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {820, 365}}</string>
+								<string>{{0, 0}, {986, 437}}</string>
 								<key>RubberWindowFrame</key>
-								<string>811 329 1028 621 0 0 1920 1058 </string>
+								<string>573 226 1194 709 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>365pt</string>
+							<string>437pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -365,18 +368,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 370}, {820, 210}}</string>
+								<string>{{0, 442}, {986, 226}}</string>
 								<key>RubberWindowFrame</key>
-								<string>811 329 1028 621 0 0 1920 1058 </string>
+								<string>573 226 1194 709 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>210pt</string>
+							<string>226pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>820pt</string>
+					<string>986pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -391,9 +394,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>55A110E51138335700810178</string>
+				<string>55A1119611383BE800810178</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>55A110E61138335700810178</string>
+				<string>55A1119711383BE800810178</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -535,7 +538,7 @@
 		<string>/Users/aleks/Projects/Frame4/iPhone/TouchCustoms/TouchCustoms.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>811 329 1028 621 0 0 1920 1058 </string>
+	<string>573 226 1194 709 0 0 1920 1058 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -612,7 +615,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>55F7CE48112DEF5A00DB54B4</string>
-				<string>55A110E71138335700810178</string>
+				<string>55A1119811383BE800810178</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

@@ -30,4 +30,15 @@ static int _ActivityCount = 0;
 	}
 }
 
+/** @Overridden
+  * We are using NSUserDefaults to store user settings, so it's quite natural to store at this point
+  * the values set while the application was running.
+  * 
+  * If such behavior is harmful for your application, override this method or do not inherit from
+  * SCAppDelegate at all. */
+- (void)applicationWillTerminate:(UIApplication *)application {
+
+	[[NSUserDefaults standardUserDefaults] synchronize];
+}
+
 @end
