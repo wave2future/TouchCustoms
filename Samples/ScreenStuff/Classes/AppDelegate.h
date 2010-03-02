@@ -9,17 +9,15 @@
 //	All rights reserved.
 //
 
-@class MainController;
-
 @interface AppDelegate : NSObject <UIApplicationDelegate> {
 	
 @private
     UIWindow *_window;
-	MainController *_mainController;
+	UINavigationController *_mainNavigationController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet MainController *mainController;
+@property (nonatomic, retain) IBOutlet UINavigationController *mainNavigationController;
 
 @end
 

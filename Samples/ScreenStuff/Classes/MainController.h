@@ -7,11 +7,22 @@
 //	
 //  Copyright © 2010 Screen Customs s.r.o.
 //	All rights reserved.
+//	
+//	Purpose
+//	Represents Main screen.
 //
 
-@interface MainController : UIViewController {
+@class RatingViewStandAloneController, RatingViewInTableView;
 
+@interface MainController : UITableViewController {
+
+@private
+	RatingViewStandAloneController *_ratingViewStandAloneController;
+	RatingViewInTableView *_ratingViewInTableView;
 }
+
+@property (nonatomic, retain) IBOutlet RatingViewStandAloneController *ratingViewStandAloneController;
+@property (nonatomic, retain) IBOutlet RatingViewInTableView *ratingViewInTableView;
 
 @end
 

@@ -17,13 +17,13 @@
 @implementation AppDelegate
 
 @synthesize window = _window;
-@synthesize mainController = _mainController;
+@synthesize mainNavigationController = _mainNavigationController;
 
 #pragma mark init / dealloc
 
 - (void)dealloc {
 	
-	SC_RELEASE_SAFELY(_mainController);
+	SC_RELEASE_SAFELY(_mainNavigationController);
 	SC_RELEASE_SAFELY(_window);
     
 	[super dealloc];
@@ -33,7 +33,7 @@
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
       
-    [self.window addSubview:self.mainController.view];
+    [self.window addSubview:self.mainNavigationController.view];
     [self.window makeKeyAndVisible];
 }
 

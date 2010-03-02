@@ -20,6 +20,9 @@
 		55E666C2113CEB74003AF287 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E666C1113CEB74003AF287 /* AVFoundation.framework */; };
 		55E666C4113CEB7C003AF287 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E666C3113CEB7C003AF287 /* AudioToolbox.framework */; };
 		55E6671A113CEBA5003AF287 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E66719113CEBA5003AF287 /* CFNetwork.framework */; };
+		55E6674A113CEEA4003AF287 /* RatingViewStandAloneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E66749113CEEA4003AF287 /* RatingViewStandAloneController.m */; };
+		55E6674C113CEECE003AF287 /* RatingViewStandAlone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55E6674B113CEECE003AF287 /* RatingViewStandAlone.xib */; };
+		55E6677B113CF16B003AF287 /* RatingViewInTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E6677A113CF16B003AF287 /* RatingViewInTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,11 @@
 		55E666C1113CEB74003AF287 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		55E666C3113CEB7C003AF287 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		55E66719113CEBA5003AF287 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		55E66748113CEEA4003AF287 /* RatingViewStandAloneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingViewStandAloneController.h; sourceTree = "<group>"; };
+		55E66749113CEEA4003AF287 /* RatingViewStandAloneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingViewStandAloneController.m; sourceTree = "<group>"; };
+		55E6674B113CEECE003AF287 /* RatingViewStandAlone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingViewStandAlone.xib; sourceTree = "<group>"; };
+		55E66779113CF16B003AF287 /* RatingViewInTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingViewInTableView.h; sourceTree = "<group>"; };
+		55E6677A113CF16B003AF287 /* RatingViewInTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingViewInTableView.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,10 +89,11 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1D3623240D0F684500981E51 /* AppDelegate.h */,
-				1D3623250D0F684500981E51 /* AppDelegate.m */,
+				55E66747113CEE68003AF287 /* RatingView */,
 				28D7ACF60DDB3853001CB0EB /* MainController.h */,
 				28D7ACF70DDB3853001CB0EB /* MainController.m */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -123,6 +132,7 @@
 			children = (
 				28AD733E0D9D9553002E5188 /* Application.xib */,
 				2899E5210DE3E06400AC0155 /* MainView.xib */,
+				55E6674B113CEECE003AF287 /* RatingViewStandAlone.xib */,
 				55E66569113C7864003AF287 /* Icon.png */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 			);
@@ -149,6 +159,17 @@
 				55E6666A113CE976003AF287 /* libTouchCustoms.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		55E66747113CEE68003AF287 /* RatingView */ = {
+			isa = PBXGroup;
+			children = (
+				55E66748113CEEA4003AF287 /* RatingViewStandAloneController.h */,
+				55E66749113CEEA4003AF287 /* RatingViewStandAloneController.m */,
+				55E66779113CF16B003AF287 /* RatingViewInTableView.h */,
+				55E6677A113CF16B003AF287 /* RatingViewInTableView.m */,
+			);
+			name = RatingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +234,7 @@
 				28AD733F0D9D9553002E5188 /* Application.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* MainView.xib in Resources */,
 				55E6656A113C7864003AF287 /* Icon.png in Resources */,
+				55E6674C113CEECE003AF287 /* RatingViewStandAlone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +248,8 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* MainController.m in Sources */,
+				55E6674A113CEEA4003AF287 /* RatingViewStandAloneController.m in Sources */,
+				55E6677B113CF16B003AF287 /* RatingViewInTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

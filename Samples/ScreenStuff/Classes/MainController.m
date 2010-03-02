@@ -11,7 +11,15 @@
 
 #import "MainController.h"
 
+#import "RatingViewStandAloneController.h"
+#import "RatingViewInTableView.h"
+
+#import "SCMemoryManagement.h"
+
 @implementation MainController
+
+@synthesize ratingViewStandAloneController = _ratingViewStandAloneController,
+ratingViewInTableView = _ratingViewInTableView;
 
 #pragma mark init / dealloc
 
@@ -32,6 +40,9 @@
  */
 
 - (void)dealloc {
+	
+	SC_RELEASE_SAFELY(_ratingViewStandAloneController);
+	SC_RELEASE_SAFELY(_ratingViewInTableView);
 	
     [super dealloc];
 }
@@ -63,5 +74,75 @@
  return (interfaceOrientation == UIInterfaceOrientationPortrait);
  }
  */
+
+#pragma mark UITableView callbacks
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+	
+	return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)table numberOfRowsInSection:(NSInteger)section {
+
+	switch (section) {
+		case 0:
+			return 2;
+	}
+	
+	return 0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	static NSString *CellIdentifier = @"cell-identifier";
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	if (!cell) {
+		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier]
+				autorelease];
+		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+	}
+	
+	switch (indexPath.section) {
+		case 0: {
+			switch (indexPath.row) {
+				case 0:
+					cell.textLabel.text = NSLocalizedString(@"As a stand-alone control", @"");
+					break;
+				case 1:
+					cell.textLabel.text = NSLocalizedString(@"In a UITableView", @"");
+					break;
+			}
+		}
+	}
+	
+	return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+	
+	switch (section) {
+		case 0:
+			return NSLocalizedString(@"RatingView", @"");
+	}
+	
+	return nil;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+	switch (indexPath.section) {
+		case 0: {
+			switch (indexPath.row) {
+				case 0:
+					[self.navigationController pushViewController:self.ratingViewStandAloneController animated:YES];
+					break;
+				case 1:
+					[self.navigationController pushViewController:self.ratingViewInTableView animated:YES];
+					break;
+			}
+			break;
+		}
+	}
+}
 
 @end
