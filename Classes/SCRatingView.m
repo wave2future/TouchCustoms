@@ -14,13 +14,6 @@
 
 #define PROP_RATING			@"rating"
 
-#define STAR_HALFSELECTED	@"star-halfselected.png"
-#define STAR_HOT			@"star-hot.png"
-#define STAR_NONSELECTED	@"star-nonselected.png"
-#define STAR_SELECTED		@"star-selected.png"
-#define STAR_HIGHLIGHTED	@"star-highlighted.png"
-#define STAR_USERSELECTED	@"star-userselected.png"
-
 #define MIN_RATING			1
 #define MAX_RATING			5
 #define STARS				MAX_RATING - MIN_RATING + 1
@@ -33,7 +26,7 @@ typedef UIImageView *		StarViewRef;
 @interface SCRatingView (/* Private methods */)
 
 - (NSMutableDictionary *)stateImageDictionary;
-- (UIImage *)imageForState:(NSString *)state fromDictionary:(NSDictionary *)stateImageDict defaultName:(NSString *)defaultImageName;
+- (UIImage *)imageForState:(NSString *)state fromDictionary:(NSDictionary *)stateImageDict;
 - (void)initializeComponent;
 - (NSInteger)getRatingFromTouches:(NSSet *)touches withEvent:(UIEvent *)event;
 - (void)visualizeCurrentUserRating:(NSInteger)currentUserRating;
@@ -81,35 +74,20 @@ typedef UIImageView *		StarViewRef;
 		for (NSInteger i = 0; i < _userRating; i++) {
 			
 			StarViewRef starView = [_starViews objectAtIndex:i];
-			starView.image = [self imageForState:STATE_USERSELECTED fromDictionary:stateImageDict
-									 defaultName:STAR_USERSELECTED];
+			starView.image = [self imageForState:kSCRatingViewUserSelected fromDictionary:stateImageDict];
 		}
 		
 		if (value < _starViews.count) {
 			/* Need to leave some stars with non-selected images. */
 			for (NSInteger i = _starViews.count - 1; i >= value; i--) {
 				StarViewRef starView = [_starViews objectAtIndex:i];
-				starView.image = [self imageForState:STATE_NONSELECTED fromDictionary:stateImageDict
-										 defaultName:STAR_NONSELECTED];
+				starView.image = [self imageForState:kSCRatingViewNonSelected fromDictionary:stateImageDict];
 			}
 		}
 	}
 	
 	if (previousUserRating != _userRating) {
 		[self.delegate ratingView:self didChangeUserRatingFrom:previousUserRating to:_userRating];
-	}
-}
-
-@synthesize starPlaceSize = _starPlaceSize;
-- (void)setStarPlaceSize:(CGSize)value {
-	
-	_starPlaceSize = value;
-	
-	for (NSInteger i = 0; i < STARS; i++) {
-		
-		StarViewRef starView = [_starViews objectAtIndex:i];
-		CGFloat width = _starPlaceSize.width;
-		starView.frame = CGRectMake(i * width, 0, width, _starPlaceSize.height); 
 	}
 }
 
@@ -144,7 +122,6 @@ typedef UIImageView *		StarViewRef;
 	self.clipsToBounds = YES;
 	
 	NSMutableArray *starViewList = [[NSMutableArray alloc] initWithCapacity:STARS];
-	NSDictionary *stateImageDict = [self stateImageDictionary];
 	
 	CGFloat height = CGRectGetHeight(self.frame);
 	
@@ -155,14 +132,6 @@ typedef UIImageView *		StarViewRef;
 		StarViewRef starView = [[StarView alloc] initWithFrame:CGRectMake(i * starWidth, 0, starWidth, height)];
 		starView.clearsContextBeforeDrawing = YES;
 		starView.contentMode = UIViewContentModeCenter;
-		
-		UIImage *highlightedImage = [UIImage imageNamed:STAR_HIGHLIGHTED];
-		starView.highlightedImage = highlightedImage;
-		
-		UIImage *nonSelectedImage = [self imageForState:STATE_NONSELECTED fromDictionary:stateImageDict
-											defaultName:STAR_NONSELECTED];
-		starView.image = nonSelectedImage;
-		
 		starView.multipleTouchEnabled = YES;
 		starView.tag = MIN_RATING + i; /* Associated rating, which is from MIN_RATING to MAX_RATING. */
 		[starViewList addObject:starView];
@@ -201,7 +170,7 @@ typedef UIImageView *		StarViewRef;
 
 - (void)setStarImage:(UIImage *)image forState:(NSString *)state {
 	
-	if ([STATE_HIGHLIGHTED isEqualToString:state]) {
+	if ([kSCRatingViewHighlighted isEqualToString:state]) {
 		
 		for (StarViewRef starView in _starViews) {
 			starView.highlightedImage = image;
@@ -225,13 +194,9 @@ typedef UIImageView *		StarViewRef;
 	return _stateImageDictionary;
 }
 
-- (UIImage *)imageForState:(NSString *)state fromDictionary:(NSDictionary *)stateImageDict
-			   defaultName:(NSString *)defaultImageName {
+- (UIImage *)imageForState:(NSString *)state fromDictionary:(NSDictionary *)stateImageDict {
 	
 	UIImage *result = [stateImageDict objectForKey:state];
-	if (!result) {
-		result = [UIImage imageNamed:defaultImageName];
-	}
 	return result;
 }
 
@@ -258,7 +223,7 @@ typedef UIImageView *		StarViewRef;
 	for (NSInteger i = 0; i < currentUserRating; i++) {
 		
 		StarViewRef starView = [_starViews objectAtIndex:i];
-		starView.image = [self imageForState:STATE_HOT fromDictionary:stateImageDict defaultName:STAR_HOT];
+		starView.image = [self imageForState:kSCRatingViewHot fromDictionary:stateImageDict];
 	}
 	
 	/* Leaving only star borders for the others. */
@@ -266,8 +231,7 @@ typedef UIImageView *		StarViewRef;
 	for (NSInteger i = _starViews.count - 1; i >= currentUserRating; i--) {
 		
 		StarViewRef starView = [_starViews objectAtIndex:i];
-		starView.image = [self imageForState:STATE_NONSELECTED fromDictionary:stateImageDict
-								 defaultName:STAR_NONSELECTED];
+		starView.image = [self imageForState:kSCRatingViewNonSelected fromDictionary:stateImageDict];
 	}
 }
 
@@ -288,8 +252,7 @@ typedef UIImageView *		StarViewRef;
 		for (NSInteger i = 0; i < fullStars; i++, counter++) {
 			
 			StarViewRef starView = [_starViews objectAtIndex:i];
-			starView.image = [self imageForState:STATE_SELECTED fromDictionary:stateImageDict
-									 defaultName:STAR_SELECTED];
+			starView.image = [self imageForState:kSCRatingViewSelected fromDictionary:stateImageDict];
 		}
 		
 		/* Now set images for a half star if any. */
@@ -297,8 +260,7 @@ typedef UIImageView *		StarViewRef;
 		if (currentRating - fullStars > 0) {
 			
 			StarViewRef starView = [_starViews objectAtIndex:counter++];
-			starView.image = [self imageForState:STATE_HALFSELECTED fromDictionary:stateImageDict
-									 defaultName:STAR_HALFSELECTED];
+			starView.image = [self imageForState:kSCRatingViewHalfSelected fromDictionary:stateImageDict];
 		}
 	}
 	
@@ -307,8 +269,7 @@ typedef UIImageView *		StarViewRef;
 	for (NSInteger i = _starViews.count - 1; i >= counter; i--) {
 		
 		StarViewRef starView = [_starViews objectAtIndex:i];
-		starView.image = [self imageForState:STATE_NONSELECTED fromDictionary:stateImageDict
-								 defaultName:STAR_NONSELECTED];
+		starView.image = [self imageForState:kSCRatingViewNonSelected fromDictionary:stateImageDict];
 	}
 }
 

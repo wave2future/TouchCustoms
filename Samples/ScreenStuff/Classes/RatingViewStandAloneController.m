@@ -35,6 +35,19 @@
 	
 	[super viewDidLoad];
 	
+	[self.ratingView setStarImage:[UIImage imageNamed:@"star-halfselected.png"]
+						 forState:kSCRatingViewHalfSelected];
+	[self.ratingView setStarImage:[UIImage imageNamed:@"star-highlighted.png"]
+						 forState:kSCRatingViewHighlighted];
+	[self.ratingView setStarImage:[UIImage imageNamed:@"star-hot.png"]
+						 forState:kSCRatingViewHot];
+	[self.ratingView setStarImage:[UIImage imageNamed:@"star-nonselected.png"]
+						 forState:kSCRatingViewNonSelected];
+	[self.ratingView setStarImage:[UIImage imageNamed:@"star-selected.png"]
+						 forState:kSCRatingViewSelected];
+	[self.ratingView setStarImage:[UIImage imageNamed:@"star-userselected.png"]
+						 forState:kSCRatingViewUserSelected];
+	
 	self.ratingView.rating = 3.6;
 }
 

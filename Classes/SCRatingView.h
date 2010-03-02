@@ -11,14 +11,12 @@
 //  Displays a 5-star rating with ability to set user rating.
 //
 
-#import <Foundation/Foundation.h>
-
-#define STATE_NONSELECTED	@"state-nonselected"
-#define STATE_SELECTED		@"state-selected"
-#define STATE_HALFSELECTED	@"state-halfselected"
-#define STATE_HOT			@"state-hot"
-#define STATE_HIGHLIGHTED	@"state-highlighted"
-#define STATE_USERSELECTED	@"state-userselected"
+#define kSCRatingViewNonSelected	@"state-nonselected"
+#define kSCRatingViewSelected		@"state-selected"
+#define kSCRatingViewHalfSelected	@"state-halfselected"
+#define kSCRatingViewHot			@"state-hot"
+#define kSCRatingViewHighlighted	@"state-highlighted"
+#define kSCRatingViewUserSelected	@"state-userselected"
 
 @class SCRatingView;
 
@@ -56,7 +54,6 @@
 	BOOL _highlighted;
 	NSArray	*_starViews;
 	NSMutableDictionary	*_stateImageDictionary;
-	CGSize _starPlaceSize;
 	
 	id<SCRatingDelegate> _delegate;
 }
@@ -70,11 +67,6 @@
  * In fact user rating - if set, i.e. 1+ - will always override rating.
  */
 @property (nonatomic, assign) NSInteger userRating;
-
-/**
- * Specifies the area that is occupied by a single star.
- */
-@property (nonatomic, assign) CGSize starPlaceSize;
 
 /**
  * Determines whether the control is highlighted. Introduced to support highlighted state in a TableView cell.
