@@ -310,6 +310,7 @@
 						<int key="objectID">13</int>
 						<reference key="object" ref="149439418"/>
 						<reference key="parent" ref="191373211"/>
+						<string key="objectName">ratingSegmentedControl</string>
 					</object>
 				</object>
 			</object>
@@ -334,7 +335,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>RatingViewStandAloneController</string>
 					<string>UIResponder</string>
-					<string>{{1320, 393}, {320, 460}}</string>
+					<string>{{1278, 393}, {320, 460}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
