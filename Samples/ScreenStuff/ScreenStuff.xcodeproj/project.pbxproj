@@ -17,6 +17,9 @@
 		28D7ACF80DDB3853001CB0EB /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* MainController.m */; };
 		55E6656A113C7864003AF287 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E66569113C7864003AF287 /* Icon.png */; };
 		55E6668E113CE9CF003AF287 /* libTouchCustoms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E6666A113CE976003AF287 /* libTouchCustoms.a */; };
+		55E666C2113CEB74003AF287 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E666C1113CEB74003AF287 /* AVFoundation.framework */; };
+		55E666C4113CEB7C003AF287 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E666C3113CEB7C003AF287 /* AudioToolbox.framework */; };
+		55E6671A113CEBA5003AF287 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E66719113CEBA5003AF287 /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		32CA4F630368D1EE00C91783 /* ScreenStuff_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenStuff_Prefix.pch; sourceTree = "<group>"; };
 		55E66569113C7864003AF287 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		55E66661113CE976003AF287 /* TouchCustoms.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TouchCustoms.xcodeproj; path = /Users/aleks/Projects/SC/TouchCustoms/TouchCustoms.xcodeproj; sourceTree = "<absolute>"; };
+		55E666C1113CEB74003AF287 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		55E666C3113CEB7C003AF287 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		55E66719113CEBA5003AF287 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +69,9 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				55E6668E113CE9CF003AF287 /* libTouchCustoms.a in Frameworks */,
+				55E666C2113CEB74003AF287 /* AVFoundation.framework in Frameworks */,
+				55E666C4113CEB7C003AF287 /* AudioToolbox.framework in Frameworks */,
+				55E6671A113CEBA5003AF287 /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,9 +133,12 @@
 			isa = PBXGroup;
 			children = (
 				55E66661113CE976003AF287 /* TouchCustoms.xcodeproj */,
-				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
-				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				55E666C3113CEB7C003AF287 /* AudioToolbox.framework */,
+				55E666C1113CEB74003AF287 /* AVFoundation.framework */,
+				55E66719113CEBA5003AF287 /* CFNetwork.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -241,6 +253,10 @@
 				GCC_PREFIX_HEADER = ScreenStuff_Prefix.pch;
 				HEADER_SEARCH_PATHS = "../../Classes/**";
 				INFOPLIST_FILE = Info.plist;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = ScreenStuff;
 				PROVISIONING_PROFILE = "F31A90F0-1B04-4324-BF47-F25E216E3DB0";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F31A90F0-1B04-4324-BF47-F25E216E3DB0";
@@ -258,6 +274,10 @@
 				GCC_PREFIX_HEADER = ScreenStuff_Prefix.pch;
 				HEADER_SEARCH_PATHS = "../../Classes/**";
 				INFOPLIST_FILE = Info.plist;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = ScreenStuff;
 				PROVISIONING_PROFILE = "F31A90F0-1B04-4324-BF47-F25E216E3DB0";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F31A90F0-1B04-4324-BF47-F25E216E3DB0";
