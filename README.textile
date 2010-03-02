@@ -18,6 +18,6 @@ TouchCustoms - гэта статычная бібліятэка для Cocoa Tou
 
 h2. Сьпіс кампанэнтаў
 
-# SCMemoryManagement - Спрашчае кіраваньне памяцяй.
+# @SCMemoryManagement@ - Спрашчае кіраваньне памяцяй.
 # SCSegmentedControl - Шмпат-радковы UISegmentedControl.
 # SCRatingView - 5-ці-зоркавы рэйтынґ-вью, што дазваляе ўсталёўваць рэйтынґ карыстальніку.
