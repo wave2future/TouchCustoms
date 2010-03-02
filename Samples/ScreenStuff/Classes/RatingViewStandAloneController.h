@@ -12,8 +12,16 @@
 //	SCRatingView showcase as a stand-alone control.
 //
 
-@interface RatingViewStandAloneController : UIViewController {
+#import "SCRatingView.h"
 
+@interface RatingViewStandAloneController : UIViewController<SCRatingDelegate> {
+
+@private
+	SCRatingView *_ratingView;
+	UILabel *_ratingLabel, *_userRatingLabel;
 }
+
+@property (nonatomic, retain) IBOutlet SCRatingView *ratingView;
+@property (nonatomic, retain) IBOutlet UILabel *ratingLabel, *userRatingLabel;
 
 @end

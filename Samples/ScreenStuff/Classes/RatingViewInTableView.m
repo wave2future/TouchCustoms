@@ -25,8 +25,6 @@
 - (void)viewDidLoad {
 
 	[super viewDidLoad];
-	
-	self.title = NSLocalizedString(@"In a UITableView", @"");
 }
 
 - (void)viewWillAppear:(BOOL)animated {

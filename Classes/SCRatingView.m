@@ -122,8 +122,15 @@ typedef UIImageView *		StarViewRef;
 - (id)initWithFrame:(CGRect)frame {
 	
 	if (self = [super initWithFrame:frame]) {
-		
-		self.clipsToBounds = YES;
+		[self initializeComponent];
+	}
+	
+	return self;
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+
+	if (self = [super initWithCoder:aDecoder]) {
 		[self initializeComponent];
 	}
 	
@@ -131,6 +138,8 @@ typedef UIImageView *		StarViewRef;
 }
 
 - (void)initializeComponent {
+	
+	self.clipsToBounds = YES;
 	
 	NSMutableArray *starViewList = [[NSMutableArray alloc] initWithCapacity:STARS];
 	NSDictionary *stateImageDict = [self stateImageDictionary];
@@ -140,8 +149,14 @@ typedef UIImageView *		StarViewRef;
 		StarViewRef starView = [[StarView alloc] initWithFrame:CGRectMake(i * 30, 0, 30, 20)];
 		starView.clearsContextBeforeDrawing = YES;
 		starView.contentMode = UIViewContentModeCenter;
-		starView.highlightedImage = [UIImage imageNamed:STAR_HIGHLIGHTED];
-		starView.image = [self imageForState:STATE_NONSELECTED fromDictionary:stateImageDict defaultName:STAR_NONSELECTED];
+		
+		UIImage *highlightedImage = [UIImage imageNamed:STAR_HIGHLIGHTED];
+		starView.highlightedImage = highlightedImage;
+		
+		UIImage *nonSelectedImage = [self imageForState:STATE_NONSELECTED fromDictionary:stateImageDict
+											defaultName:STAR_NONSELECTED];
+		starView.image = nonSelectedImage;
+		
 		starView.multipleTouchEnabled = YES;
 		starView.tag = MIN_RATING + i; /* Associated rating, which is from MIN_RATING to MAX_RATING. */
 		[starViewList addObject:starView];

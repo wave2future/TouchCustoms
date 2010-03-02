@@ -62,6 +62,12 @@
 		55E466F211203605000B710E /* NSMutableArray+SCQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 55E466F011203605000B710E /* NSMutableArray+SCQueue.h */; };
 		55E466F311203605000B710E /* NSMutableArray+SCQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E466F111203605000B710E /* NSMutableArray+SCQueue.m */; };
 		55E46A471120A786000B710E /* SCLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 55E46A461120A786000B710E /* SCLog.h */; };
+		55E66842113CF875003AF287 /* star-halfselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 55AD3965112D66DA00E70986 /* star-halfselected.png */; };
+		55E66843113CF875003AF287 /* star-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 55AD3966112D66DA00E70986 /* star-highlighted.png */; };
+		55E66844113CF875003AF287 /* star-hot.png in Resources */ = {isa = PBXBuildFile; fileRef = 55AD3967112D66DA00E70986 /* star-hot.png */; };
+		55E66845113CF875003AF287 /* star-nonselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 55AD3968112D66DA00E70986 /* star-nonselected.png */; };
+		55E66846113CF875003AF287 /* star-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 55AD3969112D66DA00E70986 /* star-selected.png */; };
+		55E66847113CF875003AF287 /* star-userselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 55AD396A112D66DA00E70986 /* star-userselected.png */; };
 		AA747D9F0F9514B9006C5449 /* TouchCustoms_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* TouchCustoms_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -345,6 +351,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "TouchCustoms" */;
 			buildPhases = (
+				55E6688E113CF8E4003AF287 /* Resources */,
 				D2AAC07A0554694100DB518D /* Headers */,
 				D2AAC07B0554694100DB518D /* Sources */,
 				D2AAC07C0554694100DB518D /* Frameworks */,
@@ -375,6 +382,22 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55E6688E113CF8E4003AF287 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E66842113CF875003AF287 /* star-halfselected.png in Resources */,
+				55E66843113CF875003AF287 /* star-highlighted.png in Resources */,
+				55E66844113CF875003AF287 /* star-hot.png in Resources */,
+				55E66845113CF875003AF287 /* star-nonselected.png in Resources */,
+				55E66846113CF875003AF287 /* star-selected.png in Resources */,
+				55E66847113CF875003AF287 /* star-userselected.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2AAC07B0554694100DB518D /* Sources */ = {
