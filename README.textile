@@ -6,9 +6,9 @@ TouchCustoms is a Cocoa Touch static library that contains a number of reusable 
 
 h2. Component list
 
-# SCMemoryManagement - Make memory management easier.
-# SCSegmentedControl - Multi-row UISegmentedControl.
-# SCRatingView - 5-star rating-view that allows to set ratings yourself.
+# @SCMemoryManagement@ - Make memory management easier.
+# @SCSegmentedControl@ - Multi-row @UISegmentedControl@.
+# @SCRatingView@ - 5-star rating-view that allows to set ratings yourself.
 
 h1. Беларуская
 
@@ -19,5 +19,5 @@ TouchCustoms - гэта статычная бібліятэка для Cocoa Tou
 h2. Сьпіс кампанэнтаў
 
 # @SCMemoryManagement@ - Спрашчае кіраваньне памяцяй.
-# SCSegmentedControl - Шмпат-радковы UISegmentedControl.
-# SCRatingView - 5-ці-зоркавы рэйтынґ-вью, што дазваляе ўсталёўваць рэйтынґ карыстальніку.
+# @SCSegmentedControl@ - Шмпат-радковы @UISegmentedControl@.
+# @SCRatingView@ - 5-ці-зоркавы рэйтынґ-вью, што дазваляе ўсталёўваць рэйтынґ карыстальніку.
