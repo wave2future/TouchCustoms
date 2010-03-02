@@ -62,4 +62,31 @@
 	self.ratingLabel.text = [NSString stringWithFormat:@"%0.1f", rating];
 }
 
+#pragma mark User interaction
+
+- (IBAction)ratingSelected:(UISegmentedControl *)sender {
+	
+	CGFloat rating;
+	
+	switch (sender.selectedSegmentIndex) {
+		case 0:
+			rating = 3.6;
+			break;
+		case 1:
+			rating = 4.2;
+			break;
+		case 3:
+			rating = 2.4;
+			break;
+		case 4:
+			rating = 5.0;
+			break;
+		default:
+			rating = 0.0;
+			break;
+	}
+	
+	self.ratingView.rating = rating;
+}
+
 @end

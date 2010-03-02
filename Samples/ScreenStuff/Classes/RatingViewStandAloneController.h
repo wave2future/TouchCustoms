@@ -24,4 +24,6 @@
 @property (nonatomic, retain) IBOutlet SCRatingView *ratingView;
 @property (nonatomic, retain) IBOutlet UILabel *ratingLabel, *userRatingLabel;
 
+- (IBAction)ratingSelected:(UISegmentedControl *)sender;
+
 @end

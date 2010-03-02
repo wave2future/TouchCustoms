@@ -12,14 +12,14 @@
 #import "MainController.h"
 
 #import "RatingViewStandAloneController.h"
-#import "RatingViewInTableView.h"
+#import "RatingViewInTableViewController.h"
 
 #import "SCMemoryManagement.h"
 
 @implementation MainController
 
 @synthesize ratingViewStandAloneController = _ratingViewStandAloneController,
-ratingViewInTableView = _ratingViewInTableView;
+ratingViewInTableViewController = _ratingViewInTableViewController;
 
 #pragma mark init / dealloc
 
@@ -42,7 +42,7 @@ ratingViewInTableView = _ratingViewInTableView;
 - (void)dealloc {
 	
 	SC_RELEASE_SAFELY(_ratingViewStandAloneController);
-	SC_RELEASE_SAFELY(_ratingViewInTableView);
+	SC_RELEASE_SAFELY(_ratingViewInTableViewController);
 	
     [super dealloc];
 }
@@ -107,9 +107,11 @@ ratingViewInTableView = _ratingViewInTableView;
 			switch (indexPath.row) {
 				case 0:
 					cell.textLabel.text = NSLocalizedString(@"As a stand-alone control", @"");
+					cell.detailTextLabel.text = @"RatingViewStandAloneController.m";
 					break;
 				case 1:
 					cell.textLabel.text = NSLocalizedString(@"In a UITableView", @"");
+					cell.detailTextLabel.text = @"RatingViewInTableViewController.m";
 					break;
 			}
 		}
@@ -137,7 +139,7 @@ ratingViewInTableView = _ratingViewInTableView;
 					[self.navigationController pushViewController:self.ratingViewStandAloneController animated:YES];
 					break;
 				case 1:
-					[self.navigationController pushViewController:self.ratingViewInTableView animated:YES];
+					[self.navigationController pushViewController:self.ratingViewInTableViewController animated:YES];
 					break;
 			}
 			break;

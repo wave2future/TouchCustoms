@@ -81,14 +81,16 @@ typedef UIImageView *		StarViewRef;
 		for (NSInteger i = 0; i < _userRating; i++) {
 			
 			StarViewRef starView = [_starViews objectAtIndex:i];
-			starView.image = [self imageForState:STATE_USERSELECTED fromDictionary:stateImageDict defaultName:STAR_USERSELECTED];
+			starView.image = [self imageForState:STATE_USERSELECTED fromDictionary:stateImageDict
+									 defaultName:STAR_USERSELECTED];
 		}
 		
 		if (value < _starViews.count) {
 			/* Need to leave some stars with non-selected images. */
 			for (NSInteger i = _starViews.count - 1; i >= value; i--) {
 				StarViewRef starView = [_starViews objectAtIndex:i];
-				starView.image = [self imageForState:STATE_NONSELECTED fromDictionary:stateImageDict defaultName:STAR_NONSELECTED];
+				starView.image = [self imageForState:STATE_NONSELECTED fromDictionary:stateImageDict
+										 defaultName:STAR_NONSELECTED];
 			}
 		}
 	}
@@ -129,7 +131,7 @@ typedef UIImageView *		StarViewRef;
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
-
+	
 	if (self = [super initWithCoder:aDecoder]) {
 		[self initializeComponent];
 	}
@@ -144,9 +146,13 @@ typedef UIImageView *		StarViewRef;
 	NSMutableArray *starViewList = [[NSMutableArray alloc] initWithCapacity:STARS];
 	NSDictionary *stateImageDict = [self stateImageDictionary];
 	
+	CGFloat height = CGRectGetHeight(self.frame);
+	
 	for (NSInteger i = 0; i < STARS; i++) {
 		
-		StarViewRef starView = [[StarView alloc] initWithFrame:CGRectMake(i * 30, 0, 30, 20)];
+		static CGFloat starWidth = 30;
+		
+		StarViewRef starView = [[StarView alloc] initWithFrame:CGRectMake(i * starWidth, 0, starWidth, height)];
 		starView.clearsContextBeforeDrawing = YES;
 		starView.contentMode = UIViewContentModeCenter;
 		
@@ -173,6 +179,22 @@ typedef UIImageView *		StarViewRef;
 	SC_RELEASE_SAFELY(_starViews);
 	
 	[super dealloc];
+}
+
+#pragma mark Layout
+
+- (void)layoutSubviews {
+	
+	[super layoutSubviews];
+	
+	CGFloat height = CGRectGetHeight(self.frame);
+	CGFloat starWidth = CGRectGetWidth(self.frame) / STARS;
+	
+	for (NSUInteger i = 0; i < STARS; i++) {
+	
+		StarViewRef starView = [_starViews objectAtIndex:i];
+		starView.frame = CGRectMake(i * starWidth, 0, starWidth, height);
+	}
 }
 
 #pragma mark Look-n-feel
@@ -203,7 +225,8 @@ typedef UIImageView *		StarViewRef;
 	return _stateImageDictionary;
 }
 
-- (UIImage *)imageForState:(NSString *)state fromDictionary:(NSDictionary *)stateImageDict defaultName:(NSString *)defaultImageName {
+- (UIImage *)imageForState:(NSString *)state fromDictionary:(NSDictionary *)stateImageDict
+			   defaultName:(NSString *)defaultImageName {
 	
 	UIImage *result = [stateImageDict objectForKey:state];
 	if (!result) {
@@ -243,7 +266,8 @@ typedef UIImageView *		StarViewRef;
 	for (NSInteger i = _starViews.count - 1; i >= currentUserRating; i--) {
 		
 		StarViewRef starView = [_starViews objectAtIndex:i];
-		starView.image = [self imageForState:STATE_NONSELECTED fromDictionary:stateImageDict defaultName:STAR_NONSELECTED];
+		starView.image = [self imageForState:STATE_NONSELECTED fromDictionary:stateImageDict
+								 defaultName:STAR_NONSELECTED];
 	}
 }
 
@@ -264,7 +288,8 @@ typedef UIImageView *		StarViewRef;
 		for (NSInteger i = 0; i < fullStars; i++, counter++) {
 			
 			StarViewRef starView = [_starViews objectAtIndex:i];
-			starView.image = [self imageForState:STATE_SELECTED fromDictionary:stateImageDict defaultName:STAR_SELECTED];
+			starView.image = [self imageForState:STATE_SELECTED fromDictionary:stateImageDict
+									 defaultName:STAR_SELECTED];
 		}
 		
 		/* Now set images for a half star if any. */
@@ -272,7 +297,8 @@ typedef UIImageView *		StarViewRef;
 		if (currentRating - fullStars > 0) {
 			
 			StarViewRef starView = [_starViews objectAtIndex:counter++];
-			starView.image = [self imageForState:STATE_HALFSELECTED fromDictionary:stateImageDict defaultName:STAR_HALFSELECTED];
+			starView.image = [self imageForState:STATE_HALFSELECTED fromDictionary:stateImageDict
+									 defaultName:STAR_HALFSELECTED];
 		}
 	}
 	
@@ -281,27 +307,29 @@ typedef UIImageView *		StarViewRef;
 	for (NSInteger i = _starViews.count - 1; i >= counter; i--) {
 		
 		StarViewRef starView = [_starViews objectAtIndex:i];
-		starView.image = [self imageForState:STATE_NONSELECTED fromDictionary:stateImageDict defaultName:STAR_NONSELECTED];
+		starView.image = [self imageForState:STATE_NONSELECTED fromDictionary:stateImageDict
+								 defaultName:STAR_NONSELECTED];
 	}
 }
 
 #pragma mark User Interaction
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-
+	
 	NSInteger starsToHighlight = [self getRatingFromTouches:touches withEvent:event];
 	[self visualizeCurrentUserRating:starsToHighlight];
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-
+	
 	NSInteger starsToHighlight = [self getRatingFromTouches:touches withEvent:event];
 	[self visualizeCurrentUserRating:starsToHighlight];
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
 	
-	NSInteger starsToSelect = [self getRatingFromTouches:touches withEvent:event]; /* Basically this is final user rating. */
+	/* Basically this is final user rating. */
+	NSInteger starsToSelect = [self getRatingFromTouches:touches withEvent:event];
 	[self setUserRating:starsToSelect];
 }
 
@@ -311,7 +339,7 @@ typedef UIImageView *		StarViewRef;
 }
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
-
+	
 	if (self.userInteractionEnabled && [self pointInside:point withEvent:event]) {
 		return self; /* Only intercept events if the touch happened inside the view. */
 	}

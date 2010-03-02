@@ -9,9 +9,9 @@
 //	All rights reserved.
 //
 
-#import "RatingViewInTableView.h"
+#import "RatingViewInTableViewController.h"
 
-@implementation RatingViewInTableView
+@implementation RatingViewInTableViewController
 
 #pragma mark init / dealloc
 

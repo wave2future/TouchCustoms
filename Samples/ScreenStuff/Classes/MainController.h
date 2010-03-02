@@ -12,17 +12,17 @@
 //	Represents Main screen.
 //
 
-@class RatingViewStandAloneController, RatingViewInTableView;
+@class RatingViewStandAloneController, RatingViewInTableViewController;
 
 @interface MainController : UITableViewController {
 
 @private
 	RatingViewStandAloneController *_ratingViewStandAloneController;
-	RatingViewInTableView *_ratingViewInTableView;
+	RatingViewInTableViewController *_ratingViewInTableViewController;
 }
 
 @property (nonatomic, retain) IBOutlet RatingViewStandAloneController *ratingViewStandAloneController;
-@property (nonatomic, retain) IBOutlet RatingViewInTableView *ratingViewInTableView;
+@property (nonatomic, retain) IBOutlet RatingViewInTableViewController *ratingViewInTableViewController;
 
 @end
 

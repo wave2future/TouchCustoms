@@ -1,5 +1,5 @@
 //
-//  RatingViewInTableView.h
+//  RatingViewInTableViewController.h
 //  ScreenStuff
 //
 //  Created by Aleks Nesterow on 3/2/10.
@@ -12,7 +12,7 @@
 //	SCRatingView showcase as a part of UITableView cell.
 //
 
-@interface RatingViewInTableView : UITableViewController {
+@interface RatingViewInTableViewController : UITableViewController {
 
 }
 

@@ -28,7 +28,7 @@
 		55E6671A113CEBA5003AF287 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E66719113CEBA5003AF287 /* CFNetwork.framework */; };
 		55E6674A113CEEA4003AF287 /* RatingViewStandAloneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E66749113CEEA4003AF287 /* RatingViewStandAloneController.m */; };
 		55E6674C113CEECE003AF287 /* RatingViewStandAlone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55E6674B113CEECE003AF287 /* RatingViewStandAlone.xib */; };
-		55E6677B113CF16B003AF287 /* RatingViewInTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E6677A113CF16B003AF287 /* RatingViewInTableView.m */; };
+		55E6677B113CF16B003AF287 /* RatingViewInTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E6677A113CF16B003AF287 /* RatingViewInTableViewController.m */; };
 		55E6678B113CF381003AF287 /* RatingViewInTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55E6678A113CF381003AF287 /* RatingViewInTableView.xib */; };
 /* End PBXBuildFile section */
 
@@ -76,8 +76,8 @@
 		55E66748113CEEA4003AF287 /* RatingViewStandAloneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingViewStandAloneController.h; sourceTree = "<group>"; };
 		55E66749113CEEA4003AF287 /* RatingViewStandAloneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingViewStandAloneController.m; sourceTree = "<group>"; };
 		55E6674B113CEECE003AF287 /* RatingViewStandAlone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingViewStandAlone.xib; sourceTree = "<group>"; };
-		55E66779113CF16B003AF287 /* RatingViewInTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingViewInTableView.h; sourceTree = "<group>"; };
-		55E6677A113CF16B003AF287 /* RatingViewInTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingViewInTableView.m; sourceTree = "<group>"; };
+		55E66779113CF16B003AF287 /* RatingViewInTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingViewInTableViewController.h; sourceTree = "<group>"; };
+		55E6677A113CF16B003AF287 /* RatingViewInTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingViewInTableViewController.m; sourceTree = "<group>"; };
 		55E6678A113CF381003AF287 /* RatingViewInTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingViewInTableView.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,8 +187,8 @@
 			children = (
 				55E66748113CEEA4003AF287 /* RatingViewStandAloneController.h */,
 				55E66749113CEEA4003AF287 /* RatingViewStandAloneController.m */,
-				55E66779113CF16B003AF287 /* RatingViewInTableView.h */,
-				55E6677A113CF16B003AF287 /* RatingViewInTableView.m */,
+				55E66779113CF16B003AF287 /* RatingViewInTableViewController.h */,
+				55E6677A113CF16B003AF287 /* RatingViewInTableViewController.m */,
 			);
 			name = RatingView;
 			sourceTree = "<group>";
@@ -277,7 +277,7 @@
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* MainController.m in Sources */,
 				55E6674A113CEEA4003AF287 /* RatingViewStandAloneController.m in Sources */,
-				55E6677B113CF16B003AF287 /* RatingViewInTableView.m in Sources */,
+				55E6677B113CF16B003AF287 /* RatingViewInTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
