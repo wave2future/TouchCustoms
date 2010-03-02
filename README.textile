@@ -1,6 +1,7 @@
 h1. What is TouchCustoms
 
-TouchCustoms is a Cocoa Touch static library that contains a number of reusable components that we use in our projects on a daily basis. See "Wiki":http://wiki.github.com/eisernWolf/TouchCustoms/ for documentation.
+TouchCustoms is a Cocoa Touch static library that contains a number of reusable components that we use in our projects on a daily basis.
+See "Wiki":http://wiki.github.com/eisernWolf/TouchCustoms/ for documentation.
 
 h1. Component list
 
