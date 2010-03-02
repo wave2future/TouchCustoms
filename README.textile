@@ -1,29 +1,26 @@
-* <a href="en">English</a>
-* <a href="be">Беларуская</a>
+h1. English
 
-<a name="#en"></a>
-
-h1. What is TouchCustoms
+h2. What is TouchCustoms
 
 TouchCustoms is a Cocoa Touch static library that contains a number of reusable components that we use in our projects on a daily basis.
 * See "Wiki":http://wiki.github.com/eisernWolf/TouchCustoms/ for documentation.
 * "License":http://github.com/eisernWolf/TouchCustoms/blob/master/LICENSE
 
-h1. Component list
+h2. Component list
 
 # SCMemoryManagement - Make memory management easier.
 # SCSegmentedControl - Multi-row UISegmentedControl.
 # SCRatingView - 5-star rating-view that allows to set ratings yourself.
 
-<a name="#be"></a>
+h1. Беларуская
 
-h1. Што такое TouchCustoms
+h2. Што такое TouchCustoms
 
 TouchCustoms - гэта статычная бібліятэка для Cocoa Touch, якая ўтрымоўвае некалькі кампанэнтаў для паўторнага выкарыстаньня, каторыя мы ўжываем у сваіх праектах што-дзень.
 * Гл. "Вікі":http://wiki.github.com/eisernWolf/TouchCustoms/ калі вы ў пошуках дакумэнтацыі.
 * "Ліцэнзія":http://github.com/eisernWolf/TouchCustoms/blob/master/LICENSE
 
-h1. Сьпіс кампанэнтаў
+h2. Сьпіс кампанэнтаў
 
 # SCMemoryManagement - Спрашчае кіраваньне памяцяй.
 # SCSegmentedControl - Шмпат-радковых UISegmentedControl.
