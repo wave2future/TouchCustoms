@@ -21,6 +21,12 @@
 		55D48DF9113D089C009CEF31 /* star-nonselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D48DF3113D089C009CEF31 /* star-nonselected.png */; };
 		55D48DFA113D089C009CEF31 /* star-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D48DF4113D089C009CEF31 /* star-selected.png */; };
 		55D48DFB113D089C009CEF31 /* star-userselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D48DF5113D089C009CEF31 /* star-userselected.png */; };
+		55D48E2A113D0BFE009CEF31 /* small-star-halfselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D48E25113D0BFE009CEF31 /* small-star-halfselected.png */; };
+		55D48E2B113D0BFE009CEF31 /* small-star-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D48E26113D0BFE009CEF31 /* small-star-highlighted.png */; };
+		55D48E2C113D0BFE009CEF31 /* small-star-hot.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D48E27113D0BFE009CEF31 /* small-star-hot.png */; };
+		55D48E2D113D0BFE009CEF31 /* small-star-nonselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D48E28113D0BFE009CEF31 /* small-star-nonselected.png */; };
+		55D48E2E113D0BFE009CEF31 /* small-star-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D48E29113D0BFE009CEF31 /* small-star-selected.png */; };
+		55D48E34113D0C15009CEF31 /* RatingCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D48E33113D0C15009CEF31 /* RatingCellView.m */; };
 		55E6656A113C7864003AF287 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E66569113C7864003AF287 /* Icon.png */; };
 		55E6668E113CE9CF003AF287 /* libTouchCustoms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E6666A113CE976003AF287 /* libTouchCustoms.a */; };
 		55E666C2113CEB74003AF287 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E666C1113CEB74003AF287 /* AVFoundation.framework */; };
@@ -68,6 +74,13 @@
 		55D48DF3113D089C009CEF31 /* star-nonselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-nonselected.png"; sourceTree = "<group>"; };
 		55D48DF4113D089C009CEF31 /* star-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-selected.png"; sourceTree = "<group>"; };
 		55D48DF5113D089C009CEF31 /* star-userselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-userselected.png"; sourceTree = "<group>"; };
+		55D48E25113D0BFE009CEF31 /* small-star-halfselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-star-halfselected.png"; sourceTree = "<group>"; };
+		55D48E26113D0BFE009CEF31 /* small-star-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-star-highlighted.png"; sourceTree = "<group>"; };
+		55D48E27113D0BFE009CEF31 /* small-star-hot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-star-hot.png"; sourceTree = "<group>"; };
+		55D48E28113D0BFE009CEF31 /* small-star-nonselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-star-nonselected.png"; sourceTree = "<group>"; };
+		55D48E29113D0BFE009CEF31 /* small-star-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-star-selected.png"; sourceTree = "<group>"; };
+		55D48E32113D0C15009CEF31 /* RatingCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingCellView.h; sourceTree = "<group>"; };
+		55D48E33113D0C15009CEF31 /* RatingCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingCellView.m; sourceTree = "<group>"; };
 		55E66569113C7864003AF287 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		55E66661113CE976003AF287 /* TouchCustoms.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TouchCustoms.xcodeproj; path = /Users/aleks/Projects/SC/TouchCustoms/TouchCustoms.xcodeproj; sourceTree = "<absolute>"; };
 		55E666C1113CEB74003AF287 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -172,6 +185,11 @@
 		55D48DEF113D089C009CEF31 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				55D48E25113D0BFE009CEF31 /* small-star-halfselected.png */,
+				55D48E26113D0BFE009CEF31 /* small-star-highlighted.png */,
+				55D48E27113D0BFE009CEF31 /* small-star-hot.png */,
+				55D48E28113D0BFE009CEF31 /* small-star-nonselected.png */,
+				55D48E29113D0BFE009CEF31 /* small-star-selected.png */,
 				55D48DF0113D089C009CEF31 /* star-halfselected.png */,
 				55D48DF1113D089C009CEF31 /* star-highlighted.png */,
 				55D48DF2113D089C009CEF31 /* star-hot.png */,
@@ -197,6 +215,8 @@
 				55E66749113CEEA4003AF287 /* RatingViewStandAloneController.m */,
 				55E66779113CF16B003AF287 /* RatingViewInTableViewController.h */,
 				55E6677A113CF16B003AF287 /* RatingViewInTableViewController.m */,
+				55D48E32113D0C15009CEF31 /* RatingCellView.h */,
+				55D48E33113D0C15009CEF31 /* RatingCellView.m */,
 			);
 			name = RatingView;
 			sourceTree = "<group>";
@@ -271,6 +291,11 @@
 				55D48DF9113D089C009CEF31 /* star-nonselected.png in Resources */,
 				55D48DFA113D089C009CEF31 /* star-selected.png in Resources */,
 				55D48DFB113D089C009CEF31 /* star-userselected.png in Resources */,
+				55D48E2A113D0BFE009CEF31 /* small-star-halfselected.png in Resources */,
+				55D48E2B113D0BFE009CEF31 /* small-star-highlighted.png in Resources */,
+				55D48E2C113D0BFE009CEF31 /* small-star-hot.png in Resources */,
+				55D48E2D113D0BFE009CEF31 /* small-star-nonselected.png in Resources */,
+				55D48E2E113D0BFE009CEF31 /* small-star-selected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +311,7 @@
 				28D7ACF80DDB3853001CB0EB /* MainController.m in Sources */,
 				55E6674A113CEEA4003AF287 /* RatingViewStandAloneController.m in Sources */,
 				55E6677B113CF16B003AF287 /* RatingViewInTableViewController.m in Sources */,
+				55D48E34113D0C15009CEF31 /* RatingCellView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

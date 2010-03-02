@@ -9,13 +9,24 @@
 //	All rights reserved.
 //
 
+#import "RatingCellView.h"
 #import "RatingViewInTableViewController.h"
 
+#import "SCMemoryManagement.h"
+
 @implementation RatingViewInTableViewController
+
+@synthesize xCodeRatingView = _xCodeRatingView, eclipseRatingView = _eclipseRatingView;
+@synthesize xCodeCell = _xCodeCell, eclipseCell = _eclipseCell;
 
 #pragma mark init / dealloc
 
 - (void)dealloc {
+	
+	SC_RELEASE_SAFELY(_xCodeRatingView);
+	SC_RELEASE_SAFELY(_eclipseRatingView);
+	SC_RELEASE_SAFELY(_xCodeCell);
+	SC_RELEASE_SAFELY(_eclipseCell);
 	
     [super dealloc];
 }
@@ -25,6 +36,9 @@
 - (void)viewDidLoad {
 
 	[super viewDidLoad];
+	
+	self.xCodeRatingView.rating = 5;
+	self.eclipseRatingView.rating = 3.5;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -46,21 +60,33 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	
-    return 0;
+    return 2;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (!cell) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-    }
-    
-    // Set up the cell...
+	switch (indexPath.section) {
+		case 0: {
+			switch (indexPath.row) {
+				case 0:
+					return self.xCodeCell;
+				case 1:
+					return self.eclipseCell;
+			}
+		}
+	}
 	
-    return cell;
+	return nil;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+
+	switch (section) {
+		case 0:
+			return NSLocalizedString(@"Pleasure from work", @"");
+	}
+	
+	return nil;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
