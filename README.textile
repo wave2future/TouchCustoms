@@ -13,11 +13,11 @@ h2. Component list
 h1. Беларуская
 
 TouchCustoms - гэта статычная бібліятэка для Cocoa Touch, якая ўтрымоўвае некалькі кампанэнтаў для паўторнага выкарыстаньня, каторыя мы ўжываем у сваіх праектах што-дзень.
-* Гл. "Вікі":http://wiki.github.com/eisernWolf/TouchCustoms/ калі вы ў пошуках дакумэнтацыі.
+* Гл. "Вікі":http://wiki.github.com/eisernWolf/TouchCustoms/, калі вы ў пошуках дакумэнтацыі.
 * "Ліцэнзія":http://github.com/eisernWolf/TouchCustoms/blob/master/LICENSE
 
 h2. Сьпіс кампанэнтаў
 
 # SCMemoryManagement - Спрашчае кіраваньне памяцяй.
-# SCSegmentedControl - Шмпат-радковых UISegmentedControl.
+# SCSegmentedControl - Шмпат-радковы UISegmentedControl.
 # SCRatingView - 5-ці-зоркавы рэйтынґ-вью, што дазваляе ўсталёўваць рэйтынґ карыстальніку.
