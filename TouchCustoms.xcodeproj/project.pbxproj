@@ -7,38 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5530E13D11406149004E436A /* SCSymbolicProgressBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 5530E13B11406149004E436A /* SCSymbolicProgressBar.h */; };
+		5530E13E11406149004E436A /* SCSymbolicProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5530E13C11406149004E436A /* SCSymbolicProgressBar.m */; };
 		5588F71911197177002BF56E /* SCActivityIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F71411197177002BF56E /* SCActivityIndicator.h */; };
 		5588F71A11197177002BF56E /* SCActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5588F71511197177002BF56E /* SCActivityIndicator.m */; };
 		5588F71B11197177002BF56E /* SCMemoryManagement.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F71611197177002BF56E /* SCMemoryManagement.h */; };
 		5588F71C11197177002BF56E /* SCRatingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F71711197177002BF56E /* SCRatingView.h */; };
 		5588F71D11197177002BF56E /* SCRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5588F71811197177002BF56E /* SCRatingView.m */; };
 		5588F72111197407002BF56E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5588F72011197407002BF56E /* UIKit.framework */; };
-		5588F7481119773C002BF56E /* SCAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F73A1119773C002BF56E /* SCAsyncSocket.h */; };
-		5588F7491119773C002BF56E /* SCAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5588F73B1119773C002BF56E /* SCAsyncSocket.m */; };
-		5588F74A1119773C002BF56E /* SCFTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F73C1119773C002BF56E /* SCFTPRequest.h */; };
-		5588F74B1119773C002BF56E /* SCFTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5588F73D1119773C002BF56E /* SCFTPRequest.m */; };
 		5588F74C1119773C002BF56E /* SCGrfx.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F73E1119773C002BF56E /* SCGrfx.h */; };
 		5588F74D1119773C002BF56E /* SCGrfx.m in Sources */ = {isa = PBXBuildFile; fileRef = 5588F73F1119773C002BF56E /* SCGrfx.m */; };
-		5588F74E1119773C002BF56E /* SCHttpAuthenticationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F7401119773C002BF56E /* SCHttpAuthenticationRequest.h */; };
-		5588F74F1119773C002BF56E /* SCHttpAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5588F7411119773C002BF56E /* SCHttpAuthenticationRequest.m */; };
-		5588F7501119773C002BF56E /* SCHttpConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F7421119773C002BF56E /* SCHttpConnection.h */; };
-		5588F7511119773C002BF56E /* SCHttpConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5588F7431119773C002BF56E /* SCHttpConnection.m */; };
-		5588F7521119773C002BF56E /* SCHttpResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F7441119773C002BF56E /* SCHttpResponse.h */; };
-		5588F7531119773C002BF56E /* SCHttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5588F7451119773C002BF56E /* SCHttpResponse.m */; };
-		5588F7541119773C002BF56E /* SCHttpServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F7461119773C002BF56E /* SCHttpServer.h */; };
-		5588F7551119773C002BF56E /* SCHttpServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5588F7471119773C002BF56E /* SCHttpServer.m */; };
-		5588F75811197744002BF56E /* SCRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F75611197744002BF56E /* SCRange.h */; };
-		5588F75911197744002BF56E /* SCRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 5588F75711197744002BF56E /* SCRange.m */; };
 		5588F75E1119774D002BF56E /* SCViewSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F75A1119774D002BF56E /* SCViewSlider.h */; };
 		5588F75F1119774D002BF56E /* SCViewSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5588F75B1119774D002BF56E /* SCViewSlider.m */; };
 		5588F7601119774D002BF56E /* SCVoiceMeter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F75C1119774D002BF56E /* SCVoiceMeter.h */; };
 		5588F7611119774D002BF56E /* SCVoiceMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5588F75D1119774D002BF56E /* SCVoiceMeter.m */; };
 		5588F76611197BBF002BF56E /* NSString+SCMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F76411197BBF002BF56E /* NSString+SCMethods.h */; };
 		5588F76711197BBF002BF56E /* NSString+SCMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 5588F76511197BBF002BF56E /* NSString+SCMethods.m */; };
-		5588F76E11197C10002BF56E /* NSData+SCDigests.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F76A11197C10002BF56E /* NSData+SCDigests.h */; };
-		5588F76F11197C10002BF56E /* NSData+SCDigests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5588F76B11197C10002BF56E /* NSData+SCDigests.m */; };
-		5588F77011197C10002BF56E /* NSNumber+SCMacTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F76C11197C10002BF56E /* NSNumber+SCMacTypes.h */; };
-		5588F77111197C10002BF56E /* NSNumber+SCMacTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5588F76D11197C10002BF56E /* NSNumber+SCMacTypes.m */; };
 		5588F79911197DFC002BF56E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5588F79811197DFC002BF56E /* AVFoundation.framework */; };
 		5588F7A311197E0D002BF56E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5588F7A211197E0D002BF56E /* AudioToolbox.framework */; };
 		5588F7B311197E9A002BF56E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5588F7B211197E9A002BF56E /* CFNetwork.framework */; };
@@ -67,38 +51,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5530E13B11406149004E436A /* SCSymbolicProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCSymbolicProgressBar.h; path = Classes/SCSymbolicProgressBar.h; sourceTree = "<group>"; };
+		5530E13C11406149004E436A /* SCSymbolicProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSymbolicProgressBar.m; path = Classes/SCSymbolicProgressBar.m; sourceTree = "<group>"; };
 		5588F71411197177002BF56E /* SCActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCActivityIndicator.h; path = Classes/SCActivityIndicator.h; sourceTree = "<group>"; };
 		5588F71511197177002BF56E /* SCActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCActivityIndicator.m; path = Classes/SCActivityIndicator.m; sourceTree = "<group>"; };
 		5588F71611197177002BF56E /* SCMemoryManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCMemoryManagement.h; path = Classes/SCMemoryManagement.h; sourceTree = "<group>"; };
 		5588F71711197177002BF56E /* SCRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCRatingView.h; path = Classes/SCRatingView.h; sourceTree = "<group>"; };
 		5588F71811197177002BF56E /* SCRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCRatingView.m; path = Classes/SCRatingView.m; sourceTree = "<group>"; };
 		5588F72011197407002BF56E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		5588F73A1119773C002BF56E /* SCAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCAsyncSocket.h; path = Classes/SCAsyncSocket.h; sourceTree = "<group>"; };
-		5588F73B1119773C002BF56E /* SCAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCAsyncSocket.m; path = Classes/SCAsyncSocket.m; sourceTree = "<group>"; };
-		5588F73C1119773C002BF56E /* SCFTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCFTPRequest.h; path = Classes/SCFTPRequest.h; sourceTree = "<group>"; };
-		5588F73D1119773C002BF56E /* SCFTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCFTPRequest.m; path = Classes/SCFTPRequest.m; sourceTree = "<group>"; };
 		5588F73E1119773C002BF56E /* SCGrfx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCGrfx.h; path = Classes/SCGrfx.h; sourceTree = "<group>"; };
 		5588F73F1119773C002BF56E /* SCGrfx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCGrfx.m; path = Classes/SCGrfx.m; sourceTree = "<group>"; };
-		5588F7401119773C002BF56E /* SCHttpAuthenticationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCHttpAuthenticationRequest.h; path = Classes/SCHttpAuthenticationRequest.h; sourceTree = "<group>"; };
-		5588F7411119773C002BF56E /* SCHttpAuthenticationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCHttpAuthenticationRequest.m; path = Classes/SCHttpAuthenticationRequest.m; sourceTree = "<group>"; };
-		5588F7421119773C002BF56E /* SCHttpConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCHttpConnection.h; path = Classes/SCHttpConnection.h; sourceTree = "<group>"; };
-		5588F7431119773C002BF56E /* SCHttpConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCHttpConnection.m; path = Classes/SCHttpConnection.m; sourceTree = "<group>"; };
-		5588F7441119773C002BF56E /* SCHttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCHttpResponse.h; path = Classes/SCHttpResponse.h; sourceTree = "<group>"; };
-		5588F7451119773C002BF56E /* SCHttpResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCHttpResponse.m; path = Classes/SCHttpResponse.m; sourceTree = "<group>"; };
-		5588F7461119773C002BF56E /* SCHttpServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCHttpServer.h; path = Classes/SCHttpServer.h; sourceTree = "<group>"; };
-		5588F7471119773C002BF56E /* SCHttpServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCHttpServer.m; path = Classes/SCHttpServer.m; sourceTree = "<group>"; };
-		5588F75611197744002BF56E /* SCRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCRange.h; path = Classes/SCRange.h; sourceTree = "<group>"; };
-		5588F75711197744002BF56E /* SCRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCRange.m; path = Classes/SCRange.m; sourceTree = "<group>"; };
 		5588F75A1119774D002BF56E /* SCViewSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCViewSlider.h; path = Classes/SCViewSlider.h; sourceTree = "<group>"; };
 		5588F75B1119774D002BF56E /* SCViewSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCViewSlider.m; path = Classes/SCViewSlider.m; sourceTree = "<group>"; };
 		5588F75C1119774D002BF56E /* SCVoiceMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCVoiceMeter.h; path = Classes/SCVoiceMeter.h; sourceTree = "<group>"; };
 		5588F75D1119774D002BF56E /* SCVoiceMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCVoiceMeter.m; path = Classes/SCVoiceMeter.m; sourceTree = "<group>"; };
 		5588F76411197BBF002BF56E /* NSString+SCMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SCMethods.h"; path = "Classes/NSString+SCMethods.h"; sourceTree = "<group>"; };
 		5588F76511197BBF002BF56E /* NSString+SCMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SCMethods.m"; path = "Classes/NSString+SCMethods.m"; sourceTree = "<group>"; };
-		5588F76A11197C10002BF56E /* NSData+SCDigests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+SCDigests.h"; path = "Classes/NSData+SCDigests.h"; sourceTree = "<group>"; };
-		5588F76B11197C10002BF56E /* NSData+SCDigests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+SCDigests.m"; path = "Classes/NSData+SCDigests.m"; sourceTree = "<group>"; };
-		5588F76C11197C10002BF56E /* NSNumber+SCMacTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNumber+SCMacTypes.h"; path = "Classes/NSNumber+SCMacTypes.h"; sourceTree = "<group>"; };
-		5588F76D11197C10002BF56E /* NSNumber+SCMacTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+SCMacTypes.m"; path = "Classes/NSNumber+SCMacTypes.m"; sourceTree = "<group>"; };
 		5588F79811197DFC002BF56E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		5588F7A211197E0D002BF56E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		5588F7B211197E9A002BF56E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -178,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				5588F79711197DCE002BF56E /* Categories */,
-				5588F79511197D84002BF56E /* Network */,
 				5588F79611197DB4002BF56E /* Screen Stuff */,
 				55A1118A1138391F00810178 /* Settings */,
 				5588F7C7111981D7002BF56E /* Sound */,
@@ -199,48 +166,29 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-		5588F79511197D84002BF56E /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				5588F73A1119773C002BF56E /* SCAsyncSocket.h */,
-				5588F73B1119773C002BF56E /* SCAsyncSocket.m */,
-				5588F73C1119773C002BF56E /* SCFTPRequest.h */,
-				5588F73D1119773C002BF56E /* SCFTPRequest.m */,
-				5588F7401119773C002BF56E /* SCHttpAuthenticationRequest.h */,
-				5588F7411119773C002BF56E /* SCHttpAuthenticationRequest.m */,
-				5588F7421119773C002BF56E /* SCHttpConnection.h */,
-				5588F7431119773C002BF56E /* SCHttpConnection.m */,
-				5588F7441119773C002BF56E /* SCHttpResponse.h */,
-				5588F7451119773C002BF56E /* SCHttpResponse.m */,
-				5588F7461119773C002BF56E /* SCHttpServer.h */,
-				5588F7471119773C002BF56E /* SCHttpServer.m */,
-				5588F75611197744002BF56E /* SCRange.h */,
-				5588F75711197744002BF56E /* SCRange.m */,
-			);
-			name = Network;
-			sourceTree = "<group>";
-		};
 		5588F79611197DB4002BF56E /* Screen Stuff */ = {
 			isa = PBXGroup;
 			children = (
+				5588F71411197177002BF56E /* SCActivityIndicator.h */,
+				5588F71511197177002BF56E /* SCActivityIndicator.m */,
+				5588F73E1119773C002BF56E /* SCGrfx.h */,
+				5588F73F1119773C002BF56E /* SCGrfx.m */,
+				5588F71711197177002BF56E /* SCRatingView.h */,
+				5588F71811197177002BF56E /* SCRatingView.m */,
 				559FC9B2111AE3F500A3A532 /* SCSegment.h */,
 				559FC9B3111AE3F500A3A532 /* SCSegment.m */,
 				559FC9B4111AE3F500A3A532 /* SCSegmentedControl.h */,
 				559FC9B5111AE3F500A3A532 /* SCSegmentedControl.m */,
-				5588F73E1119773C002BF56E /* SCGrfx.h */,
-				5588F73F1119773C002BF56E /* SCGrfx.m */,
-				5588F71411197177002BF56E /* SCActivityIndicator.h */,
-				5588F71511197177002BF56E /* SCActivityIndicator.m */,
-				5588F71711197177002BF56E /* SCRatingView.h */,
-				5588F71811197177002BF56E /* SCRatingView.m */,
-				5588F75A1119774D002BF56E /* SCViewSlider.h */,
-				5588F75B1119774D002BF56E /* SCViewSlider.m */,
+				55AD3A4D112D92BD00E70986 /* SCSwitchCell.h */,
+				55AD3A4E112D92BD00E70986 /* SCSwitchCell.m */,
+				5530E13B11406149004E436A /* SCSymbolicProgressBar.h */,
+				5530E13C11406149004E436A /* SCSymbolicProgressBar.m */,
 				55A55C0C1125E4DF0035CFBA /* SCTabOrder.h */,
 				55A55C0D1125E4DF0035CFBA /* SCTabOrder.m */,
 				55AD3973112D681F00E70986 /* SCTextFieldCell.h */,
 				55AD3974112D681F00E70986 /* SCTextFieldCell.m */,
-				55AD3A4D112D92BD00E70986 /* SCSwitchCell.h */,
-				55AD3A4E112D92BD00E70986 /* SCSwitchCell.m */,
+				5588F75A1119774D002BF56E /* SCViewSlider.h */,
+				5588F75B1119774D002BF56E /* SCViewSlider.m */,
 			);
 			name = "Screen Stuff";
 			sourceTree = "<group>";
@@ -248,12 +196,8 @@
 		5588F79711197DCE002BF56E /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				5588F76A11197C10002BF56E /* NSData+SCDigests.h */,
-				5588F76B11197C10002BF56E /* NSData+SCDigests.m */,
 				55E466F011203605000B710E /* NSMutableArray+SCQueue.h */,
 				55E466F111203605000B710E /* NSMutableArray+SCQueue.m */,
-				5588F76C11197C10002BF56E /* NSNumber+SCMacTypes.h */,
-				5588F76D11197C10002BF56E /* NSNumber+SCMacTypes.m */,
 				5588F76411197BBF002BF56E /* NSString+SCMethods.h */,
 				5588F76511197BBF002BF56E /* NSString+SCMethods.m */,
 				55CF41FD112AE9EA00E762C1 /* UIColor+SCMethods.h */,
@@ -291,19 +235,10 @@
 				5588F71911197177002BF56E /* SCActivityIndicator.h in Headers */,
 				5588F71B11197177002BF56E /* SCMemoryManagement.h in Headers */,
 				5588F71C11197177002BF56E /* SCRatingView.h in Headers */,
-				5588F7481119773C002BF56E /* SCAsyncSocket.h in Headers */,
-				5588F74A1119773C002BF56E /* SCFTPRequest.h in Headers */,
 				5588F74C1119773C002BF56E /* SCGrfx.h in Headers */,
-				5588F74E1119773C002BF56E /* SCHttpAuthenticationRequest.h in Headers */,
-				5588F7501119773C002BF56E /* SCHttpConnection.h in Headers */,
-				5588F7521119773C002BF56E /* SCHttpResponse.h in Headers */,
-				5588F7541119773C002BF56E /* SCHttpServer.h in Headers */,
-				5588F75811197744002BF56E /* SCRange.h in Headers */,
 				5588F75E1119774D002BF56E /* SCViewSlider.h in Headers */,
 				5588F7601119774D002BF56E /* SCVoiceMeter.h in Headers */,
 				5588F76611197BBF002BF56E /* NSString+SCMethods.h in Headers */,
-				5588F76E11197C10002BF56E /* NSData+SCDigests.h in Headers */,
-				5588F77011197C10002BF56E /* NSNumber+SCMacTypes.h in Headers */,
 				559FC9B6111AE3F500A3A532 /* SCSegment.h in Headers */,
 				559FC9B8111AE3F500A3A532 /* SCSegmentedControl.h in Headers */,
 				55E466F211203605000B710E /* NSMutableArray+SCQueue.h in Headers */,
@@ -315,6 +250,7 @@
 				55AD3A4F112D92BD00E70986 /* SCSwitchCell.h in Headers */,
 				55A111A411383C5200810178 /* SCSettingsService.h in Headers */,
 				55A111A811383C5F00810178 /* SCAppDelegate.h in Headers */,
+				5530E13D11406149004E436A /* SCSymbolicProgressBar.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,19 +310,10 @@
 			files = (
 				5588F71A11197177002BF56E /* SCActivityIndicator.m in Sources */,
 				5588F71D11197177002BF56E /* SCRatingView.m in Sources */,
-				5588F7491119773C002BF56E /* SCAsyncSocket.m in Sources */,
-				5588F74B1119773C002BF56E /* SCFTPRequest.m in Sources */,
 				5588F74D1119773C002BF56E /* SCGrfx.m in Sources */,
-				5588F74F1119773C002BF56E /* SCHttpAuthenticationRequest.m in Sources */,
-				5588F7511119773C002BF56E /* SCHttpConnection.m in Sources */,
-				5588F7531119773C002BF56E /* SCHttpResponse.m in Sources */,
-				5588F7551119773C002BF56E /* SCHttpServer.m in Sources */,
-				5588F75911197744002BF56E /* SCRange.m in Sources */,
 				5588F75F1119774D002BF56E /* SCViewSlider.m in Sources */,
 				5588F7611119774D002BF56E /* SCVoiceMeter.m in Sources */,
 				5588F76711197BBF002BF56E /* NSString+SCMethods.m in Sources */,
-				5588F76F11197C10002BF56E /* NSData+SCDigests.m in Sources */,
-				5588F77111197C10002BF56E /* NSNumber+SCMacTypes.m in Sources */,
 				559FC9B7111AE3F500A3A532 /* SCSegment.m in Sources */,
 				559FC9B9111AE3F500A3A532 /* SCSegmentedControl.m in Sources */,
 				55E466F311203605000B710E /* NSMutableArray+SCQueue.m in Sources */,
@@ -396,6 +323,7 @@
 				55AD3A50112D92BD00E70986 /* SCSwitchCell.m in Sources */,
 				55A111A511383C5200810178 /* SCSettingsService.m in Sources */,
 				55A111A911383C5F00810178 /* SCAppDelegate.m in Sources */,
+				5530E13E11406149004E436A /* SCSymbolicProgressBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
