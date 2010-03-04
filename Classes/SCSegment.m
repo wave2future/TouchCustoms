@@ -205,6 +205,7 @@ static CGFloat _BorderLocations[2] = { 0, 1 };
 			case SCSegmentLeftRound:
 			case SCSegmentLeftBottomRound:
 			case SCSegmentLeftTopRound:
+			case SCSegmentLeft:
 				foreRect.origin.x += kSCSegmentBorderWidth;
 				foreRect.size.width -= kSCSegmentBorderWidth;
 				break;
