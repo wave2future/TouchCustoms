@@ -13,16 +13,21 @@
 //
 
 @class RatingViewStandAloneController, RatingViewInTableViewController;
+@class SegmentedControlController;
 
 @interface MainController : UITableViewController {
 
 @private
 	RatingViewStandAloneController *_ratingViewStandAloneController;
 	RatingViewInTableViewController *_ratingViewInTableViewController;
+	
+	SegmentedControlController *_segmentedControlController;
 }
 
 @property (nonatomic, retain) IBOutlet RatingViewStandAloneController *ratingViewStandAloneController;
 @property (nonatomic, retain) IBOutlet RatingViewInTableViewController *ratingViewInTableViewController;
+
+@property (nonatomic, retain) IBOutlet SegmentedControlController *segmentedControlController;
 
 @end
 

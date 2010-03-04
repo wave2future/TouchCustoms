@@ -14,12 +14,15 @@
 #import "RatingViewStandAloneController.h"
 #import "RatingViewInTableViewController.h"
 
+#import "SegmentedControlController.h"
+
 #import "SCMemoryManagement.h"
 
 @implementation MainController
 
 @synthesize ratingViewStandAloneController = _ratingViewStandAloneController,
 ratingViewInTableViewController = _ratingViewInTableViewController;
+@synthesize segmentedControlController = _segmentedControlController;
 
 #pragma mark init / dealloc
 
@@ -43,6 +46,8 @@ ratingViewInTableViewController = _ratingViewInTableViewController;
 	
 	SC_RELEASE_SAFELY(_ratingViewStandAloneController);
 	SC_RELEASE_SAFELY(_ratingViewInTableViewController);
+	
+	SC_RELEASE_SAFELY(_segmentedControlController);
 	
     [super dealloc];
 }
@@ -79,7 +84,7 @@ ratingViewInTableViewController = _ratingViewInTableViewController;
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 	
-	return 1;
+	return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)table numberOfRowsInSection:(NSInteger)section {
@@ -87,6 +92,8 @@ ratingViewInTableViewController = _ratingViewInTableViewController;
 	switch (section) {
 		case 0:
 			return 2;
+		case 1:
+			return 1;
 	}
 	
 	return 0;
@@ -114,6 +121,14 @@ ratingViewInTableViewController = _ratingViewInTableViewController;
 					cell.detailTextLabel.text = @"RatingViewInTableViewController.m";
 					break;
 			}
+			break;
+		} case 1: {
+			switch (indexPath.row) {
+				case 0:
+					cell.textLabel.text = NSLocalizedString(@"Multi-row UISegmentedControl-like control", @"");
+					cell.detailTextLabel.text = @"SegmentedControlController.m";
+					break;
+			}
 		}
 	}
 	
@@ -125,6 +140,8 @@ ratingViewInTableViewController = _ratingViewInTableViewController;
 	switch (section) {
 		case 0:
 			return NSLocalizedString(@"RatingView", @"");
+		case 1:
+			return NSLocalizedString(@"SegmentedControl", @"");
 	}
 	
 	return nil;
@@ -140,6 +157,13 @@ ratingViewInTableViewController = _ratingViewInTableViewController;
 					break;
 				case 1:
 					[self.navigationController pushViewController:self.ratingViewInTableViewController animated:YES];
+					break;
+			}
+			break;
+		} case 1: {
+			switch (indexPath.row) {
+				case 0:
+					[self.navigationController pushViewController:self.segmentedControlController animated:YES];
 					break;
 			}
 			break;

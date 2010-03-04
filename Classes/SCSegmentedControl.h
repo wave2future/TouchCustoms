@@ -22,7 +22,6 @@
 }
 
 @property (nonatomic, assign) NSUInteger columnCount;
-/** Currently only 0 and 1 values are supported. */
 @property (nonatomic, assign) NSUInteger rowCount;
 /** If you specified 3 columns and 2 rows, this array whould contain 6 items. */
 @property (nonatomic, copy) NSArray *segmentTitles;

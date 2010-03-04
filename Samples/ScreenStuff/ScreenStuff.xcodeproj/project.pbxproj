@@ -15,6 +15,8 @@
 		2899E5220DE3E06400AC0155 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* MainView.xib */; };
 		28AD733F0D9D9553002E5188 /* Application.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* Application.xib */; };
 		28D7ACF80DDB3853001CB0EB /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* MainController.m */; };
+		55C3FFC5113F991500267F0D /* SegmentedControlController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C3FFC4113F991500267F0D /* SegmentedControlController.m */; };
+		55C3FFC7113F994400267F0D /* SegmentedControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C3FFC6113F994400267F0D /* SegmentedControlView.xib */; };
 		55D48DF6113D089C009CEF31 /* star-halfselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D48DF0113D089C009CEF31 /* star-halfselected.png */; };
 		55D48DF7113D089C009CEF31 /* star-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D48DF1113D089C009CEF31 /* star-highlighted.png */; };
 		55D48DF8113D089C009CEF31 /* star-hot.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D48DF2113D089C009CEF31 /* star-hot.png */; };
@@ -68,6 +70,9 @@
 		28D7ACF70DDB3853001CB0EB /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* ScreenStuff_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenStuff_Prefix.pch; sourceTree = "<group>"; };
+		55C3FFC3113F991500267F0D /* SegmentedControlController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedControlController.h; sourceTree = "<group>"; };
+		55C3FFC4113F991500267F0D /* SegmentedControlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedControlController.m; sourceTree = "<group>"; };
+		55C3FFC6113F994400267F0D /* SegmentedControlView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentedControlView.xib; sourceTree = "<group>"; };
 		55D48DF0113D089C009CEF31 /* star-halfselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-halfselected.png"; sourceTree = "<group>"; };
 		55D48DF1113D089C009CEF31 /* star-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-highlighted.png"; sourceTree = "<group>"; };
 		55D48DF2113D089C009CEF31 /* star-hot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-hot.png"; sourceTree = "<group>"; };
@@ -117,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				55E66747113CEE68003AF287 /* RatingView */,
+				55C3FFC1113F98E200267F0D /* SegmentedControl */,
 				28D7ACF60DDB3853001CB0EB /* MainController.h */,
 				28D7ACF70DDB3853001CB0EB /* MainController.m */,
 				1D3623240D0F684500981E51 /* AppDelegate.h */,
@@ -162,6 +168,7 @@
 				2899E5210DE3E06400AC0155 /* MainView.xib */,
 				55E6674B113CEECE003AF287 /* RatingViewStandAlone.xib */,
 				55E6678A113CF381003AF287 /* RatingViewInTableView.xib */,
+				55C3FFC6113F994400267F0D /* SegmentedControlView.xib */,
 				55E66569113C7864003AF287 /* Icon.png */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 			);
@@ -180,6 +187,15 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55C3FFC1113F98E200267F0D /* SegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				55C3FFC3113F991500267F0D /* SegmentedControlController.h */,
+				55C3FFC4113F991500267F0D /* SegmentedControlController.m */,
+			);
+			name = SegmentedControl;
 			sourceTree = "<group>";
 		};
 		55D48DEF113D089C009CEF31 /* Images */ = {
@@ -296,6 +312,7 @@
 				55D48E2C113D0BFE009CEF31 /* small-star-hot.png in Resources */,
 				55D48E2D113D0BFE009CEF31 /* small-star-nonselected.png in Resources */,
 				55D48E2E113D0BFE009CEF31 /* small-star-selected.png in Resources */,
+				55C3FFC7113F994400267F0D /* SegmentedControlView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +329,7 @@
 				55E6674A113CEEA4003AF287 /* RatingViewStandAloneController.m in Sources */,
 				55E6677B113CF16B003AF287 /* RatingViewInTableViewController.m in Sources */,
 				55D48E34113D0C15009CEF31 /* RatingCellView.m in Sources */,
+				55C3FFC5113F991500267F0D /* SegmentedControlController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
