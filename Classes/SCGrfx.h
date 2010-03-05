@@ -13,7 +13,6 @@
 //
 
 struct SCRoundedRect {
-	
 	CGFloat xLeft, xLeftCorner;
 	CGFloat xRight, xRightCorner;
 	CGFloat yTop, yTopCorner;
