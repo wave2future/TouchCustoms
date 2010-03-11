@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		551490A01149012600B7E4DA /* SCRadioCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5514909C1149012600B7E4DA /* SCRadioCell.h */; };
+		551490A11149012600B7E4DA /* SCRadioCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5514909D1149012600B7E4DA /* SCRadioCell.m */; };
+		551490A21149012600B7E4DA /* SCRadioController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5514909E1149012600B7E4DA /* SCRadioController.h */; };
+		551490A31149012600B7E4DA /* SCRadioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5514909F1149012600B7E4DA /* SCRadioController.m */; };
 		5530E13D11406149004E436A /* SCSymbolicProgressBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 5530E13B11406149004E436A /* SCSymbolicProgressBar.h */; };
 		5530E13E11406149004E436A /* SCSymbolicProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5530E13C11406149004E436A /* SCSymbolicProgressBar.m */; };
 		5588F71911197177002BF56E /* SCActivityIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F71411197177002BF56E /* SCActivityIndicator.h */; };
@@ -51,6 +55,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5514909C1149012600B7E4DA /* SCRadioCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCRadioCell.h; path = Classes/SCRadioCell.h; sourceTree = "<group>"; };
+		5514909D1149012600B7E4DA /* SCRadioCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCRadioCell.m; path = Classes/SCRadioCell.m; sourceTree = "<group>"; };
+		5514909E1149012600B7E4DA /* SCRadioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCRadioController.h; path = Classes/SCRadioController.h; sourceTree = "<group>"; };
+		5514909F1149012600B7E4DA /* SCRadioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCRadioController.m; path = Classes/SCRadioController.m; sourceTree = "<group>"; };
 		5530E13B11406149004E436A /* SCSymbolicProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCSymbolicProgressBar.h; path = Classes/SCSymbolicProgressBar.h; sourceTree = "<group>"; };
 		5530E13C11406149004E436A /* SCSymbolicProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSymbolicProgressBar.m; path = Classes/SCSymbolicProgressBar.m; sourceTree = "<group>"; };
 		5588F71411197177002BF56E /* SCActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCActivityIndicator.h; path = Classes/SCActivityIndicator.h; sourceTree = "<group>"; };
@@ -146,9 +154,12 @@
 			isa = PBXGroup;
 			children = (
 				5588F79711197DCE002BF56E /* Categories */,
+				551490981149008200B7E4DA /* Graphics */,
+				55149099114900A200B7E4DA /* Indicators */,
 				5588F79611197DB4002BF56E /* Screen Stuff */,
+				5514909A114900BC00B7E4DA /* Selectors */,
 				55A1118A1138391F00810178 /* Settings */,
-				5588F7C7111981D7002BF56E /* Sound */,
+				5514909B114900E400B7E4DA /* TableView Stuff */,
 				55A111A611383C5F00810178 /* SCAppDelegate.h */,
 				55A111A711383C5F00810178 /* SCAppDelegate.m */,
 				55E46A461120A786000B710E /* SCLog.h */,
@@ -166,27 +177,61 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-		5588F79611197DB4002BF56E /* Screen Stuff */ = {
+		551490981149008200B7E4DA /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				5588F73E1119773C002BF56E /* SCGrfx.h */,
+				5588F73F1119773C002BF56E /* SCGrfx.m */,
+			);
+			name = Graphics;
+			sourceTree = "<group>";
+		};
+		55149099114900A200B7E4DA /* Indicators */ = {
 			isa = PBXGroup;
 			children = (
 				5588F71411197177002BF56E /* SCActivityIndicator.h */,
 				5588F71511197177002BF56E /* SCActivityIndicator.m */,
-				5588F73E1119773C002BF56E /* SCGrfx.h */,
-				5588F73F1119773C002BF56E /* SCGrfx.m */,
+				5530E13B11406149004E436A /* SCSymbolicProgressBar.h */,
+				5530E13C11406149004E436A /* SCSymbolicProgressBar.m */,
 				5588F71711197177002BF56E /* SCRatingView.h */,
 				5588F71811197177002BF56E /* SCRatingView.m */,
+				5588F75C1119774D002BF56E /* SCVoiceMeter.h */,
+				5588F75D1119774D002BF56E /* SCVoiceMeter.m */,
+			);
+			name = Indicators;
+			sourceTree = "<group>";
+		};
+		5514909A114900BC00B7E4DA /* Selectors */ = {
+			isa = PBXGroup;
+			children = (
+				5514909C1149012600B7E4DA /* SCRadioCell.h */,
+				5514909D1149012600B7E4DA /* SCRadioCell.m */,
+				5514909E1149012600B7E4DA /* SCRadioController.h */,
+				5514909F1149012600B7E4DA /* SCRadioController.m */,
 				559FC9B2111AE3F500A3A532 /* SCSegment.h */,
 				559FC9B3111AE3F500A3A532 /* SCSegment.m */,
 				559FC9B4111AE3F500A3A532 /* SCSegmentedControl.h */,
 				559FC9B5111AE3F500A3A532 /* SCSegmentedControl.m */,
+			);
+			name = Selectors;
+			sourceTree = "<group>";
+		};
+		5514909B114900E400B7E4DA /* TableView Stuff */ = {
+			isa = PBXGroup;
+			children = (
 				55AD3A4D112D92BD00E70986 /* SCSwitchCell.h */,
 				55AD3A4E112D92BD00E70986 /* SCSwitchCell.m */,
-				5530E13B11406149004E436A /* SCSymbolicProgressBar.h */,
-				5530E13C11406149004E436A /* SCSymbolicProgressBar.m */,
-				55A55C0C1125E4DF0035CFBA /* SCTabOrder.h */,
-				55A55C0D1125E4DF0035CFBA /* SCTabOrder.m */,
 				55AD3973112D681F00E70986 /* SCTextFieldCell.h */,
 				55AD3974112D681F00E70986 /* SCTextFieldCell.m */,
+			);
+			name = "TableView Stuff";
+			sourceTree = "<group>";
+		};
+		5588F79611197DB4002BF56E /* Screen Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				55A55C0C1125E4DF0035CFBA /* SCTabOrder.h */,
+				55A55C0D1125E4DF0035CFBA /* SCTabOrder.m */,
 				5588F75A1119774D002BF56E /* SCViewSlider.h */,
 				5588F75B1119774D002BF56E /* SCViewSlider.m */,
 			);
@@ -204,15 +249,6 @@
 				55CF41FE112AE9EA00E762C1 /* UIColor+SCMethods.m */,
 			);
 			name = Categories;
-			sourceTree = "<group>";
-		};
-		5588F7C7111981D7002BF56E /* Sound */ = {
-			isa = PBXGroup;
-			children = (
-				5588F75C1119774D002BF56E /* SCVoiceMeter.h */,
-				5588F75D1119774D002BF56E /* SCVoiceMeter.m */,
-			);
-			name = Sound;
 			sourceTree = "<group>";
 		};
 		55A1118A1138391F00810178 /* Settings */ = {
@@ -251,6 +287,8 @@
 				55A111A411383C5200810178 /* SCSettingsService.h in Headers */,
 				55A111A811383C5F00810178 /* SCAppDelegate.h in Headers */,
 				5530E13D11406149004E436A /* SCSymbolicProgressBar.h in Headers */,
+				551490A01149012600B7E4DA /* SCRadioCell.h in Headers */,
+				551490A21149012600B7E4DA /* SCRadioController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +362,8 @@
 				55A111A511383C5200810178 /* SCSettingsService.m in Sources */,
 				55A111A911383C5F00810178 /* SCAppDelegate.m in Sources */,
 				5530E13E11406149004E436A /* SCSymbolicProgressBar.m in Sources */,
+				551490A11149012600B7E4DA /* SCRadioCell.m in Sources */,
+				551490A31149012600B7E4DA /* SCRadioController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
