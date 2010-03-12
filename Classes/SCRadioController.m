@@ -67,6 +67,15 @@
 	[tableView release];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+
+	[super viewDidAppear:animated];
+	
+	[self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:self.selectedIndex inSection:0]
+						  atScrollPosition:UITableViewScrollPositionMiddle
+								  animated:YES];
+}
+
 #pragma mark TableView callbacks
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
