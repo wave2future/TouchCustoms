@@ -11,6 +11,8 @@
 		551490A11149012600B7E4DA /* SCRadioCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5514909D1149012600B7E4DA /* SCRadioCell.m */; };
 		551490A21149012600B7E4DA /* SCRadioController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5514909E1149012600B7E4DA /* SCRadioController.h */; };
 		551490A31149012600B7E4DA /* SCRadioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5514909F1149012600B7E4DA /* SCRadioController.m */; };
+		55149458114A74FC00B7E4DA /* SCFooterLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 55149456114A74FC00B7E4DA /* SCFooterLabel.h */; };
+		55149459114A74FC00B7E4DA /* SCFooterLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 55149457114A74FC00B7E4DA /* SCFooterLabel.m */; };
 		5530E13D11406149004E436A /* SCSymbolicProgressBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 5530E13B11406149004E436A /* SCSymbolicProgressBar.h */; };
 		5530E13E11406149004E436A /* SCSymbolicProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5530E13C11406149004E436A /* SCSymbolicProgressBar.m */; };
 		5588F71911197177002BF56E /* SCActivityIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F71411197177002BF56E /* SCActivityIndicator.h */; };
@@ -59,6 +61,8 @@
 		5514909D1149012600B7E4DA /* SCRadioCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCRadioCell.m; path = Classes/SCRadioCell.m; sourceTree = "<group>"; };
 		5514909E1149012600B7E4DA /* SCRadioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCRadioController.h; path = Classes/SCRadioController.h; sourceTree = "<group>"; };
 		5514909F1149012600B7E4DA /* SCRadioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCRadioController.m; path = Classes/SCRadioController.m; sourceTree = "<group>"; };
+		55149456114A74FC00B7E4DA /* SCFooterLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCFooterLabel.h; path = Classes/SCFooterLabel.h; sourceTree = "<group>"; };
+		55149457114A74FC00B7E4DA /* SCFooterLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCFooterLabel.m; path = Classes/SCFooterLabel.m; sourceTree = "<group>"; };
 		5530E13B11406149004E436A /* SCSymbolicProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCSymbolicProgressBar.h; path = Classes/SCSymbolicProgressBar.h; sourceTree = "<group>"; };
 		5530E13C11406149004E436A /* SCSymbolicProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSymbolicProgressBar.m; path = Classes/SCSymbolicProgressBar.m; sourceTree = "<group>"; };
 		5588F71411197177002BF56E /* SCActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCActivityIndicator.h; path = Classes/SCActivityIndicator.h; sourceTree = "<group>"; };
@@ -219,6 +223,8 @@
 		5514909B114900E400B7E4DA /* TableView Stuff */ = {
 			isa = PBXGroup;
 			children = (
+				55149456114A74FC00B7E4DA /* SCFooterLabel.h */,
+				55149457114A74FC00B7E4DA /* SCFooterLabel.m */,
 				55AD3A4D112D92BD00E70986 /* SCSwitchCell.h */,
 				55AD3A4E112D92BD00E70986 /* SCSwitchCell.m */,
 				55AD3973112D681F00E70986 /* SCTextFieldCell.h */,
@@ -289,6 +295,7 @@
 				5530E13D11406149004E436A /* SCSymbolicProgressBar.h in Headers */,
 				551490A01149012600B7E4DA /* SCRadioCell.h in Headers */,
 				551490A21149012600B7E4DA /* SCRadioController.h in Headers */,
+				55149458114A74FC00B7E4DA /* SCFooterLabel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +371,7 @@
 				5530E13E11406149004E436A /* SCSymbolicProgressBar.m in Sources */,
 				551490A11149012600B7E4DA /* SCRadioCell.m in Sources */,
 				551490A31149012600B7E4DA /* SCRadioController.m in Sources */,
+				55149459114A74FC00B7E4DA /* SCFooterLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
