@@ -15,6 +15,10 @@
 		55149459114A74FC00B7E4DA /* SCFooterLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 55149457114A74FC00B7E4DA /* SCFooterLabel.m */; };
 		5530E13D11406149004E436A /* SCSymbolicProgressBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 5530E13B11406149004E436A /* SCSymbolicProgressBar.h */; };
 		5530E13E11406149004E436A /* SCSymbolicProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5530E13C11406149004E436A /* SCSymbolicProgressBar.m */; };
+		555A3A4C114D4FA00040850F /* NSError+SCMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 555A3A4A114D4FA00040850F /* NSError+SCMethods.h */; };
+		555A3A4D114D4FA00040850F /* NSError+SCMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 555A3A4B114D4FA00040850F /* NSError+SCMethods.m */; };
+		555A3A87114D605F0040850F /* UIAlertView+SCMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 555A3A85114D605F0040850F /* UIAlertView+SCMethods.h */; };
+		555A3A88114D605F0040850F /* UIAlertView+SCMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 555A3A86114D605F0040850F /* UIAlertView+SCMethods.m */; };
 		5588F71911197177002BF56E /* SCActivityIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F71411197177002BF56E /* SCActivityIndicator.h */; };
 		5588F71A11197177002BF56E /* SCActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5588F71511197177002BF56E /* SCActivityIndicator.m */; };
 		5588F71B11197177002BF56E /* SCMemoryManagement.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F71611197177002BF56E /* SCMemoryManagement.h */; };
@@ -65,6 +69,10 @@
 		55149457114A74FC00B7E4DA /* SCFooterLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCFooterLabel.m; path = Classes/SCFooterLabel.m; sourceTree = "<group>"; };
 		5530E13B11406149004E436A /* SCSymbolicProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCSymbolicProgressBar.h; path = Classes/SCSymbolicProgressBar.h; sourceTree = "<group>"; };
 		5530E13C11406149004E436A /* SCSymbolicProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSymbolicProgressBar.m; path = Classes/SCSymbolicProgressBar.m; sourceTree = "<group>"; };
+		555A3A4A114D4FA00040850F /* NSError+SCMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSError+SCMethods.h"; path = "Classes/NSError+SCMethods.h"; sourceTree = "<group>"; };
+		555A3A4B114D4FA00040850F /* NSError+SCMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSError+SCMethods.m"; path = "Classes/NSError+SCMethods.m"; sourceTree = "<group>"; };
+		555A3A85114D605F0040850F /* UIAlertView+SCMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+SCMethods.h"; path = "Classes/UIAlertView+SCMethods.h"; sourceTree = "<group>"; };
+		555A3A86114D605F0040850F /* UIAlertView+SCMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+SCMethods.m"; path = "Classes/UIAlertView+SCMethods.m"; sourceTree = "<group>"; };
 		5588F71411197177002BF56E /* SCActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCActivityIndicator.h; path = Classes/SCActivityIndicator.h; sourceTree = "<group>"; };
 		5588F71511197177002BF56E /* SCActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCActivityIndicator.m; path = Classes/SCActivityIndicator.m; sourceTree = "<group>"; };
 		5588F71611197177002BF56E /* SCMemoryManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCMemoryManagement.h; path = Classes/SCMemoryManagement.h; sourceTree = "<group>"; };
@@ -157,13 +165,18 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				5588F79711197DCE002BF56E /* Categories */,
 				551490981149008200B7E4DA /* Graphics */,
 				55149099114900A200B7E4DA /* Indicators */,
 				5588F79611197DB4002BF56E /* Screen Stuff */,
 				5514909A114900BC00B7E4DA /* Selectors */,
 				55A1118A1138391F00810178 /* Settings */,
 				5514909B114900E400B7E4DA /* TableView Stuff */,
+				555A3A4A114D4FA00040850F /* NSError+SCMethods.h */,
+				555A3A4B114D4FA00040850F /* NSError+SCMethods.m */,
+				55E466F011203605000B710E /* NSMutableArray+SCQueue.h */,
+				55E466F111203605000B710E /* NSMutableArray+SCQueue.m */,
+				5588F76411197BBF002BF56E /* NSString+SCMethods.h */,
+				5588F76511197BBF002BF56E /* NSString+SCMethods.m */,
 				55A111A611383C5F00810178 /* SCAppDelegate.h */,
 				55A111A711383C5F00810178 /* SCAppDelegate.m */,
 				55E46A461120A786000B710E /* SCLog.h */,
@@ -186,6 +199,8 @@
 			children = (
 				5588F73E1119773C002BF56E /* SCGrfx.h */,
 				5588F73F1119773C002BF56E /* SCGrfx.m */,
+				55CF41FD112AE9EA00E762C1 /* UIColor+SCMethods.h */,
+				55CF41FE112AE9EA00E762C1 /* UIColor+SCMethods.m */,
 			);
 			name = Graphics;
 			sourceTree = "<group>";
@@ -240,21 +255,10 @@
 				55A55C0D1125E4DF0035CFBA /* SCTabOrder.m */,
 				5588F75A1119774D002BF56E /* SCViewSlider.h */,
 				5588F75B1119774D002BF56E /* SCViewSlider.m */,
+				555A3A85114D605F0040850F /* UIAlertView+SCMethods.h */,
+				555A3A86114D605F0040850F /* UIAlertView+SCMethods.m */,
 			);
 			name = "Screen Stuff";
-			sourceTree = "<group>";
-		};
-		5588F79711197DCE002BF56E /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				55E466F011203605000B710E /* NSMutableArray+SCQueue.h */,
-				55E466F111203605000B710E /* NSMutableArray+SCQueue.m */,
-				5588F76411197BBF002BF56E /* NSString+SCMethods.h */,
-				5588F76511197BBF002BF56E /* NSString+SCMethods.m */,
-				55CF41FD112AE9EA00E762C1 /* UIColor+SCMethods.h */,
-				55CF41FE112AE9EA00E762C1 /* UIColor+SCMethods.m */,
-			);
-			name = Categories;
 			sourceTree = "<group>";
 		};
 		55A1118A1138391F00810178 /* Settings */ = {
@@ -296,6 +300,8 @@
 				551490A01149012600B7E4DA /* SCRadioCell.h in Headers */,
 				551490A21149012600B7E4DA /* SCRadioController.h in Headers */,
 				55149458114A74FC00B7E4DA /* SCFooterLabel.h in Headers */,
+				555A3A4C114D4FA00040850F /* NSError+SCMethods.h in Headers */,
+				555A3A87114D605F0040850F /* UIAlertView+SCMethods.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +378,8 @@
 				551490A11149012600B7E4DA /* SCRadioCell.m in Sources */,
 				551490A31149012600B7E4DA /* SCRadioController.m in Sources */,
 				55149459114A74FC00B7E4DA /* SCFooterLabel.m in Sources */,
+				555A3A4D114D4FA00040850F /* NSError+SCMethods.m in Sources */,
+				555A3A88114D605F0040850F /* UIAlertView+SCMethods.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
