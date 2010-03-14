@@ -19,8 +19,6 @@
 		555A3A4D114D4FA00040850F /* NSError+SCMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 555A3A4B114D4FA00040850F /* NSError+SCMethods.m */; };
 		555A3A87114D605F0040850F /* UIAlertView+SCMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 555A3A85114D605F0040850F /* UIAlertView+SCMethods.h */; };
 		555A3A88114D605F0040850F /* UIAlertView+SCMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 555A3A86114D605F0040850F /* UIAlertView+SCMethods.m */; };
-		5588F71911197177002BF56E /* SCActivityIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F71411197177002BF56E /* SCActivityIndicator.h */; };
-		5588F71A11197177002BF56E /* SCActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5588F71511197177002BF56E /* SCActivityIndicator.m */; };
 		5588F71B11197177002BF56E /* SCMemoryManagement.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F71611197177002BF56E /* SCMemoryManagement.h */; };
 		5588F71C11197177002BF56E /* SCRatingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588F71711197177002BF56E /* SCRatingView.h */; };
 		5588F71D11197177002BF56E /* SCRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5588F71811197177002BF56E /* SCRatingView.m */; };
@@ -73,8 +71,6 @@
 		555A3A4B114D4FA00040850F /* NSError+SCMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSError+SCMethods.m"; path = "Classes/NSError+SCMethods.m"; sourceTree = "<group>"; };
 		555A3A85114D605F0040850F /* UIAlertView+SCMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+SCMethods.h"; path = "Classes/UIAlertView+SCMethods.h"; sourceTree = "<group>"; };
 		555A3A86114D605F0040850F /* UIAlertView+SCMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+SCMethods.m"; path = "Classes/UIAlertView+SCMethods.m"; sourceTree = "<group>"; };
-		5588F71411197177002BF56E /* SCActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCActivityIndicator.h; path = Classes/SCActivityIndicator.h; sourceTree = "<group>"; };
-		5588F71511197177002BF56E /* SCActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCActivityIndicator.m; path = Classes/SCActivityIndicator.m; sourceTree = "<group>"; };
 		5588F71611197177002BF56E /* SCMemoryManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCMemoryManagement.h; path = Classes/SCMemoryManagement.h; sourceTree = "<group>"; };
 		5588F71711197177002BF56E /* SCRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCRatingView.h; path = Classes/SCRatingView.h; sourceTree = "<group>"; };
 		5588F71811197177002BF56E /* SCRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCRatingView.m; path = Classes/SCRatingView.m; sourceTree = "<group>"; };
@@ -208,8 +204,6 @@
 		55149099114900A200B7E4DA /* Indicators */ = {
 			isa = PBXGroup;
 			children = (
-				5588F71411197177002BF56E /* SCActivityIndicator.h */,
-				5588F71511197177002BF56E /* SCActivityIndicator.m */,
 				5530E13B11406149004E436A /* SCSymbolicProgressBar.h */,
 				5530E13C11406149004E436A /* SCSymbolicProgressBar.m */,
 				5588F71711197177002BF56E /* SCRatingView.h */,
@@ -278,7 +272,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA747D9F0F9514B9006C5449 /* TouchCustoms_Prefix.pch in Headers */,
-				5588F71911197177002BF56E /* SCActivityIndicator.h in Headers */,
 				5588F71B11197177002BF56E /* SCMemoryManagement.h in Headers */,
 				5588F71C11197177002BF56E /* SCRatingView.h in Headers */,
 				5588F74C1119773C002BF56E /* SCGrfx.h in Headers */,
@@ -359,7 +352,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5588F71A11197177002BF56E /* SCActivityIndicator.m in Sources */,
 				5588F71D11197177002BF56E /* SCRatingView.m in Sources */,
 				5588F74D1119773C002BF56E /* SCGrfx.m in Sources */,
 				5588F75F1119774D002BF56E /* SCViewSlider.m in Sources */,
