@@ -16,5 +16,7 @@
 + (BOOL)isNullOrEmpty:(NSString *)aString;
 + (NSString *)stringFromInteger:(NSInteger)anInteger;
 + (NSString *)stringFromDouble:(double)aDouble;
+- (NSString *)stringByTruncatingWith:(NSString *)truncateString measuringAgainstFont:(UIFont *)font
+							forWidth:(CGFloat)width;
 
 @end
