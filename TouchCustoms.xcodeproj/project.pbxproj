@@ -17,6 +17,8 @@
 		5530E13E11406149004E436A /* SCSymbolicProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5530E13C11406149004E436A /* SCSymbolicProgressBar.m */; };
 		5553AC00114ED9460088FC57 /* SCImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5553ABFE114ED9460088FC57 /* SCImageView.h */; };
 		5553AC01114ED9460088FC57 /* SCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5553ABFF114ED9460088FC57 /* SCImageView.m */; };
+		5553ADE0114FB58D0088FC57 /* SCActivityIndicatorCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5553ADDE114FB58D0088FC57 /* SCActivityIndicatorCell.h */; };
+		5553ADE1114FB58D0088FC57 /* SCActivityIndicatorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5553ADDF114FB58D0088FC57 /* SCActivityIndicatorCell.m */; };
 		555A3A4C114D4FA00040850F /* NSError+SCMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 555A3A4A114D4FA00040850F /* NSError+SCMethods.h */; };
 		555A3A4D114D4FA00040850F /* NSError+SCMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 555A3A4B114D4FA00040850F /* NSError+SCMethods.m */; };
 		555A3A87114D605F0040850F /* UIAlertView+SCMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 555A3A85114D605F0040850F /* UIAlertView+SCMethods.h */; };
@@ -71,6 +73,8 @@
 		5530E13C11406149004E436A /* SCSymbolicProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSymbolicProgressBar.m; path = Classes/SCSymbolicProgressBar.m; sourceTree = "<group>"; };
 		5553ABFE114ED9460088FC57 /* SCImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCImageView.h; path = Classes/SCImageView.h; sourceTree = "<group>"; };
 		5553ABFF114ED9460088FC57 /* SCImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCImageView.m; path = Classes/SCImageView.m; sourceTree = "<group>"; };
+		5553ADDE114FB58D0088FC57 /* SCActivityIndicatorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCActivityIndicatorCell.h; path = Classes/SCActivityIndicatorCell.h; sourceTree = "<group>"; };
+		5553ADDF114FB58D0088FC57 /* SCActivityIndicatorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCActivityIndicatorCell.m; path = Classes/SCActivityIndicatorCell.m; sourceTree = "<group>"; };
 		555A3A4A114D4FA00040850F /* NSError+SCMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSError+SCMethods.h"; path = "Classes/NSError+SCMethods.h"; sourceTree = "<group>"; };
 		555A3A4B114D4FA00040850F /* NSError+SCMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSError+SCMethods.m"; path = "Classes/NSError+SCMethods.m"; sourceTree = "<group>"; };
 		555A3A85114D605F0040850F /* UIAlertView+SCMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+SCMethods.h"; path = "Classes/UIAlertView+SCMethods.h"; sourceTree = "<group>"; };
@@ -238,6 +242,8 @@
 		5514909B114900E400B7E4DA /* TableView Stuff */ = {
 			isa = PBXGroup;
 			children = (
+				5553ADDE114FB58D0088FC57 /* SCActivityIndicatorCell.h */,
+				5553ADDF114FB58D0088FC57 /* SCActivityIndicatorCell.m */,
 				55149456114A74FC00B7E4DA /* SCFooterLabel.h */,
 				55149457114A74FC00B7E4DA /* SCFooterLabel.m */,
 				55AD3A4D112D92BD00E70986 /* SCSwitchCell.h */,
@@ -302,6 +308,7 @@
 				555A3A4C114D4FA00040850F /* NSError+SCMethods.h in Headers */,
 				555A3A87114D605F0040850F /* UIAlertView+SCMethods.h in Headers */,
 				5553AC00114ED9460088FC57 /* SCImageView.h in Headers */,
+				5553ADE0114FB58D0088FC57 /* SCActivityIndicatorCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +387,7 @@
 				555A3A4D114D4FA00040850F /* NSError+SCMethods.m in Sources */,
 				555A3A88114D605F0040850F /* UIAlertView+SCMethods.m in Sources */,
 				5553AC01114ED9460088FC57 /* SCImageView.m in Sources */,
+				5553ADE1114FB58D0088FC57 /* SCActivityIndicatorCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
