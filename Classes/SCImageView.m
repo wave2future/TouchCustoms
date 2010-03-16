@@ -42,7 +42,7 @@
 		SC_RELEASE_SAFELY(_imageUrl);
 		_imageUrl = [value retain];
 		
-		_connection = [NSURLConnection connectionWithRequest:[NSURLRequest requestWithURL:_imageUrl] delegate:self];
+		_connection = [[NSURLConnection alloc] initWithRequest:[NSURLRequest requestWithURL:_imageUrl] delegate:self];
 		[_connection start];
 	}
 }
