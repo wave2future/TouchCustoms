@@ -29,6 +29,7 @@
 		[self.contentView addSubview:_activityIndicator];
 		
 		_refreshLabel = [[UILabel alloc] init];
+		_refreshLabel.backgroundColor = [UIColor clearColor];
 		_refreshLabel.font = [UIFont boldSystemFontOfSize:14];
 		_refreshLabel.highlightedTextColor = [UIColor whiteColor];
 		_refreshLabel.textAlignment = UITextAlignmentCenter;

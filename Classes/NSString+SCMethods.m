@@ -42,6 +42,11 @@
 	return [NSString stringWithFormat:@"%f", aDouble];
 }
 
+- (NSString *)stringByAddingPercentEscapes {
+
+	return (NSString *)CFURLCreateStringByAddingPercentEscapes(NULL, (CFStringRef)self, NULL, NULL, CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding));
+}
+
 - (NSString *)stringByTruncatingWith:(NSString *)truncateString measuringAgainstFont:(UIFont *)font
 							forWidth:(CGFloat)width {
 	
