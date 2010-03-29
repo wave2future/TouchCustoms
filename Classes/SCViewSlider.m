@@ -11,9 +11,9 @@
 
 #import "SCViewSlider.h"
 
-@interface SCViewSlider (PrivateMethods)
+@interface SCViewSlider (/* Private methods */)
 
-- (void)slideTableView:(SCSlideDirection)direction;
+- (void)__slideTableView:(SCSlideDirection)direction;
 
 @end
 
@@ -41,12 +41,12 @@
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
 	
-	[self slideTableView:SCSlideDirectionUp];
+	[self __slideTableView:SCSlideDirectionUp];
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {
 	
-	[self slideTableView:SCSlideDirectionDown];
+	[self __slideTableView:SCSlideDirectionDown];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
@@ -60,7 +60,7 @@
 
 #pragma mark Private Methods
 
-- (void)slideTableView:(SCSlideDirection)direction {
+- (void)__slideTableView:(SCSlideDirection)direction {
 	
 	CGFloat y = SCSlideDirectionUp == direction ? -self.ySlideDistance : self.ySlideDistance;
 	CGFloat height = SCSlideDirectionUp == direction ? -self.heightSlideDistance : self.heightSlideDistance;

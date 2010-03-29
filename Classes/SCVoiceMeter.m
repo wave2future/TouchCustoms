@@ -17,9 +17,9 @@
 
 @interface SCVoiceMeter (/* Private Methods */)
 
-- (void)initializeComponent;
-- (BOOL)start;
-- (void)stop;
+- (void)__initializeComponent;
+- (BOOL)__start;
+- (void)__stop;
 
 @end
 
@@ -56,13 +56,13 @@ static UInt32 DeriveBufferSize(AudioQueueRef audioQueue, const AudioStreamBasicD
 - (id)init {
 	
 	if (self = [super init]) {
-		[self initializeComponent];
+		[self __initializeComponent];
 	}
 	
 	return self;
 }
 
-- (void)initializeComponent {
+- (void)__initializeComponent {
 	
 	format.mSampleRate = [[AVAudioSession sharedInstance] currentHardwareSampleRate];
 	SC_LOG_INFO(CAT, @"Sample rate: %f", format.mSampleRate);
@@ -120,15 +120,15 @@ static UInt32 DeriveBufferSize(AudioQueueRef audioQueue, const AudioStreamBasicD
 	if (_meteringEnabled != yesOrNo) {
 		
 		if (yesOrNo) {
-			_meteringEnabled = [self start];
+			_meteringEnabled = [self __start];
 		} else {
 			_meteringEnabled = NO;
-			[self stop];
+			[self __stop];
 		}
 	}
 }
 
-- (BOOL)start {
+- (BOOL)__start {
 	
 	BOOL result = NO;
 	
@@ -161,7 +161,7 @@ static UInt32 DeriveBufferSize(AudioQueueRef audioQueue, const AudioStreamBasicD
 	return result;
 }
 
-- (void)stop {
+- (void)__stop {
 	
 	SC_LOG_DEBUG(CAT, @"Stopping...");
 	OSErr status = AudioQueueStop(queue, TRUE);

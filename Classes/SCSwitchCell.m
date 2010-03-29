@@ -14,9 +14,9 @@
 
 @interface SCSwitchCell (/* Private methods */)
 
-- (void)initializeComponent;
-- (CGRect)calculateTitleLabelRect;
-- (CGRect)calculateOptionSwitchRect;
+- (void)__initializeComponent;
+- (CGRect)__calculateTitleLabelRect;
+- (CGRect)__calculateOptionSwitchRect;
 
 @end
 
@@ -33,22 +33,22 @@
 
 	if (self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier]) {
 		
-		[self initializeComponent];
+		[self __initializeComponent];
 	}
 	
 	return self;
 }
 
-- (void)initializeComponent {
+- (void)__initializeComponent {
 	
 	self.selectionStyle = UITableViewCellSelectionStyleNone;
 	
-	_titleLabel = [[UILabel alloc] initWithFrame:[self calculateTitleLabelRect]];
+	_titleLabel = [[UILabel alloc] initWithFrame:[self __calculateTitleLabelRect]];
 	_titleLabel.backgroundColor = [UIColor clearColor];
 	_titleLabel.font = [UIFont boldSystemFontOfSize:kTitleFontSize];
 	[self.contentView addSubview:_titleLabel];
 	
-	_optionSwitch = [[UISwitch alloc] initWithFrame:[self calculateOptionSwitchRect]];
+	_optionSwitch = [[UISwitch alloc] initWithFrame:[self __calculateOptionSwitchRect]];
 	[self.contentView addSubview:_optionSwitch];
 }
 
@@ -60,7 +60,7 @@
     [super dealloc];
 }
 
-- (CGRect)calculateTitleLabelRect {
+- (CGRect)__calculateTitleLabelRect {
 
 	CGFloat width = CGRectGetWidth(self.contentView.frame);
 	CGFloat height = CGRectGetHeight(self.contentView.frame);
@@ -69,7 +69,7 @@
 	return result;
 }
 
-- (CGRect)calculateOptionSwitchRect {
+- (CGRect)__calculateOptionSwitchRect {
 	
 	CGFloat width = CGRectGetWidth(self.contentView.frame);
 	CGFloat height = CGRectGetHeight(self.contentView.frame);
@@ -83,8 +83,8 @@
 
 	[super layoutSubviews];
 	
-	self.titleLabel.frame = [self calculateTitleLabelRect];
-	self.optionSwitch.frame = [self calculateOptionSwitchRect];
+	self.titleLabel.frame = [self __calculateTitleLabelRect];
+	self.optionSwitch.frame = [self __calculateOptionSwitchRect];
 }
 
 @end

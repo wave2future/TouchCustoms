@@ -22,7 +22,7 @@
 
 @interface SCFooterLabel (/* Private methods */)
 
-- (void)initializeComponent;
+- (void)__initializeComponent;
 
 @end
 
@@ -32,7 +32,7 @@
 	
 	if (self = [super init]) {
 		
-		[self initializeComponent];
+		[self __initializeComponent];
 	}
 	
 	return self;
@@ -42,7 +42,7 @@
 	
 	if (self = [super initWithFrame:frame]) {
 		
-		[self initializeComponent];
+		[self __initializeComponent];
 	}
 	
 	return self;
@@ -52,7 +52,7 @@
 	
 	if (self = [super initWithFrame:CGRectMake(0, 0, 320, 100)]) {
 		
-		[self initializeComponent];
+		[self __initializeComponent];
 		
 		self.text = footerText;
 	}
@@ -60,7 +60,7 @@
 	return self;
 }
 
-- (void)initializeComponent {
+- (void)__initializeComponent {
 	
 	self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 	self.backgroundColor = [UIColor clearColor];

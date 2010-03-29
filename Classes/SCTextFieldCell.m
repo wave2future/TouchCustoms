@@ -15,9 +15,9 @@
 
 @interface SCTextFieldCell (/* Private methods */)
 
-- (CGRect)calculateTitleLabelRect;
-- (CGRect)calculateTextFieldRect;
-- (void)initializeComponent;
+- (CGRect)__calculateTitleLabelRect;
+- (CGRect)__calculateTextFieldRect;
+- (void)__initializeComponent;
 
 @end
 
@@ -41,7 +41,7 @@
 
 	if (self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier]) {
 		
-		[self initializeComponent];
+		[self __initializeComponent];
 	}
 	
 	return self;
@@ -55,7 +55,7 @@
     [super dealloc];
 }
 
-- (void)initializeComponent {
+- (void)__initializeComponent {
 	
 	self.selectionStyle = UITableViewCellSelectionStyleNone;
 	
@@ -63,7 +63,7 @@
 	
 	/* titleLabel */
 	
-	_titleLabel = [[UILabel alloc] initWithFrame:[self calculateTitleLabelRect]];
+	_titleLabel = [[UILabel alloc] initWithFrame:[self __calculateTitleLabelRect]];
 	_titleLabel.backgroundColor = [UIColor clearColor];
 	_titleLabel.font = [UIFont boldSystemFontOfSize:17];
 	
@@ -71,7 +71,7 @@
 	
 	/* textField */
 	
-	_textField = [[UITextField alloc] initWithFrame:[self calculateTextFieldRect]];
+	_textField = [[UITextField alloc] initWithFrame:[self __calculateTextFieldRect]];
 	_textField.borderStyle = UITextBorderStyleNone;
 	_textField.font = [UIFont systemFontOfSize:17];
 	_textField.textColor = SETTINGS_TEXT_COLOR;
@@ -83,17 +83,17 @@
 
 	[super layoutSubviews];
 	
-	self.titleLabel.frame = [self calculateTitleLabelRect];
-	self.textField.frame = [self calculateTextFieldRect];
+	self.titleLabel.frame = [self __calculateTitleLabelRect];
+	self.textField.frame = [self __calculateTextFieldRect];
 }
 
-- (CGRect)calculateTitleLabelRect {
+- (CGRect)__calculateTitleLabelRect {
 
 	CGRect result = CGRectMake(kOffset, 0, self.textFieldLeftOffset, CGRectGetHeight(self.contentView.frame));
 	return result;
 }
 
-- (CGRect)calculateTextFieldRect {
+- (CGRect)__calculateTextFieldRect {
 	
 	CGRect result = CGRectMake(self.textFieldLeftOffset, (CGRectGetHeight(self.contentView.frame) - kTextFieldHeight) / 2. + 5,
 							   CGRectGetWidth(self.contentView.frame) - self.textFieldLeftOffset - kOffset, kTextFieldHeight);

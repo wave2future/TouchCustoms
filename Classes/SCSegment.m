@@ -15,7 +15,7 @@
 
 @interface SCSegment (/* Private methods */) 
 
-- (void)initializeComponent:(SCSegmentStyle)style;
+- (void)__initializeComponent:(SCSegmentStyle)style;
 
 @end
 
@@ -75,7 +75,7 @@
 - (id)initWithStyle:(SCSegmentStyle)style frame:(CGRect)frame {
 	
 	if (self = [super initWithFrame:frame]) {
-		[self initializeComponent:style];
+		[self __initializeComponent:style];
 	}
 	return self;
 }
@@ -83,7 +83,7 @@
 - (id)initWithCoder:(NSCoder *)decoder {
 	
 	if (self = [super initWithCoder:decoder]) {
-		[self initializeComponent:SCSegmentCenter];
+		[self __initializeComponent:SCSegmentCenter];
 	}
 	return self;
 }
@@ -95,7 +95,7 @@
 	[super dealloc];
 }
 
-- (void)initializeComponent:(SCSegmentStyle)style {
+- (void)__initializeComponent:(SCSegmentStyle)style {
 	
 	_style = style;
 	

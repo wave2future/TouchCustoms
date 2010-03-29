@@ -15,8 +15,8 @@
 
 @interface SCSymbolicProgressBar (/* Private methods */)
 
-- (void)initializeComponent;
-- (void)updateComponent;
+- (void)__initializeComponent;
+- (void)__updateComponent;
 
 @end
 
@@ -29,7 +29,7 @@
 	
 	if (_value != value) {
 		_value = value;
-		[self updateComponent];
+		[self __updateComponent];
 		[self sendActionsForControlEvents:UIControlEventValueChanged];
 	}
 }
@@ -55,7 +55,7 @@
 		}
 		
 		[self setNeedsLayout];
-		[self updateComponent];
+		[self __updateComponent];
 	}
 }
 
@@ -67,7 +67,7 @@
 		[_filledImage release];
 		_filledImage = [value retain];
 		
-		[self updateComponent];
+		[self __updateComponent];
 	}
 }
 
@@ -79,14 +79,14 @@
 		[_emptyImage release];
 		_emptyImage = [value retain];
 		
-		[self updateComponent];
+		[self __updateComponent];
 	}
 }
 
 - (id)initWithFrame:(CGRect)frame {
 	
     if (self = [super initWithFrame:frame]) {
-		[self initializeComponent];
+		[self __initializeComponent];
     }
 	
     return self;
@@ -95,13 +95,13 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
 
 	if (self = [super initWithCoder:aDecoder]) {
-		[self initializeComponent];
+		[self __initializeComponent];
 	}
 	
 	return self;
 }
 
-- (void)initializeComponent {
+- (void)__initializeComponent {
 	
 	_imageViews = [[NSMutableArray alloc] initWithCapacity:32];	
 }
@@ -139,7 +139,7 @@
 	}
 }
 
-- (void)updateComponent {
+- (void)__updateComponent {
 	
 	if (_imageViews.count < 1) {
 		return;

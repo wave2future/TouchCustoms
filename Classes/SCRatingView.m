@@ -25,12 +25,12 @@ typedef UIImageView *		StarViewRef;
 
 @interface SCRatingView (/* Private methods */)
 
-- (NSMutableDictionary *)stateImageDictionary;
-- (UIImage *)imageForState:(NSString *)state fromDictionary:(NSDictionary *)stateImageDict;
-- (void)initializeComponent;
-- (NSInteger)getRatingFromTouches:(NSSet *)touches withEvent:(UIEvent *)event;
-- (void)visualizeCurrentUserRating:(NSInteger)currentUserRating;
-- (void)visualizeCurrentRating:(CGFloat)currentRating;
+- (NSMutableDictionary *)__stateImageDictionary;
+- (UIImage *)__imageForState:(NSString *)state fromDictionary:(NSDictionary *)stateImageDict;
+- (void)__initializeComponent;
+- (NSInteger)__getRatingFromTouches:(NSSet *)touches withEvent:(UIEvent *)event;
+- (void)__visualizeCurrentUserRating:(NSInteger)currentUserRating;
+- (void)__visualizeCurrentRating:(CGFloat)currentRating;
 
 @end
 
@@ -45,7 +45,7 @@ typedef UIImageView *		StarViewRef;
 		CGFloat previousRating = _rating;
 		_rating = value;
 		
-		[self visualizeCurrentRating:value];
+		[self __visualizeCurrentRating:value];
 		
 		[self.delegate ratingView:self didChangeRatingFrom:previousRating to:_rating];
 	}
@@ -59,9 +59,9 @@ typedef UIImageView *		StarViewRef;
 	if (!value) {
 		
 		if (!_userRating /* User hasn't voted yet. */) {
-			[self visualizeCurrentRating:self.rating];
+			[self __visualizeCurrentRating:self.rating];
 		} else {
-			[self visualizeCurrentRating:_userRating]; /* Visualizing previous user rating. */
+			[self __visualizeCurrentRating:_userRating]; /* Visualizing previous user rating. */
 		}
 		
 	} else {
@@ -69,19 +69,19 @@ typedef UIImageView *		StarViewRef;
 		/* Align the passed value so that it would fit physical range of 5 stars. */
 		_userRating = ALIGN(value);
 		
-		NSMutableDictionary *stateImageDict = [self stateImageDictionary];
+		NSMutableDictionary *stateImageDict = [self __stateImageDictionary];
 		
 		for (NSInteger i = 0; i < _userRating; i++) {
 			
 			StarViewRef starView = [_starViews objectAtIndex:i];
-			starView.image = [self imageForState:kSCRatingViewUserSelected fromDictionary:stateImageDict];
+			starView.image = [self __imageForState:kSCRatingViewUserSelected fromDictionary:stateImageDict];
 		}
 		
 		if (value < _starViews.count) {
 			/* Need to leave some stars with non-selected images. */
 			for (NSInteger i = _starViews.count - 1; i >= value; i--) {
 				StarViewRef starView = [_starViews objectAtIndex:i];
-				starView.image = [self imageForState:kSCRatingViewNonSelected fromDictionary:stateImageDict];
+				starView.image = [self __imageForState:kSCRatingViewNonSelected fromDictionary:stateImageDict];
 			}
 		}
 	}
@@ -102,7 +102,7 @@ typedef UIImageView *		StarViewRef;
 - (id)initWithFrame:(CGRect)frame {
 	
 	if (self = [super initWithFrame:frame]) {
-		[self initializeComponent];
+		[self __initializeComponent];
 	}
 	
 	return self;
@@ -111,13 +111,13 @@ typedef UIImageView *		StarViewRef;
 - (id)initWithCoder:(NSCoder *)aDecoder {
 	
 	if (self = [super initWithCoder:aDecoder]) {
-		[self initializeComponent];
+		[self __initializeComponent];
 	}
 	
 	return self;
 }
 
-- (void)initializeComponent {
+- (void)__initializeComponent {
 	
 	self.clipsToBounds = YES;
 	
@@ -178,14 +178,14 @@ typedef UIImageView *		StarViewRef;
 		
 	} else {
 		
-		NSMutableDictionary *stateImageDict = [self stateImageDictionary];
+		NSMutableDictionary *stateImageDict = [self __stateImageDictionary];
 		[stateImageDict setObject:image forKey:state];
 		
-		[self visualizeCurrentRating:self.rating];
+		[self __visualizeCurrentRating:self.rating];
 	}
 }
 
-- (NSMutableDictionary *)stateImageDictionary {
+- (NSMutableDictionary *)__stateImageDictionary {
 	
 	if (!_stateImageDictionary) {
 		_stateImageDictionary = [[NSMutableDictionary alloc] initWithCapacity:4];
@@ -194,13 +194,13 @@ typedef UIImageView *		StarViewRef;
 	return _stateImageDictionary;
 }
 
-- (UIImage *)imageForState:(NSString *)state fromDictionary:(NSDictionary *)stateImageDict {
+- (UIImage *)__imageForState:(NSString *)state fromDictionary:(NSDictionary *)stateImageDict {
 	
 	UIImage *result = [stateImageDict objectForKey:state];
 	return result;
 }
 
-- (NSInteger)getRatingFromTouches:(NSSet *)touches withEvent:(UIEvent *)event {
+- (NSInteger)__getRatingFromTouches:(NSSet *)touches withEvent:(UIEvent *)event {
 	
 	id touch = [touches anyObject];
 	
@@ -214,16 +214,16 @@ typedef UIImageView *		StarViewRef;
 	return 0;
 }
 
-- (void)visualizeCurrentUserRating:(NSInteger)currentUserRating {
+- (void)__visualizeCurrentUserRating:(NSInteger)currentUserRating {
 	
-	NSDictionary *stateImageDict = [self stateImageDictionary];
+	NSDictionary *stateImageDict = [self __stateImageDictionary];
 	
 	/* Making red the stars that indicate the current rating. */
 	
 	for (NSInteger i = 0; i < currentUserRating; i++) {
 		
 		StarViewRef starView = [_starViews objectAtIndex:i];
-		starView.image = [self imageForState:kSCRatingViewHot fromDictionary:stateImageDict];
+		starView.image = [self __imageForState:kSCRatingViewHot fromDictionary:stateImageDict];
 	}
 	
 	/* Leaving only star borders for the others. */
@@ -231,14 +231,14 @@ typedef UIImageView *		StarViewRef;
 	for (NSInteger i = _starViews.count - 1; i >= currentUserRating; i--) {
 		
 		StarViewRef starView = [_starViews objectAtIndex:i];
-		starView.image = [self imageForState:kSCRatingViewNonSelected fromDictionary:stateImageDict];
+		starView.image = [self __imageForState:kSCRatingViewNonSelected fromDictionary:stateImageDict];
 	}
 }
 
-- (void)visualizeCurrentRating:(CGFloat)currentRating {
+- (void)__visualizeCurrentRating:(CGFloat)currentRating {
 	
 	NSInteger counter = 0;
-	NSDictionary *stateImageDict = [self stateImageDictionary];
+	NSDictionary *stateImageDict = [self __stateImageDictionary];
 	
 	if (currentRating != 0) {
 		
@@ -252,7 +252,7 @@ typedef UIImageView *		StarViewRef;
 		for (NSInteger i = 0; i < fullStars; i++, counter++) {
 			
 			StarViewRef starView = [_starViews objectAtIndex:i];
-			starView.image = [self imageForState:kSCRatingViewSelected fromDictionary:stateImageDict];
+			starView.image = [self __imageForState:kSCRatingViewSelected fromDictionary:stateImageDict];
 		}
 		
 		/* Now set images for a half star if any. */
@@ -260,7 +260,7 @@ typedef UIImageView *		StarViewRef;
 		if (currentRating - fullStars > 0) {
 			
 			StarViewRef starView = [_starViews objectAtIndex:counter++];
-			starView.image = [self imageForState:kSCRatingViewHalfSelected fromDictionary:stateImageDict];
+			starView.image = [self __imageForState:kSCRatingViewHalfSelected fromDictionary:stateImageDict];
 		}
 	}
 	
@@ -269,7 +269,7 @@ typedef UIImageView *		StarViewRef;
 	for (NSInteger i = _starViews.count - 1; i >= counter; i--) {
 		
 		StarViewRef starView = [_starViews objectAtIndex:i];
-		starView.image = [self imageForState:kSCRatingViewNonSelected fromDictionary:stateImageDict];
+		starView.image = [self __imageForState:kSCRatingViewNonSelected fromDictionary:stateImageDict];
 	}
 }
 
@@ -277,20 +277,20 @@ typedef UIImageView *		StarViewRef;
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
 	
-	NSInteger starsToHighlight = [self getRatingFromTouches:touches withEvent:event];
-	[self visualizeCurrentUserRating:starsToHighlight];
+	NSInteger starsToHighlight = [self __getRatingFromTouches:touches withEvent:event];
+	[self __visualizeCurrentUserRating:starsToHighlight];
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
 	
-	NSInteger starsToHighlight = [self getRatingFromTouches:touches withEvent:event];
-	[self visualizeCurrentUserRating:starsToHighlight];
+	NSInteger starsToHighlight = [self __getRatingFromTouches:touches withEvent:event];
+	[self __visualizeCurrentUserRating:starsToHighlight];
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
 	
 	/* Basically this is final user rating. */
-	NSInteger starsToSelect = [self getRatingFromTouches:touches withEvent:event];
+	NSInteger starsToSelect = [self __getRatingFromTouches:touches withEvent:event];
 	[self setUserRating:starsToSelect];
 }
 

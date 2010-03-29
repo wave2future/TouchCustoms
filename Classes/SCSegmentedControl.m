@@ -17,13 +17,13 @@
 
 @interface SCSegmentedControl (/* Private methods */)
 
-- (void)initializeComponent;
+- (void)__initializeComponent;
 
 @end
 
 @interface SCSegmentedControl (UserInteraction) 
 
-- (NSInteger)getSegmentIndexFromTouches:(NSSet *)touches withEvent:(UIEvent *)event;
+- (NSInteger)__getSegmentIndexFromTouches:(NSSet *)touches withEvent:(UIEvent *)event;
 
 @end
 
@@ -87,7 +87,7 @@
 - (id)initWithFrame:(CGRect)frame {
 
 	if (self = [super initWithFrame:frame]) {
-		[self initializeComponent];
+		[self __initializeComponent];
 	}
 	
 	return self;
@@ -96,13 +96,13 @@
 - (id)initWithCoder:(NSCoder *)decoder {
 
 	if (self = [super initWithCoder:decoder]) {
-		[self initializeComponent];
+		[self __initializeComponent];
 	}
 	
 	return self;
 }
 
-- (void)initializeComponent {
+- (void)__initializeComponent {
 	
 	_segments = [[NSMutableArray alloc] initWithCapacity:12];
 }
@@ -283,7 +283,7 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
 	
-	NSInteger segmentIndex = [self getSegmentIndexFromTouches:touches withEvent:event];
+	NSInteger segmentIndex = [self __getSegmentIndexFromTouches:touches withEvent:event];
 	if (0 <= segmentIndex) {
 		[self setSelectedIndex:segmentIndex];
 	}
@@ -306,7 +306,7 @@
 	}
 }
 
-- (NSInteger)getSegmentIndexFromTouches:(NSSet *)touches withEvent:(UIEvent *)event {
+- (NSInteger)__getSegmentIndexFromTouches:(NSSet *)touches withEvent:(UIEvent *)event {
 
 	id touch = [touches anyObject];
 	
