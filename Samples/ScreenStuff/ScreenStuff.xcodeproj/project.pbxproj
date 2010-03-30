@@ -15,6 +15,12 @@
 		2899E5220DE3E06400AC0155 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* MainView.xib */; };
 		28AD733F0D9D9553002E5188 /* Application.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* Application.xib */; };
 		28D7ACF80DDB3853001CB0EB /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* MainController.m */; };
+		5525E91A11620308007F1F2E /* SymbolicProgressBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5525E91911620308007F1F2E /* SymbolicProgressBarController.m */; };
+		5525E9211162063A007F1F2E /* SymbolicProgressBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5525E9201162063A007F1F2E /* SymbolicProgressBarView.xib */; };
+		5525E94311620887007F1F2E /* progress-bar-dot-empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 5525E94111620887007F1F2E /* progress-bar-dot-empty.png */; };
+		5525E94411620887007F1F2E /* progress-bar-dot-filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 5525E94211620887007F1F2E /* progress-bar-dot-filled.png */; };
+		5525E98E11620DD2007F1F2E /* btn-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 5525E98A11620DD2007F1F2E /* btn-blue.png */; };
+		5525E98F11620DD2007F1F2E /* btn-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5525E98B11620DD2007F1F2E /* btn-yellow.png */; };
 		55C3FFC5113F991500267F0D /* SegmentedControlController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C3FFC4113F991500267F0D /* SegmentedControlController.m */; };
 		55C3FFC7113F994400267F0D /* SegmentedControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C3FFC6113F994400267F0D /* SegmentedControlView.xib */; };
 		55D48DF6113D089C009CEF31 /* star-halfselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D48DF0113D089C009CEF31 /* star-halfselected.png */; };
@@ -70,6 +76,13 @@
 		28D7ACF70DDB3853001CB0EB /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* ScreenStuff_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenStuff_Prefix.pch; sourceTree = "<group>"; };
+		5525E91811620308007F1F2E /* SymbolicProgressBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymbolicProgressBarController.h; sourceTree = "<group>"; };
+		5525E91911620308007F1F2E /* SymbolicProgressBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymbolicProgressBarController.m; sourceTree = "<group>"; };
+		5525E9201162063A007F1F2E /* SymbolicProgressBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SymbolicProgressBarView.xib; sourceTree = "<group>"; };
+		5525E94111620887007F1F2E /* progress-bar-dot-empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-bar-dot-empty.png"; sourceTree = "<group>"; };
+		5525E94211620887007F1F2E /* progress-bar-dot-filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-bar-dot-filled.png"; sourceTree = "<group>"; };
+		5525E98A11620DD2007F1F2E /* btn-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-blue.png"; sourceTree = "<group>"; };
+		5525E98B11620DD2007F1F2E /* btn-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-yellow.png"; sourceTree = "<group>"; };
 		55C3FFC3113F991500267F0D /* SegmentedControlController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedControlController.h; sourceTree = "<group>"; };
 		55C3FFC4113F991500267F0D /* SegmentedControlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedControlController.m; sourceTree = "<group>"; };
 		55C3FFC6113F994400267F0D /* SegmentedControlView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentedControlView.xib; sourceTree = "<group>"; };
@@ -123,6 +136,7 @@
 			children = (
 				55E66747113CEE68003AF287 /* RatingView */,
 				55C3FFC1113F98E200267F0D /* SegmentedControl */,
+				5525E91711620189007F1F2E /* ProgressBar */,
 				28D7ACF60DDB3853001CB0EB /* MainController.h */,
 				28D7ACF70DDB3853001CB0EB /* MainController.m */,
 				1D3623240D0F684500981E51 /* AppDelegate.h */,
@@ -169,6 +183,7 @@
 				55E6674B113CEECE003AF287 /* RatingViewStandAlone.xib */,
 				55E6678A113CF381003AF287 /* RatingViewInTableView.xib */,
 				55C3FFC6113F994400267F0D /* SegmentedControlView.xib */,
+				5525E9201162063A007F1F2E /* SymbolicProgressBarView.xib */,
 				55E66569113C7864003AF287 /* Icon.png */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 			);
@@ -189,6 +204,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5525E91711620189007F1F2E /* ProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				5525E91811620308007F1F2E /* SymbolicProgressBarController.h */,
+				5525E91911620308007F1F2E /* SymbolicProgressBarController.m */,
+			);
+			name = ProgressBar;
+			sourceTree = "<group>";
+		};
 		55C3FFC1113F98E200267F0D /* SegmentedControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +225,10 @@
 		55D48DEF113D089C009CEF31 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5525E98A11620DD2007F1F2E /* btn-blue.png */,
+				5525E98B11620DD2007F1F2E /* btn-yellow.png */,
+				5525E94111620887007F1F2E /* progress-bar-dot-empty.png */,
+				5525E94211620887007F1F2E /* progress-bar-dot-filled.png */,
 				55D48E25113D0BFE009CEF31 /* small-star-halfselected.png */,
 				55D48E26113D0BFE009CEF31 /* small-star-highlighted.png */,
 				55D48E27113D0BFE009CEF31 /* small-star-hot.png */,
@@ -313,6 +341,11 @@
 				55D48E2D113D0BFE009CEF31 /* small-star-nonselected.png in Resources */,
 				55D48E2E113D0BFE009CEF31 /* small-star-selected.png in Resources */,
 				55C3FFC7113F994400267F0D /* SegmentedControlView.xib in Resources */,
+				5525E9211162063A007F1F2E /* SymbolicProgressBarView.xib in Resources */,
+				5525E94311620887007F1F2E /* progress-bar-dot-empty.png in Resources */,
+				5525E94411620887007F1F2E /* progress-bar-dot-filled.png in Resources */,
+				5525E98E11620DD2007F1F2E /* btn-blue.png in Resources */,
+				5525E98F11620DD2007F1F2E /* btn-yellow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +363,7 @@
 				55E6677B113CF16B003AF287 /* RatingViewInTableViewController.m in Sources */,
 				55D48E34113D0C15009CEF31 /* RatingCellView.m in Sources */,
 				55C3FFC5113F991500267F0D /* SegmentedControlController.m in Sources */,
+				5525E91A11620308007F1F2E /* SymbolicProgressBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
