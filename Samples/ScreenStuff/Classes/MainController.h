@@ -14,6 +14,7 @@
 
 @class RatingViewStandAloneController, RatingViewInTableViewController;
 @class SegmentedControlController;
+@class SymbolicProgressBarController;
 
 @interface MainController : UITableViewController {
 
@@ -22,12 +23,16 @@
 	RatingViewInTableViewController *_ratingViewInTableViewController;
 	
 	SegmentedControlController *_segmentedControlController;
+	
+	SymbolicProgressBarController *_symbolicProgressBarController;
 }
 
 @property (nonatomic, retain) IBOutlet RatingViewStandAloneController *ratingViewStandAloneController;
 @property (nonatomic, retain) IBOutlet RatingViewInTableViewController *ratingViewInTableViewController;
 
 @property (nonatomic, retain) IBOutlet SegmentedControlController *segmentedControlController;
+
+@property (nonatomic, retain) IBOutlet SymbolicProgressBarController *symbolicProgressBarController;
 
 @end
 

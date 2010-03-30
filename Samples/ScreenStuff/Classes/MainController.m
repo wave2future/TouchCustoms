@@ -16,6 +16,8 @@
 
 #import "SegmentedControlController.h"
 
+#import "SymbolicProgressBarController.h"
+
 #import "SCMemoryManagement.h"
 
 @implementation MainController
@@ -23,6 +25,7 @@
 @synthesize ratingViewStandAloneController = _ratingViewStandAloneController,
 ratingViewInTableViewController = _ratingViewInTableViewController;
 @synthesize segmentedControlController = _segmentedControlController;
+@synthesize symbolicProgressBarController = _symbolicProgressBarController;
 
 #pragma mark init / dealloc
 
@@ -84,7 +87,7 @@ ratingViewInTableViewController = _ratingViewInTableViewController;
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 	
-	return 2;
+	return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)table numberOfRowsInSection:(NSInteger)section {
@@ -93,6 +96,8 @@ ratingViewInTableViewController = _ratingViewInTableViewController;
 		case 0:
 			return 2;
 		case 1:
+			return 1;
+		case 2:
 			return 1;
 	}
 	
@@ -129,6 +134,14 @@ ratingViewInTableViewController = _ratingViewInTableViewController;
 					cell.detailTextLabel.text = @"SegmentedControlController.m";
 					break;
 			}
+			break;
+		} case 2: {
+			switch (indexPath.row) {
+				case 0:
+					cell.textLabel.text = NSLocalizedString(@"Show progress with custom symbols", @"");
+					cell.detailTextLabel.text = @"SymbolicProgressBarController.m";
+					break;
+			}
 		}
 	}
 	
@@ -142,6 +155,8 @@ ratingViewInTableViewController = _ratingViewInTableViewController;
 			return NSLocalizedString(@"RatingView", @"");
 		case 1:
 			return NSLocalizedString(@"SegmentedControl", @"");
+		case 2:
+			return NSLocalizedString(@"Symbolic ProgressBar", @"");
 	}
 	
 	return nil;
@@ -167,6 +182,12 @@ ratingViewInTableViewController = _ratingViewInTableViewController;
 					break;
 			}
 			break;
+		} case 2: {
+			switch (indexPath.row) {
+				case 0:
+					[self.navigationController pushViewController:self.symbolicProgressBarController animated:YES];
+					break;
+			}
 		}
 	}
 }
